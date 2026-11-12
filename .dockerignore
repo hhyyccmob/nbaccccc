@@ -1,0 +1,9 @@
+.git
+.gitignore
+.ssh
+.openai
+data
+node_modules
+*.log
+*.tmp
+preview-*.html

@@ -8,9 +8,10 @@ import {createLobby,joinLobby,startAuction,bid,pass,pickFreeAgent,assignSlots,vi
 import {validateUsername,validatePassword,normalizePhone,maskPhone,hashPassword,verifyPassword,createToken,verifyToken,parseCookies,sessionCookie,SESSION_COOKIE} from './auth-core.js';
 
 const root=fileURLToPath(new URL('./dist/',import.meta.url));
-const dataDir=fileURLToPath(new URL('./data/',import.meta.url));
+const dataDir=process.env.DATA_DIR?path.resolve(process.env.DATA_DIR):fileURLToPath(new URL('./data/',import.meta.url));
 if(!fs.existsSync(dataDir))fs.mkdirSync(dataDir,{recursive:true});
 const usersFile=path.join(dataDir,'users.json');
+const roomsFile=path.join(dataDir,'rooms.json');
 const secretFile=path.join(dataDir,'auth-secret');
 if(!fs.existsSync(secretFile))fs.writeFileSync(secretFile,randomBytes(32).toString('hex'),{encoding:'utf8',mode:0o600});
 const authSecret=fs.readFileSync(secretFile,'utf8').trim();
@@ -44,12 +45,16 @@ function loginUser(identifier,password){
 
 const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.json':'application/json; charset=utf-8'};
 const rooms=new Map();
+const eventClients=new Map();
+function loadRooms(){try{const data=JSON.parse(fs.readFileSync(roomsFile,'utf8'));const cutoff=Date.now()-2*60*60*1000;for(const room of data.rooms||[]){if(room.last>=cutoff&&room.code&&room.state){room.state.config=room.state.config||{budget:20,rosterSize:5,lotCount:10};rooms.set(room.code,room);}}}catch{}}function saveRooms(){const tmp=roomsFile+'.tmp';fs.writeFileSync(tmp,JSON.stringify({rooms:[...rooms.values()]},null,2));fs.renameSync(tmp,roomsFile);}loadRooms();
+function sendEvent(res,payload){res.write('data: '+JSON.stringify(payload)+'\n\n');}
+function broadcastRoom(code,room){const set=eventClients.get(code);if(!set)return;for(const client of set){try{sendEvent(client.res,{type:'state',state:viewState(room.state,client.playerId)});}catch{}}}
 const codeChars='ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
 const makeCode=()=>{let c='';for(let i=0;i<5;i++)c+=codeChars[randomBytes(1)[0]%codeChars.length];return c;};
 const send=(res,status,body,type='application/json; charset=utf-8',headers={})=>{res.writeHead(status,{'Content-Type':type,'Cache-Control':'no-store',...headers});res.end(type.startsWith('application/json')?JSON.stringify(body):body);};
 const fail=(res,status,message)=>send(res,status,{error:message});
 function readBody(req){return new Promise((resolve,reject)=>{let body='';req.on('data',chunk=>{body+=chunk;if(body.length>65536){reject(Error('请求过大'));req.destroy();}});req.on('end',()=>{try{resolve(body?JSON.parse(body):{});}catch{reject(Error('JSON 格式错误'));}});req.on('error',reject);});}
-function pruneRooms(){const cutoff=Date.now()-2*60*60*1000;for(const [code,room] of rooms)if(room.last<cutoff)rooms.delete(code);}
+function pruneRooms(){const cutoff=Date.now()-2*60*60*1000;let changed=false;for(const [code,room] of rooms)if(room.last<cutoff){rooms.delete(code);changed=true;}if(changed)saveRooms();}
 function roomByCode(code){const room=rooms.get(String(code||'').toUpperCase());if(!room)throw Error('房间不存在或已过期');return room;}
 function roomPlayer(room,token){for(const id of ['A','B'])if(room.tokens[id]===token)return id;throw Error('房间登录状态失效');}
 function requireRoomUser(room,playerId,user){if(room.users?.[playerId]!==user.id)throw Error('当前账号不属于这个房间');}
@@ -69,21 +74,33 @@ async function handleApi(req,res,pathname,url){
   if(pathname==='/api/auth/logout'&&req.method==='POST')return send(res,200,{ok:true},'application/json; charset=utf-8',{'Set-Cookie':sessionCookie('',0)});
   if(pathname==='/api/auction/rooms'&&req.method==='POST'){
    const user=currentUser(req);if(!user)return fail(res,401,'请先登录再创建房间');
-   pruneRooms();const body=await readBody(req);const code=makeCode();const state=createLobby(body.mode||'full',user.username);const token=randomUUID();
-   rooms.set(code,{state,tokens:{A:token,B:null},users:{A:user.id,B:null},last:Date.now()});
+   pruneRooms();const body=await readBody(req);const code=makeCode();const state=createLobby(body.mode||'full',user.username,{budget:body.budget});const token=randomUUID();
+   rooms.set(code,{code,state,tokens:{A:token,B:null},users:{A:user.id,B:null},last:Date.now()});saveRooms();
    return send(res,200,{code,token,playerId:'A',state:viewState(state,'A')});
   }
   const join=pathname.match(/^\/api\/auction\/rooms\/([A-Z0-9]{5})\/join$/);
   if(join&&req.method==='POST'){
    const user=currentUser(req);if(!user)return fail(res,401,'请先登录再加入房间');
    const room=roomByCode(join[1]);const token=randomUUID();joinLobby(room.state,user.username);room.tokens.B=token;room.users.B=user.id;room.last=Date.now();
-   return send(res,200,{code:join[1].toUpperCase(),token,playerId:'B',state:viewState(room.state,'B')});
+   saveRooms();broadcastRoom(join[1].toUpperCase(),room);return send(res,200,{code:join[1].toUpperCase(),token,playerId:'B',state:viewState(room.state,'B')});
+  }
+  const eventsMatch=pathname.match(/^\/api\/auction\/rooms\/([A-Z0-9]{5})\/events$/);
+  if(eventsMatch&&req.method==='GET'){
+   const user=currentUser(req);if(!user)return fail(res,401,'登录状态失效');
+   const room=roomByCode(eventsMatch[1]),token=url.searchParams.get('token')||'',playerId=roomPlayer(room,token);
+   requireRoomUser(room,playerId,user);room.last=Date.now();saveRooms();
+   res.writeHead(200,{'Content-Type':'text/event-stream; charset=utf-8','Cache-Control':'no-store','Connection':'keep-alive','X-Accel-Buffering':'no'});
+   res.write(': connected\n\n');sendEvent(res,{type:'state',state:viewState(room.state,playerId)});
+   const client={res,playerId};const code=eventsMatch[1].toUpperCase();if(!eventClients.has(code))eventClients.set(code,new Set());eventClients.get(code).add(client);
+   const heartbeat=setInterval(()=>{try{res.write(': ping\n\n');}catch{}},20000);
+   req.on('close',()=>{clearInterval(heartbeat);const set=eventClients.get(code);if(set){set.delete(client);if(!set.size)eventClients.delete(code);}});
+   return;
   }
   const stateMatch=pathname.match(/^\/api\/auction\/rooms\/([A-Z0-9]{5})\/state$/);
   if(stateMatch&&req.method==='GET'){
    const user=currentUser(req);if(!user)return fail(res,401,'登录状态失效');
    const room=roomByCode(stateMatch[1]),token=url.searchParams.get('token')||'',playerId=roomPlayer(room,token);
-   requireRoomUser(room,playerId,user);room.last=Date.now();return send(res,200,{state:viewState(room.state,playerId)});
+   requireRoomUser(room,playerId,user);const eventRoom=room;eventRoom.last=Date.now();saveRooms();broadcastRoom(stateMatch[1].toUpperCase(),eventRoom);return send(res,200,{state:viewState(room.state,playerId)});
   }
   const actionMatch=pathname.match(/^\/api\/auction\/rooms\/([A-Z0-9]{5})\/action$/);
   if(actionMatch&&req.method==='POST'){
@@ -97,7 +114,7 @@ async function handleApi(req,res,pathname,url){
    else if(type==='pick')pickFreeAgent(room.state,playerId,Number(body.poolIndex));
    else if(type==='assign')assignSlots(room.state,playerId,body.slots);
    else throw Error('未知操作');
-   room.last=Date.now();return send(res,200,{state:viewState(room.state,playerId)});
+   room.last=Date.now();saveRooms();broadcastRoom(actionMatch[1].toUpperCase(),room);return send(res,200,{state:viewState(room.state,playerId)});
   }
   return fail(res,404,'接口不存在');
  }catch(e){const status=/登录/.test(e.message||'')?401:400;return fail(res,status,e.message||'请求失败');}
@@ -106,6 +123,7 @@ const server=http.createServer(async(req,res)=>{
  try{
   const url=new URL(req.url,'http://localhost');const pathname=decodeURIComponent(url.pathname);
   if(pathname.startsWith('/api/'))return handleApi(req,res,pathname,url);
+  if(pathname==='/healthz'){res.writeHead(200,{'Content-Type':'text/plain; charset=utf-8','Cache-Control':'no-store'});res.end('ok');return;}
   if(pathname==='/auction'){res.writeHead(302,{Location:'/auction.html'+url.search});res.end();return;}
   const file=path.resolve(root,'.'+(pathname==='/'?'/index.html':pathname));
   if(!file.startsWith(root)||!fs.existsSync(file)||!fs.statSync(file).isFile()){res.writeHead(404);res.end('Not found');return;}

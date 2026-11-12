@@ -2,12 +2,13 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {createLobby,joinLobby,startAuction,bid,pass,pickFreeAgent,assignSlots,viewState,AUCTION_CONFIG} from '../dist/auction-core.js';
 
-function started(mode='full',seed=123){const s=createLobby(mode,'A');joinLobby(s,'B');startAuction(s,seed);return s;}
+function started(mode='full',seed=123,settings={}){const s=createLobby(mode,'A',settings);joinLobby(s,'B');startAuction(s,seed);return s;}
 function finishAssign(s){
  if(!s.teams.A.assignment)assignSlots(s,'A',s.teams.A.roster.map(p=>p.id));
  if(!s.teams.B.assignment)assignSlots(s,'B',s.teams.B.roster.map(p=>p.id));
 }
 test('auction creates ten unique historical lots and two 20-yuan teams',()=>{const s=started();assert.equal(s.phase,'auction');assert.equal(s.teams.A.budget,20);assert.equal(s.teams.B.budget,20);assert.equal(s.queue.length+1,10);assert.ok(s.current);});
+test('room budget setting flows into both teams',()=>{const s=started('full',3,{budget:50});assert.equal(s.config.budget,50);assert.equal(s.teams.A.budget,50);assert.equal(s.teams.B.budget,50);assert.equal(viewState(s,'A').config.budget,50);});
 test('height and team blind modes hide identity until reveal',()=>{for(const mode of ['height','team']){const s=started(mode,5);const v=viewState(s,'A');assert.equal(v.current.kind,mode);assert.equal(v.current.name,undefined);assert.equal(v.current.ovr,undefined);assert.equal(v.current.photo,undefined);if(mode==='height')assert.ok(v.current.heightCm>=175&&v.current.heightCm<=240);}});
 test('passing a player with no bid makes it unsold and continues',()=>{const s=started('full',7);const before=s.lotNo;pass(s,s.turn);assert.equal(s.unsold.length,1);assert.equal(s.lotNo,before+1);assert.equal(s.phase,'auction');});
 test('winning bid charges budget and adds the player',()=>{const s=started('full',11);const bidder=s.turn,other=bidder==='A'?'B':'A',player=s.current;bid(s,bidder,3);pass(s,other);assert.equal(s.teams[bidder].budget,17);assert.ok(s.teams[bidder].roster.some(p=>p.id===player.id));});

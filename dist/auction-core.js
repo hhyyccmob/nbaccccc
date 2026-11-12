@@ -7,18 +7,20 @@ export function shuffle(items,random){const a=[...items];for(let i=a.length-1;i>
 const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
 const one=v=>Math.round(v*10)/10;
 const other=id=>id==='A'?'B':'A';
-const emptyTeam=(id,name)=>({id,name,budget:AUCTION_CONFIG.budget,roster:[],assignment:null});
+const emptyTeam=(id,name,budget=AUCTION_CONFIG.budget)=>({id,name,budget,roster:[],assignment:null});
 function normal(random){return Math.sqrt(-2*Math.log(Math.max(random(),1e-8)))*Math.cos(2*Math.PI*random());}
 function slotName(i){return ['PG','SG','SF','PF','C'][i];}
 
-export function createLobby(infoMode,hostName){
+export function createLobby(infoMode,hostName,settings={}){
  if(!AUCTION_CONFIG.modes.includes(infoMode))throw Error('未知盲拍模式');
- return {version:0,infoMode,phase:'lobby',seed:null,round:0,lotNo:0,current:null,currentBid:0,highBidder:null,turn:null,queue:[],unsold:[],freePick:null,log:[],series:null,winner:null,teams:{A:emptyTeam('A',hostName||'房主'),B:null}};
+ const budget=[20,30,50].includes(Number(settings.budget))?Number(settings.budget):AUCTION_CONFIG.budget;
+ const config={budget,rosterSize:AUCTION_CONFIG.rosterSize,lotCount:AUCTION_CONFIG.lotCount};
+ return {version:0,infoMode,config,phase:'lobby',seed:null,round:0,lotNo:0,current:null,currentBid:0,highBidder:null,turn:null,queue:[],unsold:[],freePick:null,log:[],series:null,winner:null,teams:{A:emptyTeam('A',hostName||'房主',budget),B:null}};
 }
 export function joinLobby(state,name){
  if(state.phase!=='lobby')throw Error('房间已经开始');
  if(state.teams.B)throw Error('房间已满');
- state.teams.B=emptyTeam('B',name||'客队');
+ state.teams.B=emptyTeam('B',name||'客队',state.config?.budget||AUCTION_CONFIG.budget);
  state.version++;
 }
 export function startAuction(state,seed){
@@ -29,7 +31,7 @@ export function startAuction(state,seed){
  state.phase='auction';
  state.round=1;
  state.roundSaleCount=0;
- state.queue=shuffle(AUCTION_PLAYERS,random).slice(0,AUCTION_CONFIG.lotCount);
+ state.queue=shuffle(AUCTION_PLAYERS,random).slice(0,state.config?.lotCount||AUCTION_CONFIG.lotCount);
  state.unsold=[];
  state.log=[];
  state.current=null;
@@ -222,7 +224,7 @@ export function viewState(state,viewerId){
    if(!t)return null;
    return {id:t.id,name:t.name,budget:t.budget,rosterCount:t.roster.length,complete:t.roster.length>=5,assignment:t.assignment,roster:t.roster.map(p=>playerView(p,revealed?'full':state.infoMode))};
  };
- const result={version:state.version,phase:state.phase,infoMode:state.infoMode,round:state.round,lotNo:state.lotNo,viewerId,teams:{A:teamView(state.teams.A),B:teamView(state.teams.B)},currentBid:state.currentBid,highBidder:state.highBidder,turn:state.turn,log:state.log.slice(-30),unsoldCount:state.unsold.length,queueCount:state.queue.length,current:state.current?playerView(state.current,revealed?'full':state.infoMode):null,freePick:null,series:state.series,winner:state.winner};
+ const result={version:state.version,phase:state.phase,infoMode:state.infoMode,config:state.config||{budget:AUCTION_CONFIG.budget,rosterSize:AUCTION_CONFIG.rosterSize,lotCount:AUCTION_CONFIG.lotCount},round:state.round,lotNo:state.lotNo,viewerId,teams:{A:teamView(state.teams.A),B:teamView(state.teams.B)},currentBid:state.currentBid,highBidder:state.highBidder,turn:state.turn,log:state.log.slice(-30),unsoldCount:state.unsold.length,queueCount:state.queue.length,current:state.current?playerView(state.current,revealed?'full':state.infoMode):null,freePick:null,series:state.series,winner:state.winner};
  if(state.phase==='freePick'&&state.freePick){result.freePick={chooser:state.freePick.chooser,target:state.freePick.target,picksNeeded:state.freePick.picksNeeded,pool:state.freePick.pool.map(p=>playerView(p,state.infoMode))};}
  if(revealed){result.teams.A.roster=state.teams.A.roster.map(p=>playerView(p,'full'));result.teams.B.roster=state.teams.B.roster.map(p=>playerView(p,'full'));}
  result.canBid=state.phase==='auction'&&state.turn===viewerId;
