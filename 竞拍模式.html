@@ -239,6 +239,14 @@ html[data-theme="neon"] body.auction-app #toast{background:#0b2a1d;color:var(--n
 @media(max-width:780px){html[data-theme="neon"] body.season-app .reveal-card .card-portrait,html[data-theme="neon"] body.auction-app .lot-photo{filter:saturate(1.05) brightness(.92)}}
 
 html[data-theme="neon"] body.season-app #toast{background:#0b2a1d;color:var(--neon);border:1px solid #2b6848;box-shadow:0 0 24px #8dff6a20}
+
+/* Keep transparent active-player photos at normal color on dark surfaces */
+html[data-theme="neon"] body.season-app .portrait.active-photo img,
+html[data-theme="neon"] body.season-app .card-portrait.active-photo img,
+html[data-theme="neon"] body.season-app .reveal-card .card-portrait img,
+html[data-theme="neon"] body.season-app .player-card .card-portrait img{mix-blend-mode:normal;filter:none}
+html[data-theme="neon"] body.season-app .reveal-card .card-portrait{background:radial-gradient(ellipse at 50% 100%,#244b39 0%,#0a1d15 62%,transparent 63%)}
+html[data-theme="neon"] body.season-app .court-portrait{background:radial-gradient(circle at center,#3d6d55,#10291d);border-color:#7fe29c55;box-shadow:0 0 16px #8dff6a20}
 </style>
 </head>
 <body class="auction-app">
