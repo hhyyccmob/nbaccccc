@@ -10,7 +10,7 @@ const POS_ORDER=['PG','SG','SF','PF','C'];
 const POS_LABEL={PG:'控球后卫',SG:'得分后卫',SF:'小前锋',PF:'大前锋',C:'中锋'};
 let view=null,game=null,online=null,localAI=false,polling=null,aiTimer=null,pending=false,toastTimer=null;
 const initialParams=new URLSearchParams(location.search);
-let infoMode='full',playerName=localStorage.getItem('auction-name')||'',joinCode=(initialParams.get('room')||'').toUpperCase(),assignmentDraft=null,lastScreen='';
+let infoMode='full',playerName=localStorage.getItem('auction-name')||'',joinCode=(initialParams.get('room')||'').toUpperCase(),assignmentDraft=null,lastScreen='',account=null,authOpen=false,authMode='login',authUsername='',authPassword='',authError='',pendingOnlineAction=null;
 
 function toast(text){const node=$('#toast');if(!node)return;node.textContent=text;node.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>node.classList.remove('show'),TOAST_TIME);}
 function modeLabel(m){return MODE_LABELS[m]||m;}
@@ -37,7 +37,35 @@ function startLocalAI(){
  startAuction(game,randomSeed());
  online=null;localAI=true;view=viewState(game,'A');assignmentDraft=null;render();scheduleAI();
 }
+function openAuth(action=null,auth='login'){
+ pendingOnlineAction=action;
+ authOpen=true;authMode=auth||'login';authError='';authPassword='';render();
+}
+async function loadAccount(){
+ try{
+  const res=await fetch('/api/auth/me',{credentials:'same-origin'});
+  if(!res.ok){account=null;return;}
+  const data=await res.json();account=data.user||null;render();
+ }catch{account=null;}
+}
+async function submitAuth(){
+ if(pending)return;pending=true;
+ try{
+  const endpoint=authMode==='login'?'/api/auth/login':'/api/auth/register';
+  const res=await fetch(endpoint,{method:'POST',credentials:'same-origin',headers:{'Content-Type':'application/json'},body:JSON.stringify({username:authUsername,password:authPassword})});
+  const data=await res.json();if(!res.ok)throw Error(data.error||'登录失败');
+  account=data.user;authOpen=false;authError='';authPassword='';pending=false;render();
+  toast((authMode==='login'?'已登录：':'账号已创建：')+account.username);
+  const action=pendingOnlineAction;pendingOnlineAction=null;
+  if(action==='create')await createRoom();else if(action==='join')await joinRoom();
+ }catch(e){authError=e.message||'登录失败';pending=false;render();}
+}
+async function logoutAccount(){
+ try{await fetch('/api/auth/logout',{method:'POST',credentials:'same-origin'});}catch{}
+ if(online){stopPolling();online=null;view=null;game=null;assignmentDraft=null;}account=null;pendingOnlineAction=null;render();toast('已退出登录');
+}
 async function createRoom(){
+ if(!account){openAuth('create');toast('请先登录再创建房间');return;}
  if(pending)return;pending=true;
  try{
   const res=await fetch('/api/auction/rooms',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:playerName.trim()||'房主',mode:infoMode})});
@@ -47,6 +75,7 @@ async function createRoom(){
  finally{pending=false;}
 }
 async function joinRoom(){
+ if(!account){openAuth('join');toast('请先登录再加入房间');return;}
  if(pending)return;const code=joinCode.trim().toUpperCase();if(code.length<4){toast('请输入房间码');return;}
  pending=true;
  try{
@@ -144,25 +173,31 @@ function render(){
  else if(phase==='assign'){ensureDraft();app.innerHTML=renderAssign();next='assign';}
  else if(phase==='done'){app.innerHTML=renderSeries();next='series';}
  else{app.innerHTML=renderLanding();next='landing';}
+ if(authOpen)app.insertAdjacentHTML('beforeend',renderAuthModal());
  if(next!==lastScreen){lastScreen=next;window.scrollTo({top:0,behavior:'smooth'});}
 }
 
 function renderLanding(){
+ const accountMarkup=account?`<div class="account-strip logged"><div><span>联机账号</span><strong>${esc(account.username)}</strong></div><button type="button" class="button account-logout" data-auth-logout>退出登录</button></div>`:`<div class="account-strip"><div><span>联机需要账号</span><strong>登录后创建或加入房间</strong></div><button type="button" class="button account-login" data-auth-open>登录 / 注册</button></div>`;
  return `<section class="landing">
   <div class="landing-hero"><div class="eyebrow"><span></span> AUCTION ROOM / 2 PLAYERS</div><h1>历史球星<br><em>竞拍室</em></h1><p>每人 20 元，10 名历史球星随机上拍。公开加价、盲拍博弈，最后把阵容排进五个位置，打一轮七场四胜。</p><div class="landing-stats"><span><b>20</b> 初始预算</span><span><b>10</b> 名拍品</span><span><b>5</b> 人阵容</span><span><b>BO7</b> 系列赛</span></div></div>
   <div class="landing-grid">
    <section class="setup-card"><div class="eyebrow">CREATE / JOIN</div><h2>进入竞拍室</h2>
-    <label class="field-label">你的名字<input id="player-name" maxlength="16" value="${esc(playerName)}" placeholder="输入昵称"></label>
+    ${accountMarkup}
+    <label class="field-label">单机昵称<input id="player-name" maxlength="16" value="${esc(playerName)}" placeholder="仅单机 AI 使用"></label>
     <div class="field-label">信息模式</div>
     <div class="mode-grid">${Object.entries(MODE_LABELS).map(([key,label])=>`<button type="button" class="mode-card ${infoMode===key?'selected':''}" data-info-mode="${key}"><b>${label}</b><small>${MODE_DESC[key]}</small></button>`).join('')}</div>
     <div class="action-row"><button class="button primary" id="create-room">创建房间 →</button><div class="join-row"><input id="join-code" maxlength="5" value="${esc(joinCode)}" placeholder="房间码"><button class="button secondary" id="join-room">加入</button></div></div>
     <div class="divider"><span>或者</span></div>
     <button class="button ai-button" id="play-ai">单机对战普通 AI <span>↗</span></button>
-    <p class="hint">房间码联机需要先运行 <code>node server.mjs</code>。单机模式无需联网。</p>
+    <p class="hint">房间码联机会使用账号昵称，需要先运行 <code>node server.mjs</code>。单机模式无需登录和联网。</p>
    </section>
    <aside class="landing-rules"><div class="eyebrow">THE RULES</div><h3>20 元，五个人。</h3><ul><li>公开轮流加价，起拍 1 元，可以一次加多档。</li><li>每队最多 5 人，可以花光预算。</li><li>一队满 5 人，剩余球员免费归另一队。</li><li>一队花光钱，另一队先从剩余池免费挑选。</li><li>盲拍模式只在双方阵容完整后揭晓完整资料。</li><li>竞拍后自由排阵，模拟七场四胜。</li></ul></aside>
   </div>
  </section>`;
+}
+function renderAuthModal(){
+ return `<div class="auth-overlay" data-auth-overlay><section class="auth-modal" role="dialog" aria-modal="true" aria-label="账号登录"><button type="button" class="auth-close" data-auth-close aria-label="关闭">×</button><div class="eyebrow">ACCOUNT / ONLINE PLAY</div><h2>${authMode==='login'?'登录账号':'创建账号'}</h2><div class="auth-tabs"><button type="button" class="${authMode==='login'?'active':''}" data-auth-mode="login">登录</button><button type="button" class="${authMode==='register'?'active':''}" data-auth-mode="register">注册</button></div><label class="field-label">用户名<input id="auth-username" maxlength="20" autocomplete="username" value="${esc(authUsername)}" placeholder="3–20 位中文、字母、数字或下划线"></label><label class="field-label">密码<input id="auth-password" type="password" maxlength="72" autocomplete="${authMode==='login'?'current-password':'new-password'}" placeholder="至少 6 位"></label>${authError?`<p class="auth-error">${esc(authError)}</p>`:''}<button type="button" class="button primary auth-submit" id="auth-submit">${authMode==='login'?'登录':'创建账号'} →</button><p class="auth-note">账号保存在当前服务器的 <code>data/users.json</code>，密码使用 scrypt 哈希，不保存明文。</p></section></div>`;
 }
 function renderRoom(){
  const host=view.teams.A,guest=view.teams.B;
@@ -225,6 +260,11 @@ function renderRules(){
 
 document.addEventListener('click',async e=>{
  const t=e.target;
+ if(t.closest('[data-auth-open]')){openAuth();return;}
+ if(t.closest('[data-auth-close]')||t.matches('[data-auth-overlay]')){authOpen=false;pendingOnlineAction=null;authError='';authPassword='';render();return;}
+ if(t.closest('[data-auth-logout]')){await logoutAccount();return;}
+ const authTab=t.closest('[data-auth-mode]');if(authTab){authMode=authTab.dataset.authMode;authError='';render();return;}
+ if(t.closest('#auth-submit')){await submitAuth();return;}
  const mode=t.closest('[data-info-mode]');if(mode){infoMode=mode.dataset.infoMode;render();return;}
  if(t.closest('#create-room')){await createRoom();return;}
  if(t.closest('#join-room')){await joinRoom();return;}
@@ -241,6 +281,8 @@ document.addEventListener('click',async e=>{
 document.addEventListener('input',e=>{
  if(e.target.id==='player-name'){playerName=e.target.value;localStorage.setItem('auction-name',playerName);}
  if(e.target.id==='join-code')joinCode=e.target.value.toUpperCase();
+ if(e.target.id==='auth-username')authUsername=e.target.value;
+ if(e.target.id==='auth-password')authPassword=e.target.value;
 });
 document.addEventListener('change',e=>{
  if(e.target.matches('[data-slot]')){const i=POS_ORDER.indexOf(e.target.dataset.slot);if(i>=0){if(!assignmentDraft)ensureDraft();assignmentDraft[i]=e.target.value;}}
@@ -250,4 +292,5 @@ $('#rules-close').addEventListener('click',()=>$('#rules-dialog').close());
 $('#rules-dialog').addEventListener('click',e=>{if(e.target===$('#rules-dialog'))e.target.close();});
 renderRules();
 render();
+loadAccount();
 resumeOnlineFromParams();

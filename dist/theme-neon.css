@@ -236,3 +236,16 @@ html[data-theme="neon"] body.season-app .reveal-card .card-portrait img,
 html[data-theme="neon"] body.season-app .player-card .card-portrait img{mix-blend-mode:normal;filter:none}
 html[data-theme="neon"] body.season-app .reveal-card .card-portrait{background:radial-gradient(ellipse at 50% 100%,#244b39 0%,#0a1d15 62%,transparent 63%)}
 html[data-theme="neon"] body.season-app .court-portrait{background:radial-gradient(circle at center,#3d6d55,#10291d);border-color:#7fe29c55;box-shadow:0 0 16px #8dff6a20}
+
+html[data-theme="neon"] body.auction-app .account-strip{background:#07130e;border-color:#1d4031;color:#dfffe8}
+html[data-theme="neon"] body.auction-app .account-strip.logged{border-left-color:var(--neon);background:#0b1e16}
+html[data-theme="neon"] body.auction-app .account-strip span{color:#82a291}
+html[data-theme="neon"] body.auction-app .account-strip strong{color:var(--neon)}
+html[data-theme="neon"] body.auction-app .auth-modal{background:radial-gradient(circle at 12% 0%,#123b2a,#07130e 58%,#020806);border-color:#24513d;color:#e9fff2;box-shadow:0 25px 80px #000000aa,0 0 40px #8dff6a12}
+html[data-theme="neon"] body.auction-app .auth-modal h2{color:#effff5}
+html[data-theme="neon"] body.auction-app .auth-close{color:#8eae9c}
+html[data-theme="neon"] body.auction-app .auth-tabs{border-bottom-color:#1d4031}
+html[data-theme="neon"] body.auction-app .auth-tabs button{color:#7f9e8d}
+html[data-theme="neon"] body.auction-app .auth-tabs button.active{color:var(--neon);border-bottom-color:var(--neon)}
+html[data-theme="neon"] body.auction-app .auth-error{border-color:#7a3d2e;background:#2a120d;color:#ffad91}
+html[data-theme="neon"] body.auction-app .auth-note{color:#7f9e8d}

@@ -1,0 +1,8 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {validateUsername,validatePassword,hashPassword,verifyPassword,createToken,verifyToken,parseCookies,sessionCookie} from '../auth-core.js';
+
+test('username and password validation',()=>{assert.equal(validateUsername('  player_1 '),'player_1');assert.throws(()=>validateUsername('a'));assert.throws(()=>validateUsername('bad name'));assert.throws(()=>validatePassword('12345'));assert.equal(validatePassword('123456'),'123456');});
+test('passwords use salted scrypt hashes',()=>{const a=hashPassword('secret123'),b=hashPassword('secret123');assert.notEqual(a.salt,b.salt);assert.notEqual(a.passwordHash,b.passwordHash);assert.ok(verifyPassword('secret123',a));assert.ok(verifyPassword('secret123',b));assert.ok(!verifyPassword('wrong',a));});
+test('session tokens verify, expire and reject tampering',()=>{const secret='test-secret',user={id:7,username:'tester'};const token=createToken(user,secret,60000);const data=verifyToken(token,secret);assert.equal(data.sub,'7');assert.equal(data.username,'tester');assert.equal(verifyToken(token,'other-secret'),null);assert.equal(verifyToken(token+'x',secret),null);const expired=createToken(user,secret,-1);assert.equal(verifyToken(expired,secret),null);});
+test('cookie parser and session cookie attributes',()=>{const cookies=parseCookies('a=1; nba_session=abc%2Edef; theme=neon');assert.equal(cookies.a,'1');assert.equal(cookies.nba_session,'abc.def');const header=sessionCookie('token');assert.match(header,/HttpOnly/);assert.match(header,/SameSite=Lax/);assert.match(header,/Path=\//);});
