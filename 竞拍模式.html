@@ -11,7 +11,7 @@
 
 /* Account and authentication */
 .account-strip{display:flex;align-items:center;justify-content:space-between;gap:14px;border:1px solid var(--line);border-radius:4px;background:#f6f3e9;padding:12px 14px;margin-bottom:16px}
-.account-strip>div{min-width:0}.account-strip span{display:block;font-size:9px;color:var(--muted);letter-spacing:.4px}.account-strip strong{display:block;font-size:13px;margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.account-strip>div{min-width:0}.account-strip span{display:block;font-size:9px;color:var(--muted);letter-spacing:.4px}.account-strip strong{display:block;font-size:13px;margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.account-strip small{display:block;font:9px var(--mono);color:var(--muted);margin-top:3px;letter-spacing:.4px}
 .account-strip.logged{border-left:3px solid var(--orange);background:#fff0e8}
 .account-strip .button{flex:none;padding:9px 12px;font-size:10px}
 .auth-overlay{position:fixed;inset:0;z-index:60;display:flex;align-items:center;justify-content:center;padding:20px;background:#06100bcc;backdrop-filter:blur(5px)}
@@ -271,6 +271,7 @@ html[data-theme="neon"] body.auction-app .account-strip{background:#07130e;borde
 html[data-theme="neon"] body.auction-app .account-strip.logged{border-left-color:var(--neon);background:#0b1e16}
 html[data-theme="neon"] body.auction-app .account-strip span{color:#82a291}
 html[data-theme="neon"] body.auction-app .account-strip strong{color:var(--neon)}
+html[data-theme="neon"] body.auction-app .account-strip small{color:#7fa491}
 html[data-theme="neon"] body.auction-app .auth-modal{background:radial-gradient(circle at 12% 0%,#123b2a,#07130e 58%,#020806);border-color:#24513d;color:#e9fff2;box-shadow:0 25px 80px #000000aa,0 0 40px #8dff6a12}
 html[data-theme="neon"] body.auction-app .auth-modal h2{color:#effff5}
 html[data-theme="neon"] body.auction-app .auth-close{color:#8eae9c}
@@ -854,7 +855,7 @@ const POS_ORDER=['PG','SG','SF','PF','C'];
 const POS_LABEL={PG:'控球后卫',SG:'得分后卫',SF:'小前锋',PF:'大前锋',C:'中锋'};
 let view=null,game=null,online=null,localAI=false,polling=null,aiTimer=null,pending=false,toastTimer=null;
 const initialParams=new URLSearchParams(location.search);
-let infoMode='full',playerName=localStorage.getItem('auction-name')||'',joinCode=(initialParams.get('room')||'').toUpperCase(),assignmentDraft=null,lastScreen='',account=null,authOpen=false,authMode='login',authUsername='',authPassword='',authError='',pendingOnlineAction=null;
+let infoMode='full',playerName=localStorage.getItem('auction-name')||'',joinCode=(initialParams.get('room')||'').toUpperCase(),assignmentDraft=null,lastScreen='',account=null,authOpen=false,authMode='login',authUsername='',authPhone='',authPassword='',authError='',pendingOnlineAction=null;
 
 function toast(text){const node=$('#toast');if(!node)return;node.textContent=text;node.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>node.classList.remove('show'),TOAST_TIME);}
 function modeLabel(m){return MODE_LABELS[m]||m;}
@@ -883,7 +884,7 @@ function startLocalAI(){
 }
 function openAuth(action=null,auth='login'){
  pendingOnlineAction=action;
- authOpen=true;authMode=auth||'login';authError='';authPassword='';render();
+ authOpen=true;authMode=auth||'login';authError='';authPassword='';authPhone='';render();
 }
 async function loadAccount(){
  try{
@@ -896,10 +897,14 @@ async function submitAuth(){
  if(pending)return;pending=true;
  try{
   const endpoint=authMode==='login'?'/api/auth/login':'/api/auth/register';
-  const res=await fetch(endpoint,{method:'POST',credentials:'same-origin',headers:{'Content-Type':'application/json'},body:JSON.stringify({username:authUsername,password:authPassword})});
+  const payload=authMode==='login'
+   ?{identifier:authUsername,password:authPassword}
+   :{username:authUsername,phone:authPhone,password:authPassword};
+  const res=await fetch(endpoint,{method:'POST',credentials:'same-origin',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
   const data=await res.json();if(!res.ok)throw Error(data.error||'登录失败');
-  account=data.user;authOpen=false;authError='';authPassword='';pending=false;render();
-  toast((authMode==='login'?'已登录：':'账号已创建：')+account.username);
+  const wasLogin=authMode==='login';
+  account=data.user;authOpen=false;authError='';authPassword='';authPhone='';pending=false;render();
+  toast((wasLogin?'已登录：':'账号已创建：')+account.username);
   const action=pendingOnlineAction;pendingOnlineAction=null;
   if(action==='create')await createRoom();else if(action==='join')await joinRoom();
  }catch(e){authError=e.message||'登录失败';pending=false;render();}
@@ -1022,7 +1027,8 @@ function render(){
 }
 
 function renderLanding(){
- const accountMarkup=account?`<div class="account-strip logged"><div><span>联机账号</span><strong>${esc(account.username)}</strong></div><button type="button" class="button account-logout" data-auth-logout>退出登录</button></div>`:`<div class="account-strip"><div><span>联机需要账号</span><strong>登录后创建或加入房间</strong></div><button type="button" class="button account-login" data-auth-open>登录 / 注册</button></div>`;
+ const phoneLine=account?.phoneMasked?`<small>${esc(account.phoneMasked)}</small>`:'';
+ const accountMarkup=account?`<div class="account-strip logged"><div><span>联机账号</span><strong>${esc(account.username)}</strong>${phoneLine}</div><button type="button" class="button account-logout" data-auth-logout>退出登录</button></div>`:`<div class="account-strip"><div><span>联机需要账号</span><strong>登录后创建或加入房间</strong></div><button type="button" class="button account-login" data-auth-open>登录 / 注册</button></div>`;
  return `<section class="landing">
   <div class="landing-hero"><div class="eyebrow"><span></span> AUCTION ROOM / 2 PLAYERS</div><h1>历史球星<br><em>竞拍室</em></h1><p>每人 20 元，10 名历史球星随机上拍。公开加价、盲拍博弈，最后把阵容排进五个位置，打一轮七场四胜。</p><div class="landing-stats"><span><b>20</b> 初始预算</span><span><b>10</b> 名拍品</span><span><b>5</b> 人阵容</span><span><b>BO7</b> 系列赛</span></div></div>
   <div class="landing-grid">
@@ -1041,7 +1047,10 @@ function renderLanding(){
  </section>`;
 }
 function renderAuthModal(){
- return `<div class="auth-overlay" data-auth-overlay><section class="auth-modal" role="dialog" aria-modal="true" aria-label="账号登录"><button type="button" class="auth-close" data-auth-close aria-label="关闭">×</button><div class="eyebrow">ACCOUNT / ONLINE PLAY</div><h2>${authMode==='login'?'登录账号':'创建账号'}</h2><div class="auth-tabs"><button type="button" class="${authMode==='login'?'active':''}" data-auth-mode="login">登录</button><button type="button" class="${authMode==='register'?'active':''}" data-auth-mode="register">注册</button></div><label class="field-label">用户名<input id="auth-username" maxlength="20" autocomplete="username" value="${esc(authUsername)}" placeholder="3–20 位中文、字母、数字或下划线"></label><label class="field-label">密码<input id="auth-password" type="password" maxlength="72" autocomplete="${authMode==='login'?'current-password':'new-password'}" placeholder="至少 6 位"></label>${authError?`<p class="auth-error">${esc(authError)}</p>`:''}<button type="button" class="button primary auth-submit" id="auth-submit">${authMode==='login'?'登录':'创建账号'} →</button><p class="auth-note">账号保存在当前服务器的 <code>data/users.json</code>，密码使用 scrypt 哈希，不保存明文。</p></section></div>`;
+ const phoneField=authMode==='register'?`<label class="field-label">手机号（选填，用于登录）<input id="auth-phone" type="tel" maxlength="16" autocomplete="tel" value="${esc(authPhone)}" placeholder="11 位手机号，可不填"></label>`:'';
+ const identifierLabel=authMode==='login'?'用户名或手机号':'昵称';
+ const identifierPlaceholder=authMode==='login'?'输入用户名或 11 位手机号':'3–20 位中文、字母、数字或下划线';
+ return `<div class="auth-overlay" data-auth-overlay><section class="auth-modal" role="dialog" aria-modal="true" aria-label="账号登录"><button type="button" class="auth-close" data-auth-close aria-label="关闭">×</button><div class="eyebrow">ACCOUNT / ONLINE PLAY</div><h2>${authMode==='login'?'登录账号':'创建账号'}</h2><div class="auth-tabs"><button type="button" class="${authMode==='login'?'active':''}" data-auth-mode="login">登录</button><button type="button" class="${authMode==='register'?'active':''}" data-auth-mode="register">注册</button></div><label class="field-label">${identifierLabel}<input id="auth-username" maxlength="20" autocomplete="username" value="${esc(authUsername)}" placeholder="${identifierPlaceholder}"></label>${phoneField}<label class="field-label">密码<input id="auth-password" type="password" maxlength="72" autocomplete="${authMode==='login'?'current-password':'new-password'}" placeholder="至少 6 位"></label>${authError?`<p class="auth-error">${esc(authError)}</p>`:''}<button type="button" class="button primary auth-submit" id="auth-submit">${authMode==='login'?'登录':'创建账号'} →</button><p class="auth-note">账号保存在当前服务器的 <code>data/users.json</code>，密码使用 scrypt 哈希，不保存明文。手机号只作为登录标识，当前不发送短信验证码。</p></section></div>`;
 }
 function renderRoom(){
  const host=view.teams.A,guest=view.teams.B;
@@ -1105,7 +1114,7 @@ function renderRules(){
 document.addEventListener('click',async e=>{
  const t=e.target;
  if(t.closest('[data-auth-open]')){openAuth();return;}
- if(t.closest('[data-auth-close]')||t.matches('[data-auth-overlay]')){authOpen=false;pendingOnlineAction=null;authError='';authPassword='';render();return;}
+ if(t.closest('[data-auth-close]')||t.matches('[data-auth-overlay]')){authOpen=false;pendingOnlineAction=null;authError='';authPassword='';authPhone='';render();return;}
  if(t.closest('[data-auth-logout]')){await logoutAccount();return;}
  const authTab=t.closest('[data-auth-mode]');if(authTab){authMode=authTab.dataset.authMode;authError='';render();return;}
  if(t.closest('#auth-submit')){await submitAuth();return;}
@@ -1126,6 +1135,7 @@ document.addEventListener('input',e=>{
  if(e.target.id==='player-name'){playerName=e.target.value;localStorage.setItem('auction-name',playerName);}
  if(e.target.id==='join-code')joinCode=e.target.value.toUpperCase();
  if(e.target.id==='auth-username')authUsername=e.target.value;
+ if(e.target.id==='auth-phone')authPhone=e.target.value;
  if(e.target.id==='auth-password')authPassword=e.target.value;
 });
 document.addEventListener('change',e=>{

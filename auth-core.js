@@ -8,6 +8,17 @@ export function validateUsername(value){
  if(!/^[A-Za-z0-9_\u4e00-\u9fa5]{3,20}$/.test(username))throw Error('用户名需为 3–20 位中文、字母、数字或下划线');
  return username;
 }
+export function normalizePhone(value){
+ const raw=String(value||'').trim();
+ if(!raw)return '';
+ const digits=raw.replace(/[^\d+]/g,'').replace(/^\+?86/,'');
+ if(!/^1[3-9]\d{9}$/.test(digits))throw Error('请输入有效的 11 位手机号');
+ return digits;
+}
+export function maskPhone(phone){
+ const value=String(phone||'');
+ return value.length===11?value.slice(0,3)+'****'+value.slice(7):'';
+}
 export function validatePassword(value){
  const password=String(value||'');
  if(password.length<6||password.length>72)throw Error('密码长度需为 6–72 位');

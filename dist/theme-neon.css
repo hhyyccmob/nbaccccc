@@ -241,6 +241,7 @@ html[data-theme="neon"] body.auction-app .account-strip{background:#07130e;borde
 html[data-theme="neon"] body.auction-app .account-strip.logged{border-left-color:var(--neon);background:#0b1e16}
 html[data-theme="neon"] body.auction-app .account-strip span{color:#82a291}
 html[data-theme="neon"] body.auction-app .account-strip strong{color:var(--neon)}
+html[data-theme="neon"] body.auction-app .account-strip small{color:#7fa491}
 html[data-theme="neon"] body.auction-app .auth-modal{background:radial-gradient(circle at 12% 0%,#123b2a,#07130e 58%,#020806);border-color:#24513d;color:#e9fff2;box-shadow:0 25px 80px #000000aa,0 0 40px #8dff6a12}
 html[data-theme="neon"] body.auction-app .auth-modal h2{color:#effff5}
 html[data-theme="neon"] body.auction-app .auth-close{color:#8eae9c}

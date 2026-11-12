@@ -5,7 +5,7 @@ import os from 'node:os';
 import {fileURLToPath} from 'node:url';
 import {randomUUID,randomBytes} from 'node:crypto';
 import {createLobby,joinLobby,startAuction,bid,pass,pickFreeAgent,assignSlots,viewState} from './dist/auction-core.js';
-import {validateUsername,validatePassword,hashPassword,verifyPassword,createToken,verifyToken,parseCookies,sessionCookie,SESSION_COOKIE} from './auth-core.js';
+import {validateUsername,validatePassword,normalizePhone,maskPhone,hashPassword,verifyPassword,createToken,verifyToken,parseCookies,sessionCookie,SESSION_COOKIE} from './auth-core.js';
 
 const root=fileURLToPath(new URL('./dist/',import.meta.url));
 const dataDir=fileURLToPath(new URL('./data/',import.meta.url));
@@ -17,24 +17,27 @@ const authSecret=fs.readFileSync(secretFile,'utf8').trim();
 function loadUsers(){try{const data=JSON.parse(fs.readFileSync(usersFile,'utf8'));if(Array.isArray(data.users))return {nextId:Number(data.nextId)||1,users:data.users};}catch{}return {nextId:1,users:[]};}
 let userStore=loadUsers();
 function saveUsers(){const tmp=usersFile+'.tmp';fs.writeFileSync(tmp,JSON.stringify(userStore,null,2));fs.renameSync(tmp,usersFile);}
-const publicUser=user=>user?{id:user.id,username:user.username,createdAt:user.createdAt,lastLoginAt:user.lastLoginAt}:null;
+const publicUser=user=>user?{id:user.id,username:user.username,phoneMasked:maskPhone(user.phone),createdAt:user.createdAt,lastLoginAt:user.lastLoginAt}:null;
 const findUserByLower=lower=>userStore.users.find(u=>u.usernameLower===lower);
 const findUserById=id=>userStore.users.find(u=>String(u.id)===String(id));
+const findUserByPhone=phone=>phone?userStore.users.find(u=>u.phone===phone):null;
 function currentUser(req){
  const token=parseCookies(req.headers.cookie||'')[SESSION_COOKIE];
  const data=verifyToken(token,authSecret);
  if(!data)return null;
  return findUserById(data.sub)||null;
 }
-function registerUser(username,password){
- const display=validateUsername(username),pw=validatePassword(password),lower=display.toLowerCase();
+function registerUser(username,password,phone){
+ const display=validateUsername(username),pw=validatePassword(password),lower=display.toLowerCase(),normalizedPhone=normalizePhone(phone);
  if(findUserByLower(lower))throw Error('用户名已存在');
+ if(normalizedPhone&&findUserByPhone(normalizedPhone))throw Error('手机号已注册');
  const {salt,passwordHash}=hashPassword(pw);
- const user={id:userStore.nextId++,username:display,usernameLower:lower,salt,passwordHash,createdAt:new Date().toISOString(),lastLoginAt:new Date().toISOString()};
+ const user={id:userStore.nextId++,username:display,usernameLower:lower,phone:normalizedPhone,salt,passwordHash,createdAt:new Date().toISOString(),lastLoginAt:new Date().toISOString()};
  userStore.users.push(user);saveUsers();return user;
 }
-function loginUser(username,password){
- const lower=String(username||'').trim().toLowerCase();const user=findUserByLower(lower);
+function loginUser(identifier,password){
+ const value=String(identifier||'').trim(),lower=value.toLowerCase();let user=findUserByLower(lower);
+ if(!user){try{user=findUserByPhone(normalizePhone(value));}catch{}}
  if(!user||!verifyPassword(password,user))throw Error('用户名或密码错误');
  user.lastLoginAt=new Date().toISOString();saveUsers();return user;
 }
@@ -53,11 +56,11 @@ function requireRoomUser(room,playerId,user){if(room.users?.[playerId]!==user.id
 async function handleApi(req,res,pathname,url){
  try{
   if(pathname==='/api/auth/register'&&req.method==='POST'){
-   const body=await readBody(req),user=registerUser(body.username,body.password),token=createToken(user,authSecret);
+   const body=await readBody(req),user=registerUser(body.username,body.password,body.phone),token=createToken(user,authSecret);
    return send(res,200,{user:publicUser(user)},'application/json; charset=utf-8',{'Set-Cookie':sessionCookie(token)});
   }
   if(pathname==='/api/auth/login'&&req.method==='POST'){
-   const body=await readBody(req),user=loginUser(body.username,body.password),token=createToken(user,authSecret);
+   const body=await readBody(req),user=loginUser(body.identifier||body.username,body.password),token=createToken(user,authSecret);
    return send(res,200,{user:publicUser(user)},'application/json; charset=utf-8',{'Set-Cookie':sessionCookie(token)});
   }
   if(pathname==='/api/auth/me'&&req.method==='GET'){
