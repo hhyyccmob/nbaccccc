@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="classic">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#102a24">
+<meta name="description" content="首发实验室竞拍模式：两名玩家各 20 元，公开竞拍 10 名历史球星，盲拍、补位、自由排阵与七场四胜。">
+<title>历史球星竞拍室 · 首发实验室</title>
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("starting-five-theme")||"classic"}catch{}</script><link rel="stylesheet" href="./auction.css"><link rel="stylesheet" href="./theme-neon.css">
+</head>
+<body class="auction-app">
+<header class="site-header">
+  <a class="brand" href="./index.html" id="back-home"><span class="brand-ball">◉</span><span>首发实验室<small>AUCTION ROOM</small></span></a>
+  <nav class="header-nav"><a href="./index.html" id="back-home-2">← 赛季模式</a><button class="text-button theme-toggle" type="button" data-theme-toggle>✦ 霓虹主题</button><button class="text-button" id="rules-open">玩法说明 ↗</button></nav>
+</header>
+<main id="app"></main>
+<dialog id="rules-dialog"><div class="dialog-top"><h2>竞拍规则</h2><button id="rules-close" aria-label="关闭">×</button></div><div id="rules-body"></div></dialog>
+<div id="toast" role="status"></div>
+<script src="./theme.js"></script><script type="module" src="./auction.js"></script>
+</body>
+</html>

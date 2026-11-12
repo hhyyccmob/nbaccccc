@@ -1,0 +1,46 @@
+[
+  {
+    "id": "SG7",
+    "source": "https://images.24ur.com/media/images/598x440/Jul2019/4987733444_62284729.jpg?fop=fp%3A0.49%3A0.52&v=4dc6",
+    "context": "https://www.moskisvet.com/sport/sporti-z-zogo/drazen-petrovic-kosarkarski-mozart-ki-ni-do-konca-spisal-svoje-simfonije.html",
+    "file": "assets/players/SG7.jpg",
+    "mime": "image/jpeg",
+    "bytes": 31820,
+    "width": null,
+    "height": null,
+    "sha256": "5ea6a93e046aeb662e9756bd3657cf84f112ba7f862b1d1dc8b2a57396bf390f"
+  },
+  {
+    "id": "PG7",
+    "source": "https://cdn.nba.com/teams/legacy/www.nba.com/cavaliers/sites/cavaliers/files/23_88.jpg?im=Resize%3D%28640%29",
+    "context": "https://www.nba.com/cavaliers/photogallery/classic-jersey-throwback-190829",
+    "file": "assets/players/PG7.jpg",
+    "mime": "image/jpeg",
+    "bytes": 192912,
+    "width": null,
+    "height": null,
+    "sha256": "932e76712d7430471bfcc7e2dcb5c978b40267645d97161043281855612d8f51"
+  },
+  {
+    "id": "C5",
+    "source": "https://cdn.nba.com/teams/legacy/i.cdn.turner.com/drp/nba/hornets/sites/default/files/patrick_ewing.jpg?imwidth=512",
+    "context": "https://www.nba.com/hornets/2014-15-coaching-staff",
+    "file": "assets/players/C5.jpg",
+    "mime": "image/jpeg",
+    "bytes": 23527,
+    "width": null,
+    "height": null,
+    "sha256": "a494027eebfee1342f7ed10175a623386c9e9d46078ac20db2dcf9cc516ff74d"
+  },
+  {
+    "id": "PF7",
+    "source": "https://img.asmedia.epimg.net/resizer/v2/NHJRNZSYPZPLBJF6CWTILTROB4.jpg?auth=5706bbd7578026c38e0114b4bb6da4d771e80d32bfe425a3feadc3f41ba5d859&height=675&smart=true&width=1200",
+    "context": "https://en.as.com/nba/larry-johnsons-iconic-four-point-play-that-crushed-pacers-the-worst-i-ever-shot-in-my-life-n/",
+    "file": "assets/players/PF7.jpg",
+    "mime": "image/jpeg",
+    "bytes": 152988,
+    "width": null,
+    "height": null,
+    "sha256": "87a1b64691b40d99dd1a951c1a952d7de2cef2e92ee5229c54eea2a9935cf2d1"
+  }
+]

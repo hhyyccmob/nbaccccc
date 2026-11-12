@@ -1,0 +1,3340 @@
+{
+  "source": "NBA 2K25 All-Time + 2K25 Current + 2K27 Current + 2K16–2K21 Current",
+  "generatedAt": "2026-11-09T06:49:44.606Z",
+  "targets": {
+    "off": [
+      91.49,
+      8.04
+    ],
+    "def": [
+      84.69,
+      12.05
+    ],
+    "shoot": [
+      70.06,
+      22.87
+    ],
+    "pass": [
+      78.4,
+      14.23
+    ],
+    "reb": [
+      76.76,
+      17.65
+    ]
+  },
+  "players": [
+    {
+      "id": "PG0",
+      "name": "魔术师约翰逊",
+      "en": "Magic Johnson",
+      "ovr": 99,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Los Angeles Lakers",
+      "off": 99,
+      "def": 94,
+      "shoot": 80,
+      "pass": 97,
+      "reb": 84,
+      "candidates": [
+        {
+          "overall": 99,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Los Angeles Lakers"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Los Angeles Lakers"
+    },
+    {
+      "id": "PG1",
+      "name": "奥斯卡·罗伯特森",
+      "en": "Oscar Robertson",
+      "ovr": 97,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Sacramento Kings",
+      "off": 92,
+      "def": 83,
+      "shoot": 86,
+      "pass": 95,
+      "reb": 87,
+      "candidates": [
+        {
+          "overall": 97,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Sacramento Kings"
+        },
+        {
+          "overall": 96,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Milwaukee Bucks"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Sacramento Kings"
+    },
+    {
+      "id": "PG2",
+      "name": "伊赛亚·托马斯",
+      "en": "Isiah Thomas",
+      "ovr": 95,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Detroit Pistons",
+      "off": 81,
+      "def": 71,
+      "shoot": 72,
+      "pass": 97,
+      "reb": 46,
+      "candidates": [
+        {
+          "overall": 95,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Detroit Pistons"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Detroit Pistons"
+    },
+    {
+      "id": "PG3",
+      "name": "约翰·斯托克顿",
+      "en": "John Stockton",
+      "ovr": 97,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Utah Jazz",
+      "off": 76,
+      "def": 89,
+      "shoot": 86,
+      "pass": 97,
+      "reb": 47,
+      "candidates": [
+        {
+          "overall": 97,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Utah Jazz"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Utah Jazz"
+    },
+    {
+      "id": "PG4",
+      "name": "加里·佩顿",
+      "en": "Gary Payton",
+      "ovr": 95,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Oklahoma City Thunder",
+      "off": 80,
+      "def": 91,
+      "shoot": 67,
+      "pass": 92,
+      "reb": 52,
+      "candidates": [
+        {
+          "overall": 95,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Oklahoma City Thunder"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Oklahoma City Thunder"
+    },
+    {
+      "id": "PG5",
+      "name": "鲍勃·库西",
+      "en": "Bob Cousy",
+      "ovr": 96,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Boston Celtics",
+      "off": 84,
+      "def": 76,
+      "shoot": 90,
+      "pass": 96,
+      "reb": 77,
+      "candidates": [
+        {
+          "overall": 96,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Boston Celtics"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Boston Celtics"
+    },
+    {
+      "id": "PG6",
+      "name": "蒂姆·哈达威",
+      "en": "Tim Hardaway",
+      "ovr": 90,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Golden State Warriors",
+      "off": 78,
+      "def": 77,
+      "shoot": 76,
+      "pass": 92,
+      "reb": 49,
+      "candidates": [
+        {
+          "overall": 90,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Golden State Warriors"
+        },
+        {
+          "overall": 89,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Miami Heat"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Golden State Warriors"
+    },
+    {
+      "id": "PG7",
+      "name": "马克·普莱斯",
+      "en": "Mark Price",
+      "ovr": 93,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Cleveland Cavaliers",
+      "off": 80,
+      "def": 59,
+      "shoot": 93,
+      "pass": 92,
+      "reb": 47,
+      "candidates": [
+        {
+          "overall": 93,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Cleveland Cavaliers"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Cleveland Cavaliers"
+    },
+    {
+      "id": "PG8",
+      "name": "斯蒂芬·库里",
+      "en": "Stephen Curry",
+      "ovr": 98,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Golden State Warriors",
+      "off": 84,
+      "def": 70,
+      "shoot": 93,
+      "pass": 94,
+      "reb": 52,
+      "candidates": [
+        {
+          "overall": 98,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Golden State Warriors"
+        },
+        {
+          "overall": 95,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 21,
+          "team": "GSW"
+        },
+        {
+          "overall": 95,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 20,
+          "team": "GSW"
+        },
+        {
+          "overall": 95,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 19,
+          "team": "GSW"
+        },
+        {
+          "overall": 94,
+          "kind": "2K25 Current",
+          "editionYear": 2025,
+          "team": "Golden State Warriors"
+        },
+        {
+          "overall": 94,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 18,
+          "team": "GSW"
+        },
+        {
+          "overall": 94,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 17,
+          "team": "GSW"
+        },
+        {
+          "overall": 93,
+          "kind": "2K27 Current",
+          "editionYear": 2027,
+          "team": "Golden State Warriors"
+        },
+        {
+          "overall": 93,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 16,
+          "team": "GSW"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Golden State Warriors"
+    },
+    {
+      "id": "PG9",
+      "name": "克里斯·保罗",
+      "en": "Chris Paul",
+      "ovr": 97,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time New Orleans Pelicans",
+      "off": 83,
+      "def": 89,
+      "shoot": 80,
+      "pass": 96,
+      "reb": 51,
+      "candidates": [
+        {
+          "overall": 97,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time New Orleans Pelicans"
+        },
+        {
+          "overall": 93,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Los Angeles Clippers"
+        },
+        {
+          "overall": 91,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 18,
+          "team": "LAC"
+        },
+        {
+          "overall": 91,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 17,
+          "team": "LAC"
+        },
+        {
+          "overall": 90,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Houston Rockets"
+        },
+        {
+          "overall": 90,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 19,
+          "team": "HOU"
+        },
+        {
+          "overall": 90,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 16,
+          "team": "LAC"
+        },
+        {
+          "overall": 88,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 21,
+          "team": "OKC"
+        },
+        {
+          "overall": 85,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 20,
+          "team": "HOU"
+        },
+        {
+          "overall": 81,
+          "kind": "2K25 Current",
+          "editionYear": 2025,
+          "team": "Los Angeles Clippers"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time New Orleans Pelicans"
+    },
+    {
+      "id": "PG10",
+      "name": "史蒂夫·纳什",
+      "en": "Steve Nash",
+      "ovr": 96,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Phoenix Suns",
+      "off": 80,
+      "def": 71,
+      "shoot": 90,
+      "pass": 96,
+      "reb": 64,
+      "candidates": [
+        {
+          "overall": 96,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Phoenix Suns"
+        },
+        {
+          "overall": 87,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Dallas Mavericks"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Phoenix Suns"
+    },
+    {
+      "id": "PG11",
+      "name": "拉塞尔·威斯布鲁克",
+      "en": "Russell Westbrook",
+      "ovr": 95,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Oklahoma City Thunder",
+      "off": 88,
+      "def": 73,
+      "shoot": 71,
+      "pass": 95,
+      "reb": 79,
+      "candidates": [
+        {
+          "overall": 95,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Oklahoma City Thunder"
+        },
+        {
+          "overall": 94,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 18,
+          "team": "OKC"
+        },
+        {
+          "overall": 93,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 19,
+          "team": "OKC"
+        },
+        {
+          "overall": 93,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 17,
+          "team": "OKC"
+        },
+        {
+          "overall": 90,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 20,
+          "team": "OKC"
+        },
+        {
+          "overall": 89,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 16,
+          "team": "OKC"
+        },
+        {
+          "overall": 88,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 21,
+          "team": "HOU"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Oklahoma City Thunder"
+    },
+    {
+      "id": "PG12",
+      "name": "达米安·利拉德",
+      "en": "Damian Lillard",
+      "ovr": 94,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Portland Trail Blazers",
+      "off": 85,
+      "def": 47,
+      "shoot": 82,
+      "pass": 92,
+      "reb": 49,
+      "candidates": [
+        {
+          "overall": 94,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Portland Trail Blazers"
+        },
+        {
+          "overall": 94,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 21,
+          "team": "POR"
+        },
+        {
+          "overall": 92,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 20,
+          "team": "POR"
+        },
+        {
+          "overall": 90,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 19,
+          "team": "POR"
+        },
+        {
+          "overall": 89,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 18,
+          "team": "POR"
+        },
+        {
+          "overall": 89,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 17,
+          "team": "POR"
+        },
+        {
+          "overall": 88,
+          "kind": "2K25 Current",
+          "editionYear": 2025,
+          "team": "Portland Trail Blazers"
+        },
+        {
+          "overall": 86,
+          "kind": "2K27 Current",
+          "editionYear": 2027,
+          "team": "Portland Trail Blazers"
+        },
+        {
+          "overall": 86,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 16,
+          "team": "POR"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Portland Trail Blazers"
+    },
+    {
+      "id": "PG13",
+      "name": "凯里·欧文",
+      "en": "Kyrie Irving",
+      "ovr": 94,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Cleveland Cavaliers",
+      "off": 85,
+      "def": 63,
+      "shoot": 88,
+      "pass": 88,
+      "reb": 54,
+      "candidates": [
+        {
+          "overall": 94,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Cleveland Cavaliers"
+        },
+        {
+          "overall": 93,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 19,
+          "team": "BOS"
+        },
+        {
+          "overall": 91,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 20,
+          "team": "BOS"
+        },
+        {
+          "overall": 90,
+          "kind": "2K25 Current",
+          "editionYear": 2025,
+          "team": "Dallas Mavericks"
+        },
+        {
+          "overall": 90,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 21,
+          "team": "BKN"
+        },
+        {
+          "overall": 90,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 18,
+          "team": "CLE"
+        },
+        {
+          "overall": 89,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Brooklyn Nets"
+        },
+        {
+          "overall": 89,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 17,
+          "team": "CLE"
+        },
+        {
+          "overall": 87,
+          "kind": "2K27 Current",
+          "editionYear": 2027,
+          "team": "Dallas Mavericks"
+        },
+        {
+          "overall": 87,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 16,
+          "team": "CLE"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Cleveland Cavaliers"
+    },
+    {
+      "id": "PG14",
+      "name": "卢卡·东契奇",
+      "en": "Luka Doncic",
+      "ovr": 96,
+      "ratingSource": "2K27 Current",
+      "ratingYear": 2027,
+      "ratingTeam": "Los Angeles Lakers",
+      "off": 97,
+      "def": 51,
+      "shoot": 82,
+      "pass": 93,
+      "reb": 63,
+      "candidates": [
+        {
+          "overall": 96,
+          "kind": "2K27 Current",
+          "editionYear": 2027,
+          "team": "Los Angeles Lakers"
+        },
+        {
+          "overall": 95,
+          "kind": "2K25 Current",
+          "editionYear": 2025,
+          "team": "Los Angeles Lakers"
+        },
+        {
+          "overall": 94,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 21,
+          "team": "DAL"
+        },
+        {
+          "overall": 93,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Dallas Mavericks"
+        },
+        {
+          "overall": 87,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 20,
+          "team": "DAL"
+        }
+      ],
+      "ratingEdition": "2K27",
+      "attributeEdition": "2K27 Current",
+      "attributeTeam": "Los Angeles Lakers"
+    },
+    {
+      "id": "PG15",
+      "name": "德里克·罗斯",
+      "en": "Derrick Rose",
+      "ovr": 95,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Chicago Bulls",
+      "off": 88,
+      "def": 68,
+      "shoot": 74,
+      "pass": 94,
+      "reb": 57,
+      "candidates": [
+        {
+          "overall": 95,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Chicago Bulls"
+        },
+        {
+          "overall": 82,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 16,
+          "team": "CHI"
+        },
+        {
+          "overall": 81,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 21,
+          "team": "DET"
+        },
+        {
+          "overall": 80,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 20,
+          "team": "MIN"
+        },
+        {
+          "overall": 80,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 17,
+          "team": "CHI"
+        },
+        {
+          "overall": 78,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 18,
+          "team": "NYK"
+        },
+        {
+          "overall": 75,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 19,
+          "team": "MIN"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Chicago Bulls"
+    },
+    {
+      "id": "SG0",
+      "name": "迈克尔·乔丹",
+      "en": "Michael Jordan",
+      "ovr": 99,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Chicago Bulls",
+      "off": 99,
+      "def": 97,
+      "shoot": 86,
+      "pass": 87,
+      "reb": 63,
+      "candidates": [
+        {
+          "overall": 99,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Chicago Bulls"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Chicago Bulls"
+    },
+    {
+      "id": "SG1",
+      "name": "克莱德·德雷克斯勒",
+      "en": "Clyde Drexler",
+      "ovr": 96,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Portland Trail Blazers",
+      "off": 98,
+      "def": 85,
+      "shoot": 76,
+      "pass": 81,
+      "reb": 79,
+      "candidates": [
+        {
+          "overall": 96,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Portland Trail Blazers"
+        },
+        {
+          "overall": 93,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Houston Rockets"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Portland Trail Blazers"
+    },
+    {
+      "id": "SG2",
+      "name": "杰里·韦斯特",
+      "en": "Jerry West",
+      "ovr": 97,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Los Angeles Lakers",
+      "off": 87,
+      "def": 86,
+      "shoot": 89,
+      "pass": 93,
+      "reb": 42,
+      "candidates": [
+        {
+          "overall": 97,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Los Angeles Lakers"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Los Angeles Lakers"
+    },
+    {
+      "id": "SG3",
+      "name": "乔治·格文",
+      "en": "George Gervin",
+      "ovr": 94,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time San Antonio Spurs",
+      "off": 98,
+      "def": 88,
+      "shoot": 74,
+      "pass": 77,
+      "reb": 88,
+      "candidates": [
+        {
+          "overall": 94,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time San Antonio Spurs"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time San Antonio Spurs"
+    },
+    {
+      "id": "SG5",
+      "name": "乔·杜马斯",
+      "en": "Joe Dumars",
+      "ovr": 93,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Detroit Pistons",
+      "off": 82,
+      "def": 86,
+      "shoot": 84,
+      "pass": 85,
+      "reb": 63,
+      "candidates": [
+        {
+          "overall": 93,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Detroit Pistons"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Detroit Pistons"
+    },
+    {
+      "id": "SG6",
+      "name": "米奇·里奇蒙德",
+      "en": "Mitch Richmond",
+      "ovr": 94,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Sacramento Kings",
+      "off": 94,
+      "def": 73,
+      "shoot": 88,
+      "pass": 82,
+      "reb": 62,
+      "candidates": [
+        {
+          "overall": 94,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Sacramento Kings"
+        },
+        {
+          "overall": 88,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Golden State Warriors"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Sacramento Kings"
+    },
+    {
+      "id": "SG7",
+      "name": "德拉任·彼得洛维奇",
+      "en": "Drazen Petrovic",
+      "ovr": 90,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Brooklyn Nets",
+      "off": 88,
+      "def": 71,
+      "shoot": 94,
+      "pass": 78,
+      "reb": 72,
+      "candidates": [
+        {
+          "overall": 90,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Brooklyn Nets"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Brooklyn Nets"
+    },
+    {
+      "id": "SG8",
+      "name": "科比·布莱恩特",
+      "en": "Kobe Bryant",
+      "ovr": 99,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Los Angeles Lakers",
+      "off": 96,
+      "def": 88,
+      "shoot": 83,
+      "pass": 89,
+      "reb": 55,
+      "candidates": [
+        {
+          "overall": 99,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Los Angeles Lakers"
+        },
+        {
+          "overall": 85,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 16,
+          "team": "LAL"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Los Angeles Lakers"
+    },
+    {
+      "id": "SG9",
+      "name": "德维恩·韦德",
+      "en": "Dwyane Wade",
+      "ovr": 97,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Miami Heat",
+      "off": 93,
+      "def": 91,
+      "shoot": 75,
+      "pass": 93,
+      "reb": 63,
+      "candidates": [
+        {
+          "overall": 97,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Miami Heat"
+        },
+        {
+          "overall": 87,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 17,
+          "team": "MIA"
+        },
+        {
+          "overall": 86,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 16,
+          "team": "MIA"
+        },
+        {
+          "overall": 82,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 18,
+          "team": "CHI"
+        },
+        {
+          "overall": 79,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 19,
+          "team": "MIA"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Miami Heat"
+    },
+    {
+      "id": "SG10",
+      "name": "詹姆斯·哈登",
+      "en": "James Harden",
+      "ovr": 96,
+      "ratingSource": "2K16–2K21 Current",
+      "ratingYear": 21,
+      "ratingTeam": "HOU",
+      "off": 94,
+      "def": 73,
+      "shoot": 78,
+      "pass": 91,
+      "reb": 58,
+      "candidates": [
+        {
+          "overall": 96,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 21,
+          "team": "HOU"
+        },
+        {
+          "overall": 96,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 20,
+          "team": "HOU"
+        },
+        {
+          "overall": 96,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 19,
+          "team": "HOU"
+        },
+        {
+          "overall": 95,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Houston Rockets"
+        },
+        {
+          "overall": 95,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 18,
+          "team": "HOU"
+        },
+        {
+          "overall": 92,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 16,
+          "team": "HOU"
+        },
+        {
+          "overall": 90,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 17,
+          "team": "HOU"
+        },
+        {
+          "overall": 89,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Brooklyn Nets"
+        },
+        {
+          "overall": 89,
+          "kind": "2K25 Current",
+          "editionYear": 2025,
+          "team": "Los Angeles Clippers"
+        },
+        {
+          "overall": 87,
+          "kind": "2K27 Current",
+          "editionYear": 2027,
+          "team": "Cleveland Cavaliers"
+        }
+      ],
+      "ratingEdition": "2K21",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Houston Rockets"
+    },
+    {
+      "id": "SG11",
+      "name": "阿伦·艾弗森",
+      "en": "Allen Iverson",
+      "ovr": 96,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Philadelphia 76ers",
+      "off": 83,
+      "def": 77,
+      "shoot": 77,
+      "pass": 92,
+      "reb": 46,
+      "candidates": [
+        {
+          "overall": 96,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Philadelphia 76ers"
+        },
+        {
+          "overall": 90,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Denver Nuggets"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Philadelphia 76ers"
+    },
+    {
+      "id": "SG12",
+      "name": "雷·阿伦",
+      "en": "Ray Allen",
+      "ovr": 94,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Oklahoma City Thunder",
+      "off": 93,
+      "def": 71,
+      "shoot": 93,
+      "pass": 83,
+      "reb": 62,
+      "candidates": [
+        {
+          "overall": 94,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Oklahoma City Thunder"
+        },
+        {
+          "overall": 91,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Milwaukee Bucks"
+        },
+        {
+          "overall": 88,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Boston Celtics"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Oklahoma City Thunder"
+    },
+    {
+      "id": "SG13",
+      "name": "克莱·汤普森",
+      "en": "Klay Thompson",
+      "ovr": 91,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Golden State Warriors",
+      "off": 86,
+      "def": 82,
+      "shoot": 91,
+      "pass": 71,
+      "reb": 48,
+      "candidates": [
+        {
+          "overall": 91,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Golden State Warriors"
+        },
+        {
+          "overall": 90,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 18,
+          "team": "GSW"
+        },
+        {
+          "overall": 90,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 17,
+          "team": "GSW"
+        },
+        {
+          "overall": 89,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 20,
+          "team": "GSW"
+        },
+        {
+          "overall": 89,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 19,
+          "team": "GSW"
+        },
+        {
+          "overall": 87,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 16,
+          "team": "GSW"
+        },
+        {
+          "overall": 80,
+          "kind": "2K25 Current",
+          "editionYear": 2025,
+          "team": "Dallas Mavericks"
+        },
+        {
+          "overall": 76,
+          "kind": "2K27 Current",
+          "editionYear": 2027,
+          "team": "Dallas Mavericks"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Golden State Warriors"
+    },
+    {
+      "id": "SG14",
+      "name": "德文·布克",
+      "en": "Devin Booker",
+      "ovr": 92,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Phoenix Suns",
+      "off": 93,
+      "def": 59,
+      "shoot": 82,
+      "pass": 86,
+      "reb": 57,
+      "candidates": [
+        {
+          "overall": 92,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Phoenix Suns"
+        },
+        {
+          "overall": 91,
+          "kind": "2K27 Current",
+          "editionYear": 2027,
+          "team": "Phoenix Suns"
+        },
+        {
+          "overall": 91,
+          "kind": "2K25 Current",
+          "editionYear": 2025,
+          "team": "Phoenix Suns"
+        },
+        {
+          "overall": 87,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 21,
+          "team": "PHX"
+        },
+        {
+          "overall": 87,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 19,
+          "team": "PHX"
+        },
+        {
+          "overall": 86,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 20,
+          "team": "PHX"
+        },
+        {
+          "overall": 85,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 18,
+          "team": "PHX"
+        },
+        {
+          "overall": 78,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 17,
+          "team": "PHX"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Phoenix Suns"
+    },
+    {
+      "id": "SG15",
+      "name": "马努·吉诺比利",
+      "en": "Manu Ginobili",
+      "ovr": 90,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time San Antonio Spurs",
+      "off": 86,
+      "def": 77,
+      "shoot": 82,
+      "pass": 89,
+      "reb": 62,
+      "candidates": [
+        {
+          "overall": 90,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time San Antonio Spurs"
+        },
+        {
+          "overall": 79,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 17,
+          "team": "SAS"
+        },
+        {
+          "overall": 78,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 16,
+          "team": "SAS"
+        },
+        {
+          "overall": 77,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 19,
+          "team": "SAS"
+        },
+        {
+          "overall": 76,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 18,
+          "team": "SAS"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time San Antonio Spurs"
+    },
+    {
+      "id": "SF0",
+      "name": "拉里·伯德",
+      "en": "Larry Bird",
+      "ovr": 99,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Boston Celtics",
+      "off": 95,
+      "def": 92,
+      "shoot": 95,
+      "pass": 84,
+      "reb": 76,
+      "candidates": [
+        {
+          "overall": 99,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Boston Celtics"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Boston Celtics"
+    },
+    {
+      "id": "SF1",
+      "name": "朱利叶斯·欧文",
+      "en": "Julius Erving",
+      "ovr": 97,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Brooklyn Nets",
+      "off": 99,
+      "def": 92,
+      "shoot": 77,
+      "pass": 86,
+      "reb": 78,
+      "candidates": [
+        {
+          "overall": 97,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Brooklyn Nets"
+        },
+        {
+          "overall": 94,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Philadelphia 76ers"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Brooklyn Nets"
+    },
+    {
+      "id": "SF2",
+      "name": "斯科蒂·皮蓬",
+      "en": "Scottie Pippen",
+      "ovr": 97,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Chicago Bulls",
+      "off": 93,
+      "def": 99,
+      "shoot": 72,
+      "pass": 85,
+      "reb": 91,
+      "candidates": [
+        {
+          "overall": 97,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Chicago Bulls"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Chicago Bulls"
+    },
+    {
+      "id": "SF3",
+      "name": "埃尔金·贝勒",
+      "en": "Elgin Baylor",
+      "ovr": 96,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Los Angeles Lakers",
+      "off": 99,
+      "def": 96,
+      "shoot": 85,
+      "pass": 82,
+      "reb": 96,
+      "candidates": [
+        {
+          "overall": 96,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Los Angeles Lakers"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Los Angeles Lakers"
+    },
+    {
+      "id": "SF4",
+      "name": "约翰·哈夫利切克",
+      "en": "John Havlicek",
+      "ovr": 96,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Boston Celtics",
+      "off": 95,
+      "def": 99,
+      "shoot": 89,
+      "pass": 84,
+      "reb": 78,
+      "candidates": [
+        {
+          "overall": 96,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Boston Celtics"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Boston Celtics"
+    },
+    {
+      "id": "SF5",
+      "name": "多米尼克·威尔金斯",
+      "en": "Dominique Wilkins",
+      "ovr": 95,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Atlanta Hawks",
+      "off": 99,
+      "def": 86,
+      "shoot": 73,
+      "pass": 76,
+      "reb": 82,
+      "candidates": [
+        {
+          "overall": 95,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Atlanta Hawks"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Atlanta Hawks"
+    },
+    {
+      "id": "SF6",
+      "name": "里克·巴里",
+      "en": "Rick Barry",
+      "ovr": 95,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Golden State Warriors",
+      "off": 99,
+      "def": 89,
+      "shoot": 80,
+      "pass": 83,
+      "reb": 87,
+      "candidates": [
+        {
+          "overall": 95,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Golden State Warriors"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Golden State Warriors"
+    },
+    {
+      "id": "SF7",
+      "name": "阿德里安·丹特利",
+      "en": "Adrian Dantley",
+      "ovr": 91,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Utah Jazz",
+      "off": 99,
+      "def": 79,
+      "shoot": 69,
+      "pass": 82,
+      "reb": 77,
+      "candidates": [
+        {
+          "overall": 91,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Utah Jazz"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Utah Jazz"
+    },
+    {
+      "id": "SF8",
+      "name": "勒布朗·詹姆斯",
+      "en": "LeBron James",
+      "ovr": 99,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Cleveland Cavaliers",
+      "off": 98,
+      "def": 91,
+      "shoot": 74,
+      "pass": 92,
+      "reb": 70,
+      "candidates": [
+        {
+          "overall": 99,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Cleveland Cavaliers"
+        },
+        {
+          "overall": 99,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Miami Heat"
+        },
+        {
+          "overall": 98,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 19,
+          "team": "CLE"
+        },
+        {
+          "overall": 97,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 21,
+          "team": "LAL"
+        },
+        {
+          "overall": 97,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 20,
+          "team": "LAL"
+        },
+        {
+          "overall": 97,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 18,
+          "team": "CLE"
+        },
+        {
+          "overall": 96,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Los Angeles Lakers"
+        },
+        {
+          "overall": 96,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 17,
+          "team": "CLE"
+        },
+        {
+          "overall": 94,
+          "kind": "2K25 Current",
+          "editionYear": 2025,
+          "team": "Los Angeles Lakers"
+        },
+        {
+          "overall": 94,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 16,
+          "team": "CLE"
+        },
+        {
+          "overall": 91,
+          "kind": "2K27 Current",
+          "editionYear": 2027,
+          "team": "Philadelphia 76ers"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Cleveland Cavaliers"
+    },
+    {
+      "id": "SF9",
+      "name": "凯文·杜兰特",
+      "en": "Kevin Durant",
+      "ovr": 97,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Golden State Warriors",
+      "off": 99,
+      "def": 77,
+      "shoot": 87,
+      "pass": 84,
+      "reb": 73,
+      "candidates": [
+        {
+          "overall": 97,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Golden State Warriors"
+        },
+        {
+          "overall": 97,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Oklahoma City Thunder"
+        },
+        {
+          "overall": 97,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 19,
+          "team": "GSW"
+        },
+        {
+          "overall": 96,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Brooklyn Nets"
+        },
+        {
+          "overall": 96,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 20,
+          "team": "GSW"
+        },
+        {
+          "overall": 96,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 18,
+          "team": "GSW"
+        },
+        {
+          "overall": 93,
+          "kind": "2K27 Current",
+          "editionYear": 2027,
+          "team": "Houston Rockets"
+        },
+        {
+          "overall": 93,
+          "kind": "2K25 Current",
+          "editionYear": 2025,
+          "team": "Houston Rockets"
+        },
+        {
+          "overall": 93,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 17,
+          "team": "OKC"
+        },
+        {
+          "overall": 91,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 16,
+          "team": "OKC"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Golden State Warriors"
+    },
+    {
+      "id": "SF10",
+      "name": "科怀·伦纳德",
+      "en": "Kawhi Leonard",
+      "ovr": 97,
+      "ratingSource": "2K16–2K21 Current",
+      "ratingYear": 20,
+      "ratingTeam": "TOR",
+      "off": 96,
+      "def": 97,
+      "shoot": 76,
+      "pass": 84,
+      "reb": 74,
+      "candidates": [
+        {
+          "overall": 97,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 20,
+          "team": "TOR"
+        },
+        {
+          "overall": 96,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Toronto Raptors"
+        },
+        {
+          "overall": 96,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 21,
+          "team": "LAC"
+        },
+        {
+          "overall": 95,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Los Angeles Clippers"
+        },
+        {
+          "overall": 95,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time San Antonio Spurs"
+        },
+        {
+          "overall": 95,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 18,
+          "team": "SAS"
+        },
+        {
+          "overall": 94,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 19,
+          "team": "SAS"
+        },
+        {
+          "overall": 93,
+          "kind": "2K27 Current",
+          "editionYear": 2027,
+          "team": "Los Angeles Clippers"
+        },
+        {
+          "overall": 93,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 17,
+          "team": "SAS"
+        },
+        {
+          "overall": 92,
+          "kind": "2K25 Current",
+          "editionYear": 2025,
+          "team": "Los Angeles Clippers"
+        },
+        {
+          "overall": 87,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 16,
+          "team": "SAS"
+        }
+      ],
+      "ratingEdition": "2K20",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Toronto Raptors"
+    },
+    {
+      "id": "SF11",
+      "name": "保罗·乔治",
+      "en": "Paul George",
+      "ovr": 93,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Indiana Pacers",
+      "off": 87,
+      "def": 94,
+      "shoot": 72,
+      "pass": 79,
+      "reb": 63,
+      "candidates": [
+        {
+          "overall": 93,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Indiana Pacers"
+        },
+        {
+          "overall": 93,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 20,
+          "team": "OKC"
+        },
+        {
+          "overall": 91,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 18,
+          "team": "IND"
+        },
+        {
+          "overall": 90,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 21,
+          "team": "LAC"
+        },
+        {
+          "overall": 89,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Los Angeles Clippers"
+        },
+        {
+          "overall": 89,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 19,
+          "team": "OKC"
+        },
+        {
+          "overall": 89,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 17,
+          "team": "IND"
+        },
+        {
+          "overall": 86,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 16,
+          "team": "IND"
+        },
+        {
+          "overall": 82,
+          "kind": "2K27 Current",
+          "editionYear": 2027,
+          "team": "Boston Celtics"
+        },
+        {
+          "overall": 81,
+          "kind": "2K25 Current",
+          "editionYear": 2025,
+          "team": "Philadelphia 76ers"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Indiana Pacers"
+    },
+    {
+      "id": "SF12",
+      "name": "特雷西·麦克格雷迪",
+      "en": "Tracy McGrady",
+      "ovr": 95,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Orlando Magic",
+      "off": 96,
+      "def": 77,
+      "shoot": 85,
+      "pass": 88,
+      "reb": 54,
+      "candidates": [
+        {
+          "overall": 95,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Orlando Magic"
+        },
+        {
+          "overall": 92,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Houston Rockets"
+        },
+        {
+          "overall": 85,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Toronto Raptors"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Orlando Magic"
+    },
+    {
+      "id": "SF13",
+      "name": "卡梅隆·安东尼",
+      "en": "Carmelo Anthony",
+      "ovr": 95,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Denver Nuggets",
+      "off": 97,
+      "def": 80,
+      "shoot": 84,
+      "pass": 87,
+      "reb": 85,
+      "candidates": [
+        {
+          "overall": 95,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Denver Nuggets"
+        },
+        {
+          "overall": 92,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time New York Knicks"
+        },
+        {
+          "overall": 88,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 17,
+          "team": "NYK"
+        },
+        {
+          "overall": 88,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 16,
+          "team": "NYK"
+        },
+        {
+          "overall": 84,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 18,
+          "team": "NYK"
+        },
+        {
+          "overall": 79,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 19,
+          "team": "OKC"
+        },
+        {
+          "overall": 78,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 21,
+          "team": "POR"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Denver Nuggets"
+    },
+    {
+      "id": "SF14",
+      "name": "保罗·皮尔斯",
+      "en": "Paul Pierce",
+      "ovr": 94,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Boston Celtics",
+      "off": 93,
+      "def": 83,
+      "shoot": 85,
+      "pass": 80,
+      "reb": 76,
+      "candidates": [
+        {
+          "overall": 94,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Boston Celtics"
+        },
+        {
+          "overall": 78,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 16,
+          "team": "WAS"
+        },
+        {
+          "overall": 73,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 17,
+          "team": "LAC"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Boston Celtics"
+    },
+    {
+      "id": "SF15",
+      "name": "吉米·巴特勒",
+      "en": "Jimmy Butler",
+      "ovr": 93,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Miami Heat",
+      "off": 90,
+      "def": 96,
+      "shoot": 64,
+      "pass": 84,
+      "reb": 65,
+      "candidates": [
+        {
+          "overall": 93,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Miami Heat"
+        },
+        {
+          "overall": 91,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Chicago Bulls"
+        },
+        {
+          "overall": 90,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 18,
+          "team": "CHI"
+        },
+        {
+          "overall": 89,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 21,
+          "team": "MIA"
+        },
+        {
+          "overall": 89,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 19,
+          "team": "MIN"
+        },
+        {
+          "overall": 88,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 20,
+          "team": "PHI"
+        },
+        {
+          "overall": 88,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 17,
+          "team": "CHI"
+        },
+        {
+          "overall": 87,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Minnesota Timberwolves"
+        },
+        {
+          "overall": 87,
+          "kind": "2K25 Current",
+          "editionYear": 2025,
+          "team": "Golden State Warriors"
+        },
+        {
+          "overall": 86,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 16,
+          "team": "CHI"
+        },
+        {
+          "overall": 85,
+          "kind": "2K27 Current",
+          "editionYear": 2027,
+          "team": "Golden State Warriors"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Miami Heat"
+    },
+    {
+      "id": "PF0",
+      "name": "卡尔·马龙",
+      "en": "Karl Malone",
+      "ovr": 97,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Utah Jazz",
+      "off": 99,
+      "def": 92,
+      "shoot": 76,
+      "pass": 80,
+      "reb": 97,
+      "candidates": [
+        {
+          "overall": 97,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Utah Jazz"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Utah Jazz"
+    },
+    {
+      "id": "PF2",
+      "name": "丹尼斯·罗德曼",
+      "en": "Dennis Rodman",
+      "ovr": 93,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Chicago Bulls",
+      "off": 79,
+      "def": 89,
+      "shoot": 42,
+      "pass": 59,
+      "reb": 99,
+      "candidates": [
+        {
+          "overall": 93,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Chicago Bulls"
+        },
+        {
+          "overall": 89,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Detroit Pistons"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Chicago Bulls"
+    },
+    {
+      "id": "PF3",
+      "name": "凯文·麦克海尔",
+      "en": "Kevin McHale",
+      "ovr": 95,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Boston Celtics",
+      "off": 97,
+      "def": 92,
+      "shoot": 72,
+      "pass": 58,
+      "reb": 95,
+      "candidates": [
+        {
+          "overall": 95,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Boston Celtics"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Boston Celtics"
+    },
+    {
+      "id": "PF4",
+      "name": "鲍勃·佩蒂特",
+      "en": "Bob Pettit",
+      "ovr": 95,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Atlanta Hawks",
+      "off": 99,
+      "def": 80,
+      "shoot": 90,
+      "pass": 67,
+      "reb": 98,
+      "candidates": [
+        {
+          "overall": 95,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Atlanta Hawks"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Atlanta Hawks"
+    },
+    {
+      "id": "PF5",
+      "name": "埃尔文·海耶斯",
+      "en": "Elvin Hayes",
+      "ovr": 94,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Washington Wizards",
+      "off": 95,
+      "def": 97,
+      "shoot": 53,
+      "pass": 67,
+      "reb": 99,
+      "candidates": [
+        {
+          "overall": 94,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Washington Wizards"
+        },
+        {
+          "overall": 89,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Houston Rockets"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Washington Wizards"
+    },
+    {
+      "id": "PF6",
+      "name": "肖恩·坎普",
+      "en": "Shawn Kemp",
+      "ovr": 90,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Oklahoma City Thunder",
+      "off": 89,
+      "def": 79,
+      "shoot": 45,
+      "pass": 54,
+      "reb": 89,
+      "candidates": [
+        {
+          "overall": 90,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Oklahoma City Thunder"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Oklahoma City Thunder"
+    },
+    {
+      "id": "PF7",
+      "name": "拉里·约翰逊",
+      "en": "Larry Johnson",
+      "ovr": 88,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Charlotte Hornets",
+      "off": 94,
+      "def": 68,
+      "shoot": 76,
+      "pass": 73,
+      "reb": 87,
+      "candidates": [
+        {
+          "overall": 88,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Charlotte Hornets"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Charlotte Hornets"
+    },
+    {
+      "id": "PF8",
+      "name": "蒂姆·邓肯",
+      "en": "Tim Duncan",
+      "ovr": 98,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time San Antonio Spurs",
+      "off": 96,
+      "def": 99,
+      "shoot": 69,
+      "pass": 64,
+      "reb": 96,
+      "candidates": [
+        {
+          "overall": 98,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time San Antonio Spurs"
+        },
+        {
+          "overall": 87,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 16,
+          "team": "SAS"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time San Antonio Spurs"
+    },
+    {
+      "id": "PF9",
+      "name": "凯文·加内特",
+      "en": "Kevin Garnett",
+      "ovr": 98,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Minnesota Timberwolves",
+      "off": 99,
+      "def": 88,
+      "shoot": 67,
+      "pass": 76,
+      "reb": 95,
+      "candidates": [
+        {
+          "overall": 98,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Minnesota Timberwolves"
+        },
+        {
+          "overall": 92,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Boston Celtics"
+        },
+        {
+          "overall": 76,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 16,
+          "team": "MIN"
+        },
+        {
+          "overall": 74,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 17,
+          "team": "MIN"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Minnesota Timberwolves"
+    },
+    {
+      "id": "PF10",
+      "name": "德克·诺维茨基",
+      "en": "Dirk Nowitzki",
+      "ovr": 98,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Dallas Mavericks",
+      "off": 99,
+      "def": 79,
+      "shoot": 94,
+      "pass": 67,
+      "reb": 92,
+      "candidates": [
+        {
+          "overall": 98,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Dallas Mavericks"
+        },
+        {
+          "overall": 84,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 17,
+          "team": "DAL"
+        },
+        {
+          "overall": 84,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 16,
+          "team": "DAL"
+        },
+        {
+          "overall": 80,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 18,
+          "team": "DAL"
+        },
+        {
+          "overall": 78,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 19,
+          "team": "DAL"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Dallas Mavericks"
+    },
+    {
+      "id": "PF11",
+      "name": "扬尼斯·阿德托昆博",
+      "en": "Giannis Antetokounmpo",
+      "ovr": 97,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Milwaukee Bucks",
+      "off": 88,
+      "def": 96,
+      "shoot": 46,
+      "pass": 86,
+      "reb": 79,
+      "candidates": [
+        {
+          "overall": 97,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Milwaukee Bucks"
+        },
+        {
+          "overall": 97,
+          "kind": "2K25 Current",
+          "editionYear": 2025,
+          "team": "Milwaukee Bucks"
+        },
+        {
+          "overall": 97,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 21,
+          "team": "MIL"
+        },
+        {
+          "overall": 96,
+          "kind": "2K27 Current",
+          "editionYear": 2027,
+          "team": "Miami Heat"
+        },
+        {
+          "overall": 96,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 20,
+          "team": "MIL"
+        },
+        {
+          "overall": 94,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 19,
+          "team": "MIL"
+        },
+        {
+          "overall": 91,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 18,
+          "team": "MIL"
+        },
+        {
+          "overall": 83,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 17,
+          "team": "MIL"
+        },
+        {
+          "overall": 81,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 16,
+          "team": "MIL"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Milwaukee Bucks"
+    },
+    {
+      "id": "PF12",
+      "name": "安东尼·戴维斯",
+      "en": "Anthony Davis",
+      "ovr": 95,
+      "ratingSource": "2K16–2K21 Current",
+      "ratingYear": 21,
+      "ratingTeam": "LAL",
+      "off": 99,
+      "def": 92,
+      "shoot": 65,
+      "pass": 69,
+      "reb": 89,
+      "candidates": [
+        {
+          "overall": 95,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 21,
+          "team": "LAL"
+        },
+        {
+          "overall": 94,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Los Angeles Lakers"
+        },
+        {
+          "overall": 94,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time New Orleans Pelicans"
+        },
+        {
+          "overall": 94,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 20,
+          "team": "NOP"
+        },
+        {
+          "overall": 94,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 19,
+          "team": "NOP"
+        },
+        {
+          "overall": 94,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 18,
+          "team": "NOP"
+        },
+        {
+          "overall": 93,
+          "kind": "2K25 Current",
+          "editionYear": 2025,
+          "team": "Dallas Mavericks"
+        },
+        {
+          "overall": 92,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 16,
+          "team": "NOP"
+        },
+        {
+          "overall": 90,
+          "kind": "2K27 Current",
+          "editionYear": 2027,
+          "team": "Washington Wizards"
+        },
+        {
+          "overall": 90,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 17,
+          "team": "NOP"
+        }
+      ],
+      "ratingEdition": "2K21",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Los Angeles Lakers"
+    },
+    {
+      "id": "PF13",
+      "name": "保罗·加索尔",
+      "en": "Pau Gasol",
+      "ovr": 92,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Memphis Grizzlies",
+      "off": 94,
+      "def": 80,
+      "shoot": 65,
+      "pass": 64,
+      "reb": 88,
+      "candidates": [
+        {
+          "overall": 92,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Memphis Grizzlies"
+        },
+        {
+          "overall": 91,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Los Angeles Lakers"
+        },
+        {
+          "overall": 86,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 16,
+          "team": "CHI"
+        },
+        {
+          "overall": 84,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 17,
+          "team": "CHI"
+        },
+        {
+          "overall": 81,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 18,
+          "team": "SAS"
+        },
+        {
+          "overall": 79,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 19,
+          "team": "SAS"
+        },
+        {
+          "overall": 75,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 20,
+          "team": "MIL"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Memphis Grizzlies"
+    },
+    {
+      "id": "PF14",
+      "name": "克里斯·波什",
+      "en": "Chris Bosh",
+      "ovr": 90,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Toronto Raptors",
+      "off": 96,
+      "def": 82,
+      "shoot": 72,
+      "pass": 61,
+      "reb": 94,
+      "candidates": [
+        {
+          "overall": 90,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Toronto Raptors"
+        },
+        {
+          "overall": 88,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Miami Heat"
+        },
+        {
+          "overall": 86,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 17,
+          "team": "MIA"
+        },
+        {
+          "overall": 84,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 16,
+          "team": "MIA"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Toronto Raptors"
+    },
+    {
+      "id": "PF15",
+      "name": "德雷蒙德·格林",
+      "en": "Draymond Green",
+      "ovr": 90,
+      "ratingSource": "2K16–2K21 Current",
+      "ratingYear": 17,
+      "ratingTeam": "GSW",
+      "off": 76,
+      "def": 99,
+      "shoot": 61,
+      "pass": 82,
+      "reb": 73,
+      "candidates": [
+        {
+          "overall": 90,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 17,
+          "team": "GSW"
+        },
+        {
+          "overall": 89,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Golden State Warriors"
+        },
+        {
+          "overall": 88,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 18,
+          "team": "GSW"
+        },
+        {
+          "overall": 87,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 19,
+          "team": "GSW"
+        },
+        {
+          "overall": 86,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 20,
+          "team": "GSW"
+        },
+        {
+          "overall": 82,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 16,
+          "team": "GSW"
+        },
+        {
+          "overall": 81,
+          "kind": "2K25 Current",
+          "editionYear": 2025,
+          "team": "Golden State Warriors"
+        },
+        {
+          "overall": 79,
+          "kind": "2K27 Current",
+          "editionYear": 2027,
+          "team": "Golden State Warriors"
+        },
+        {
+          "overall": 79,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 21,
+          "team": "GSW"
+        }
+      ],
+      "ratingEdition": "2K17",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Golden State Warriors"
+    },
+    {
+      "id": "C0",
+      "name": "哈基姆·奥拉朱旺",
+      "en": "Hakeem Olajuwon",
+      "ovr": 99,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Houston Rockets",
+      "off": 99,
+      "def": 97,
+      "shoot": 65,
+      "pass": 63,
+      "reb": 98,
+      "candidates": [
+        {
+          "overall": 99,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Houston Rockets"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Houston Rockets"
+    },
+    {
+      "id": "C1",
+      "name": "卡里姆·阿卜杜勒-贾巴尔",
+      "en": "Kareem Abdul-Jabbar",
+      "ovr": 99,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Milwaukee Bucks",
+      "off": 95,
+      "def": 96,
+      "shoot": 33,
+      "pass": 60,
+      "reb": 99,
+      "candidates": [
+        {
+          "overall": 99,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Milwaukee Bucks"
+        },
+        {
+          "overall": 96,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Los Angeles Lakers"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Milwaukee Bucks"
+    },
+    {
+      "id": "C2",
+      "name": "威尔特·张伯伦",
+      "en": "Wilt Chamberlain",
+      "ovr": 99,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Golden State Warriors",
+      "off": 92,
+      "def": 91,
+      "shoot": 28,
+      "pass": 62,
+      "reb": 99,
+      "candidates": [
+        {
+          "overall": 99,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Golden State Warriors"
+        },
+        {
+          "overall": 93,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Philadelphia 76ers"
+        },
+        {
+          "overall": 91,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Los Angeles Lakers"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Golden State Warriors"
+    },
+    {
+      "id": "C3",
+      "name": "比尔·拉塞尔",
+      "en": "Bill Russell",
+      "ovr": 98,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Boston Celtics",
+      "off": 83,
+      "def": 99,
+      "shoot": 20,
+      "pass": 66,
+      "reb": 99,
+      "candidates": [
+        {
+          "overall": 98,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Boston Celtics"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Boston Celtics"
+    },
+    {
+      "id": "C4",
+      "name": "大卫·罗宾逊",
+      "en": "David Robinson",
+      "ovr": 96,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time San Antonio Spurs",
+      "off": 96,
+      "def": 92,
+      "shoot": 66,
+      "pass": 52,
+      "reb": 89,
+      "candidates": [
+        {
+          "overall": 96,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time San Antonio Spurs"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time San Antonio Spurs"
+    },
+    {
+      "id": "C5",
+      "name": "帕特里克·尤因",
+      "en": "Patrick Ewing",
+      "ovr": 95,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time New York Knicks",
+      "off": 99,
+      "def": 88,
+      "shoot": 65,
+      "pass": 57,
+      "reb": 95,
+      "candidates": [
+        {
+          "overall": 95,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time New York Knicks"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time New York Knicks"
+    },
+    {
+      "id": "C6",
+      "name": "摩西·马龙",
+      "en": "Moses Malone",
+      "ovr": 97,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Houston Rockets",
+      "off": 96,
+      "def": 97,
+      "shoot": 36,
+      "pass": 54,
+      "reb": 99,
+      "candidates": [
+        {
+          "overall": 97,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Houston Rockets"
+        },
+        {
+          "overall": 97,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Philadelphia 76ers"
+        },
+        {
+          "overall": 89,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Washington Wizards"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Houston Rockets"
+    },
+    {
+      "id": "C7",
+      "name": "比尔·沃顿",
+      "en": "Bill Walton",
+      "ovr": 95,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Portland Trail Blazers",
+      "off": 89,
+      "def": 92,
+      "shoot": 28,
+      "pass": 72,
+      "reb": 99,
+      "candidates": [
+        {
+          "overall": 95,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Portland Trail Blazers"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Portland Trail Blazers"
+    },
+    {
+      "id": "C8",
+      "name": "沙奎尔·奥尼尔",
+      "en": "Shaquille O'Neal",
+      "ovr": 98,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Los Angeles Lakers",
+      "off": 84,
+      "def": 99,
+      "shoot": 20,
+      "pass": 62,
+      "reb": 99,
+      "candidates": [
+        {
+          "overall": 98,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Los Angeles Lakers"
+        },
+        {
+          "overall": 93,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Orlando Magic"
+        },
+        {
+          "overall": 89,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Miami Heat"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Los Angeles Lakers"
+    },
+    {
+      "id": "C9",
+      "name": "尼古拉·约基奇",
+      "en": "Nikola Jokic",
+      "ovr": 98,
+      "ratingSource": "2K25 Current",
+      "ratingYear": 2025,
+      "ratingTeam": "Denver Nuggets",
+      "off": 99,
+      "def": 77,
+      "shoot": 80,
+      "pass": 86,
+      "reb": 90,
+      "candidates": [
+        {
+          "overall": 98,
+          "kind": "2K25 Current",
+          "editionYear": 2025,
+          "team": "Denver Nuggets"
+        },
+        {
+          "overall": 97,
+          "kind": "2K27 Current",
+          "editionYear": 2027,
+          "team": "Denver Nuggets"
+        },
+        {
+          "overall": 97,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Denver Nuggets"
+        },
+        {
+          "overall": 90,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 21,
+          "team": "DEN"
+        },
+        {
+          "overall": 90,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 20,
+          "team": "DEN"
+        },
+        {
+          "overall": 89,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 19,
+          "team": "DEN"
+        },
+        {
+          "overall": 88,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 18,
+          "team": "DEN"
+        },
+        {
+          "overall": 79,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 17,
+          "team": "DEN"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 Current",
+      "attributeTeam": "Denver Nuggets"
+    },
+    {
+      "id": "C10",
+      "name": "乔尔·恩比德",
+      "en": "Joel Embiid",
+      "ovr": 95,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Philadelphia 76ers",
+      "off": 98,
+      "def": 83,
+      "shoot": 68,
+      "pass": 71,
+      "reb": 84,
+      "candidates": [
+        {
+          "overall": 95,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Philadelphia 76ers"
+        },
+        {
+          "overall": 92,
+          "kind": "2K25 Current",
+          "editionYear": 2025,
+          "team": "Philadelphia 76ers"
+        },
+        {
+          "overall": 91,
+          "kind": "2K27 Current",
+          "editionYear": 2027,
+          "team": "Philadelphia 76ers"
+        },
+        {
+          "overall": 91,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 21,
+          "team": "PHI"
+        },
+        {
+          "overall": 91,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 20,
+          "team": "PHI"
+        },
+        {
+          "overall": 90,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 19,
+          "team": "PHI"
+        },
+        {
+          "overall": 86,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 18,
+          "team": "PHI"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Philadelphia 76ers"
+    },
+    {
+      "id": "C11",
+      "name": "德怀特·霍华德",
+      "en": "Dwight Howard",
+      "ovr": 94,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Orlando Magic",
+      "off": 81,
+      "def": 99,
+      "shoot": 20,
+      "pass": 48,
+      "reb": 98,
+      "candidates": [
+        {
+          "overall": 94,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Orlando Magic"
+        },
+        {
+          "overall": 85,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 16,
+          "team": "HOU"
+        },
+        {
+          "overall": 84,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 17,
+          "team": "HOU"
+        },
+        {
+          "overall": 81,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 19,
+          "team": "CHA"
+        },
+        {
+          "overall": 81,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 18,
+          "team": "ATL"
+        },
+        {
+          "overall": 78,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 21,
+          "team": "LAL"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Orlando Magic"
+    },
+    {
+      "id": "C12",
+      "name": "姚明",
+      "en": "Yao Ming",
+      "ovr": 91,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Houston Rockets",
+      "off": 89,
+      "def": 80,
+      "shoot": 45,
+      "pass": 51,
+      "reb": 98,
+      "candidates": [
+        {
+          "overall": 91,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Houston Rockets"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Houston Rockets"
+    },
+    {
+      "id": "C13",
+      "name": "本·华莱士",
+      "en": "Ben Wallace",
+      "ovr": 89,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Detroit Pistons",
+      "off": 59,
+      "def": 99,
+      "shoot": 20,
+      "pass": 49,
+      "reb": 86,
+      "candidates": [
+        {
+          "overall": 89,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Detroit Pistons"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Detroit Pistons"
+    },
+    {
+      "id": "C14",
+      "name": "马克·加索尔",
+      "en": "Marc Gasol",
+      "ovr": 93,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Memphis Grizzlies",
+      "off": 99,
+      "def": 89,
+      "shoot": 82,
+      "pass": 62,
+      "reb": 87,
+      "candidates": [
+        {
+          "overall": 93,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Memphis Grizzlies"
+        },
+        {
+          "overall": 89,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 18,
+          "team": "MEM"
+        },
+        {
+          "overall": 87,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 16,
+          "team": "MEM"
+        },
+        {
+          "overall": 85,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 19,
+          "team": "MEM"
+        },
+        {
+          "overall": 85,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 17,
+          "team": "MEM"
+        },
+        {
+          "overall": 82,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 20,
+          "team": "TOR"
+        },
+        {
+          "overall": 77,
+          "kind": "2K16–2K21 Current",
+          "editionYear": 21,
+          "team": "TOR"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Memphis Grizzlies"
+    },
+    {
+      "id": "C15",
+      "name": "阿隆佐·莫宁",
+      "en": "Alonzo Mourning",
+      "ovr": 94,
+      "ratingSource": "2K25 All-Time",
+      "ratingYear": 2025,
+      "ratingTeam": "All-Time Miami Heat",
+      "off": 96,
+      "def": 99,
+      "shoot": 54,
+      "pass": 46,
+      "reb": 95,
+      "candidates": [
+        {
+          "overall": 94,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Miami Heat"
+        },
+        {
+          "overall": 89,
+          "kind": "2K25 All-Time",
+          "editionYear": 2025,
+          "team": "All-Time Charlotte Hornets"
+        }
+      ],
+      "ratingEdition": "2K25",
+      "attributeEdition": "2K25 All-Time",
+      "attributeTeam": "All-Time Miami Heat"
+    }
+  ],
+  "missing": [
+    {
+      "id": "SG4",
+      "name": "Reggie Miller",
+      "zh": "雷吉·米勒"
+    },
+    {
+      "id": "PF1",
+      "name": "Charles Barkley",
+      "zh": "查尔斯·巴克利"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+.openai/
+node_modules/
+.env
+.env.*
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+preview-*.html
+work/auction-cm-check.js
+work/check-auction-cm.mjs
+work/convert-height-cm.mjs
+work/fix-height-test.mjs
+work/patch-readme-cm.mjs
+同步到D盘.bat
+.ssh/

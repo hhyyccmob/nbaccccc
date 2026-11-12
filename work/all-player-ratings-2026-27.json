@@ -1,0 +1,8662 @@
+{
+  "season": "2026-27",
+  "snapshot": "2026-11-09",
+  "generatedAt": "2026-11-09T09:06:12.687Z",
+  "model": {
+    "calibration": {
+      "off": {
+        "mean": 24.470750000000006,
+        "sd": 9.203073462843811,
+        "targetMean": 93,
+        "targetSd": 6
+      },
+      "def": {
+        "mean": 31.67199999999999,
+        "sd": 12.422477450170721,
+        "targetMean": 84,
+        "targetSd": 7
+      },
+      "shoot": {
+        "mean": 10.55225,
+        "sd": 24.73245794876643,
+        "targetMean": 73,
+        "targetSd": 14
+      },
+      "pass": {
+        "mean": 18.344874999999995,
+        "sd": 9.332075866835575,
+        "targetMean": 81,
+        "targetSd": 9
+      },
+      "reb": {
+        "mean": 36.665875,
+        "sd": 16.868676570329256,
+        "targetMean": 79,
+        "targetSd": 10
+      }
+    },
+    "rotationWeights": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0.62,
+      0.52,
+      0.44,
+      0.36
+    ],
+    "availabilityGames": 9,
+    "leagueMean": 85.6797789149605,
+    "leagueSd": 1.348473740070805,
+    "powerMapping": "clamp(87 + (playerScore - leagueMean) / leagueSd * 5, 68, 99)"
+  },
+  "players": [
+    {
+      "id": "4397183",
+      "name": "Aaron Wiggins",
+      "abbr": "ATL",
+      "team": "Atlanta Hawks",
+      "pos": "PG",
+      "games": 11,
+      "minutes": 26.1,
+      "ratings": {
+        "off": 89,
+        "def": 80,
+        "shoot": 79,
+        "pass": 73,
+        "reb": 69,
+        "ovr": 83
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4873201",
+      "name": "Asa Newell",
+      "abbr": "ATL",
+      "team": "Atlanta Hawks",
+      "pos": "PF",
+      "games": 5,
+      "minutes": 11,
+      "ratings": {
+        "off": 79,
+        "def": 68,
+        "shoot": 56,
+        "pass": 67,
+        "reb": 66,
+        "ovr": 72
+      },
+      "source": "derived"
+    },
+    {
+      "id": "2490149",
+      "name": "CJ McCollum",
+      "abbr": "ATL",
+      "team": "Atlanta Hawks",
+      "pos": "SG",
+      "games": 11,
+      "minutes": 25.7,
+      "ratings": {
+        "off": 86,
+        "def": 80,
+        "shoot": 73,
+        "pass": 79,
+        "reb": 67,
+        "ovr": 82
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4280151",
+      "name": "Corey Kispert",
+      "abbr": "ATL",
+      "team": "Atlanta Hawks",
+      "pos": "SF",
+      "games": 6,
+      "minutes": 9.5,
+      "ratings": {
+        "off": 94,
+        "def": 66,
+        "shoot": 93,
+        "pass": 66,
+        "reb": 60,
+        "ovr": 86
+      },
+      "source": "derived"
+    },
+    {
+      "id": "2578185",
+      "name": "Dorian Finney-Smith",
+      "abbr": "ATL",
+      "team": "Atlanta Hawks",
+      "pos": "SF",
+      "games": 3,
+      "minutes": 4.3,
+      "ratings": {
+        "off": 68,
+        "def": 65,
+        "shoot": 55,
+        "pass": 65,
+        "reb": 60,
+        "ovr": 66
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4869342",
+      "name": "Dyson Daniels",
+      "abbr": "ATL",
+      "team": "Atlanta Hawks",
+      "pos": "SG",
+      "games": 11,
+      "minutes": 30.3,
+      "ratings": {
+        "off": 83,
+        "def": 96,
+        "shoot": 42,
+        "pass": 86,
+        "reb": 81,
+        "ovr": 88
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4701230",
+      "name": "Jalen Johnson",
+      "abbr": "ATL",
+      "team": "Atlanta Hawks",
+      "pos": "SF",
+      "games": 8,
+      "minutes": 33,
+      "ratings": {
+        "off": 92,
+        "def": 84,
+        "shoot": 63,
+        "pass": 95,
+        "reb": 88,
+        "ovr": 91
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "3146557",
+      "name": "Jock Landale",
+      "abbr": "ATL",
+      "team": "Atlanta Hawks",
+      "pos": "C",
+      "games": 7,
+      "minutes": 15.3,
+      "ratings": {
+        "off": 81,
+        "def": 71,
+        "shoot": 51,
+        "pass": 72,
+        "reb": 75,
+        "ovr": 76
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5149077",
+      "name": "Kingston Flemings",
+      "abbr": "ATL",
+      "team": "Atlanta Hawks",
+      "pos": "PG",
+      "games": 10,
+      "minutes": 21.7,
+      "ratings": {
+        "off": 87,
+        "def": 76,
+        "shoot": 75,
+        "pass": 82,
+        "reb": 66,
+        "ovr": 82
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4397020",
+      "name": "Luguentz Dort",
+      "abbr": "ATL",
+      "team": "Atlanta Hawks",
+      "pos": "PG",
+      "games": 11,
+      "minutes": 25.5,
+      "ratings": {
+        "off": 83,
+        "def": 77,
+        "shoot": 75,
+        "pass": 70,
+        "reb": 68,
+        "ovr": 79
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4278039",
+      "name": "Nickeil Alexander-Walker",
+      "abbr": "ATL",
+      "team": "Atlanta Hawks",
+      "pos": "PG",
+      "games": 11,
+      "minutes": 30.8,
+      "ratings": {
+        "off": 96,
+        "def": 80,
+        "shoot": 86,
+        "pass": 74,
+        "reb": 68,
+        "ovr": 88
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4431680",
+      "name": "Onyeka Okongwu",
+      "abbr": "ATL",
+      "team": "Atlanta Hawks",
+      "pos": "PF",
+      "games": 11,
+      "minutes": 29.5,
+      "ratings": {
+        "off": 90,
+        "def": 83,
+        "shoot": 70,
+        "pass": 75,
+        "reb": 85,
+        "ovr": 87
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4431941",
+      "name": "RayJ Dennis",
+      "abbr": "ATL",
+      "team": "Atlanta Hawks",
+      "pos": "PG",
+      "games": 1,
+      "minutes": 8,
+      "ratings": {
+        "off": 76,
+        "def": 75,
+        "shoot": 26,
+        "pass": 72,
+        "reb": 64,
+        "ovr": 75
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5106262",
+      "name": "Zuby Ejiofor",
+      "abbr": "ATL",
+      "team": "Atlanta Hawks",
+      "pos": "SF",
+      "games": 6,
+      "minutes": 12.3,
+      "ratings": {
+        "off": 86,
+        "def": 72,
+        "shoot": 73,
+        "pass": 70,
+        "reb": 69,
+        "ovr": 78
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5242502",
+      "name": "Ben Saraf",
+      "abbr": "BKN",
+      "team": "Brooklyn Nets",
+      "pos": "PG",
+      "games": 1,
+      "minutes": 4,
+      "ratings": {
+        "off": 96,
+        "def": 67,
+        "shoot": 26,
+        "pass": 63,
+        "reb": 61,
+        "ovr": 78
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5174655",
+      "name": "Chaney Johnson",
+      "abbr": "BKN",
+      "team": "Brooklyn Nets",
+      "pos": "SF",
+      "games": 9,
+      "minutes": 19.7,
+      "ratings": {
+        "off": 79,
+        "def": 74,
+        "shoot": 68,
+        "pass": 67,
+        "reb": 67,
+        "ovr": 74
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5107173",
+      "name": "Danny Wolf",
+      "abbr": "BKN",
+      "team": "Brooklyn Nets",
+      "pos": "PF",
+      "games": 4,
+      "minutes": 19.3,
+      "ratings": {
+        "off": 88,
+        "def": 70,
+        "shoot": 82,
+        "pass": 71,
+        "reb": 77,
+        "ovr": 81
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4432194",
+      "name": "Day'Ron Sharpe",
+      "abbr": "BKN",
+      "team": "Brooklyn Nets",
+      "pos": "C",
+      "games": 9,
+      "minutes": 24.1,
+      "ratings": {
+        "off": 85,
+        "def": 81,
+        "shoot": 63,
+        "pass": 79,
+        "reb": 84,
+        "ovr": 84
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5037873",
+      "name": "Drake Powell",
+      "abbr": "BKN",
+      "team": "Brooklyn Nets",
+      "pos": "PG",
+      "games": 2,
+      "minutes": 9,
+      "ratings": {
+        "off": 52,
+        "def": 67,
+        "shoot": 25,
+        "pass": 74,
+        "reb": 61,
+        "ovr": 63
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5175643",
+      "name": "Egor Demin",
+      "abbr": "BKN",
+      "team": "Brooklyn Nets",
+      "pos": "PG",
+      "games": 4,
+      "minutes": 21.8,
+      "ratings": {
+        "off": 80,
+        "def": 75,
+        "shoot": 70,
+        "pass": 75,
+        "reb": 65,
+        "ovr": 77
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4687718",
+      "name": "Josh Minott",
+      "abbr": "BKN",
+      "team": "Brooklyn Nets",
+      "pos": "SF",
+      "games": 6,
+      "minutes": 6.7,
+      "ratings": {
+        "off": 80,
+        "def": 68,
+        "shoot": 61,
+        "pass": 65,
+        "reb": 63,
+        "ovr": 72
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4870564",
+      "name": "Joshua Jefferson",
+      "abbr": "BKN",
+      "team": "Brooklyn Nets",
+      "pos": "SF",
+      "games": 1,
+      "minutes": 4,
+      "ratings": {
+        "off": 52,
+        "def": 64,
+        "shoot": 25,
+        "pass": 63,
+        "reb": 57,
+        "ovr": 59
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3064514",
+      "name": "Julius Randle",
+      "abbr": "BKN",
+      "team": "Brooklyn Nets",
+      "pos": "PF",
+      "games": 9,
+      "minutes": 33.9,
+      "ratings": {
+        "off": 93,
+        "def": 77,
+        "shoot": 76,
+        "pass": 84,
+        "reb": 81,
+        "ovr": 86
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4702177",
+      "name": "Keon Ellis",
+      "abbr": "BKN",
+      "team": "Brooklyn Nets",
+      "pos": "PG",
+      "games": 8,
+      "minutes": 22.6,
+      "ratings": {
+        "off": 73,
+        "def": 84,
+        "shoot": 55,
+        "pass": 71,
+        "reb": 63,
+        "ovr": 76
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4278104",
+      "name": "Michael Porter Jr.",
+      "abbr": "BKN",
+      "team": "Brooklyn Nets",
+      "pos": "PF",
+      "games": 9,
+      "minutes": 33.6,
+      "ratings": {
+        "off": 95,
+        "def": 83,
+        "shoot": 81,
+        "pass": 68,
+        "reb": 83,
+        "ovr": 88
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "5101761",
+      "name": "Mikel Brown Jr.",
+      "abbr": "BKN",
+      "team": "Brooklyn Nets",
+      "pos": "PG",
+      "games": 7,
+      "minutes": 23.1,
+      "ratings": {
+        "off": 84,
+        "def": 74,
+        "shoot": 71,
+        "pass": 79,
+        "reb": 64,
+        "ovr": 80
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3150844",
+      "name": "Moritz Wagner",
+      "abbr": "BKN",
+      "team": "Brooklyn Nets",
+      "pos": "C",
+      "games": 9,
+      "minutes": 18.4,
+      "ratings": {
+        "off": 89,
+        "def": 70,
+        "shoot": 89,
+        "pass": 67,
+        "reb": 69,
+        "ovr": 83
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4712896",
+      "name": "Noah Clowney",
+      "abbr": "BKN",
+      "team": "Brooklyn Nets",
+      "pos": "PF",
+      "games": 9,
+      "minutes": 21,
+      "ratings": {
+        "off": 78,
+        "def": 73,
+        "shoot": 63,
+        "pass": 67,
+        "reb": 74,
+        "ovr": 75
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5279130",
+      "name": "Nolan Traore",
+      "abbr": "BKN",
+      "team": "Brooklyn Nets",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 22.2,
+      "ratings": {
+        "off": 91,
+        "def": 83,
+        "shoot": 84,
+        "pass": 75,
+        "reb": 64,
+        "ovr": 87
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3907823",
+      "name": "Terance Mann",
+      "abbr": "BKN",
+      "team": "Brooklyn Nets",
+      "pos": "PG",
+      "games": 4,
+      "minutes": 14,
+      "ratings": {
+        "off": 58,
+        "def": 75,
+        "shoot": 26,
+        "pass": 69,
+        "reb": 62,
+        "ovr": 66
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4593841",
+      "name": "Baylor Scheierman",
+      "abbr": "BOS",
+      "team": "Boston Celtics",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 20.3,
+      "ratings": {
+        "off": 84,
+        "def": 76,
+        "shoot": 84,
+        "pass": 69,
+        "reb": 71,
+        "ovr": 82
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3078576",
+      "name": "Derrick White",
+      "abbr": "BOS",
+      "team": "Boston Celtics",
+      "pos": "SG",
+      "games": 9,
+      "minutes": 30,
+      "ratings": {
+        "off": 90,
+        "def": 80,
+        "shoot": 76,
+        "pass": 84,
+        "reb": 68,
+        "ovr": 85
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "5106283",
+      "name": "Dillon Mitchell",
+      "abbr": "BOS",
+      "team": "Boston Celtics",
+      "pos": "SF",
+      "games": 1,
+      "minutes": 2,
+      "ratings": {
+        "off": 52,
+        "def": 64,
+        "shoot": 25,
+        "pass": 63,
+        "reb": 57,
+        "ovr": 59
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5175647",
+      "name": "Hugo Gonzalez",
+      "abbr": "BOS",
+      "team": "Boston Celtics",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 13.1,
+      "ratings": {
+        "off": 79,
+        "def": 73,
+        "shoot": 53,
+        "pass": 65,
+        "reb": 64,
+        "ovr": 73
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4065648",
+      "name": "Jayson Tatum",
+      "abbr": "BOS",
+      "team": "Boston Celtics",
+      "pos": "SF",
+      "games": 8,
+      "minutes": 34.4,
+      "ratings": {
+        "off": 98,
+        "def": 80,
+        "shoot": 73,
+        "pass": 96,
+        "reb": 79,
+        "ovr": 92
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4683689",
+      "name": "Jordan Walsh",
+      "abbr": "BOS",
+      "team": "Boston Celtics",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 16.1,
+      "ratings": {
+        "off": 81,
+        "def": 75,
+        "shoot": 69,
+        "pass": 66,
+        "reb": 69,
+        "ovr": 76
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4277951",
+      "name": "Luka Garza",
+      "abbr": "BOS",
+      "team": "Boston Celtics",
+      "pos": "C",
+      "games": 9,
+      "minutes": 13.2,
+      "ratings": {
+        "off": 83,
+        "def": 70,
+        "shoot": 86,
+        "pass": 69,
+        "reb": 70,
+        "ovr": 80
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3195",
+      "name": "Mike Conley",
+      "abbr": "BOS",
+      "team": "Boston Celtics",
+      "pos": "PG",
+      "games": 3,
+      "minutes": 7,
+      "ratings": {
+        "off": 87,
+        "def": 73,
+        "shoot": 93,
+        "pass": 65,
+        "reb": 57,
+        "ovr": 85
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4351852",
+      "name": "Mitchell Robinson",
+      "abbr": "BOS",
+      "team": "Boston Celtics",
+      "pos": "C",
+      "games": 8,
+      "minutes": 18.9,
+      "ratings": {
+        "off": 86,
+        "def": 76,
+        "shoot": 32,
+        "pass": 65,
+        "reb": 77,
+        "ovr": 80
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4397424",
+      "name": "Neemias Queta",
+      "abbr": "BOS",
+      "team": "Boston Celtics",
+      "pos": "C",
+      "games": 9,
+      "minutes": 21.8,
+      "ratings": {
+        "off": 88,
+        "def": 80,
+        "shoot": 93,
+        "pass": 69,
+        "reb": 78,
+        "ovr": 87
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4251",
+      "name": "Paul George",
+      "abbr": "BOS",
+      "team": "Boston Celtics",
+      "pos": "SF",
+      "games": 8,
+      "minutes": 30.4,
+      "ratings": {
+        "off": 94,
+        "def": 89,
+        "shoot": 85,
+        "pass": 82,
+        "reb": 76,
+        "ovr": 90
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4066354",
+      "name": "Payton Pritchard",
+      "abbr": "BOS",
+      "team": "Boston Celtics",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 26.4,
+      "ratings": {
+        "off": 87,
+        "def": 76,
+        "shoot": 76,
+        "pass": 79,
+        "reb": 67,
+        "ovr": 81
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4397251",
+      "name": "Ron Harper Jr.",
+      "abbr": "BOS",
+      "team": "Boston Celtics",
+      "pos": "PG",
+      "games": 4,
+      "minutes": 6.8,
+      "ratings": {
+        "off": 63,
+        "def": 69,
+        "shoot": 55,
+        "pass": 67,
+        "reb": 59,
+        "ovr": 66
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4065804",
+      "name": "Sam Hauser",
+      "abbr": "BOS",
+      "team": "Boston Celtics",
+      "pos": "SF",
+      "games": 9,
+      "minutes": 20.8,
+      "ratings": {
+        "off": 78,
+        "def": 69,
+        "shoot": 68,
+        "pass": 68,
+        "reb": 67,
+        "ovr": 72
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4433287",
+      "name": "Brandon Miller",
+      "abbr": "CHA",
+      "team": "Charlotte Hornets",
+      "pos": "SF",
+      "games": 10,
+      "minutes": 31,
+      "ratings": {
+        "off": 91,
+        "def": 81,
+        "shoot": 72,
+        "pass": 72,
+        "reb": 74,
+        "ovr": 83
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "5060701",
+      "name": "Christian Anderson",
+      "abbr": "CHA",
+      "team": "Charlotte Hornets",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 11.9,
+      "ratings": {
+        "off": 74,
+        "def": 72,
+        "shoot": 48,
+        "pass": 71,
+        "reb": 63,
+        "ovr": 73
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4395651",
+      "name": "Coby White",
+      "abbr": "CHA",
+      "team": "Charlotte Hornets",
+      "pos": "PG",
+      "games": 3,
+      "minutes": 16.7,
+      "ratings": {
+        "off": 75,
+        "def": 71,
+        "shoot": 53,
+        "pass": 72,
+        "reb": 64,
+        "ovr": 73
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3032979",
+      "name": "Dennis Schroder",
+      "abbr": "CHA",
+      "team": "Charlotte Hornets",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 29.9,
+      "ratings": {
+        "off": 82,
+        "def": 76,
+        "shoot": 59,
+        "pass": 84,
+        "reb": 69,
+        "ovr": 81
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3135045",
+      "name": "Grayson Allen",
+      "abbr": "CHA",
+      "team": "Charlotte Hornets",
+      "pos": "PG",
+      "games": 10,
+      "minutes": 25.9,
+      "ratings": {
+        "off": 91,
+        "def": 76,
+        "shoot": 90,
+        "pass": 75,
+        "reb": 66,
+        "ovr": 86
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5281370",
+      "name": "Hannes Steinbach",
+      "abbr": "CHA",
+      "team": "Charlotte Hornets",
+      "pos": "PF",
+      "games": 4,
+      "minutes": 12.5,
+      "ratings": {
+        "off": 74,
+        "def": 73,
+        "shoot": 26,
+        "pass": 65,
+        "reb": 73,
+        "ovr": 73
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5061575",
+      "name": "Kon Knueppel",
+      "abbr": "CHA",
+      "team": "Charlotte Hornets",
+      "pos": "PG",
+      "games": 1,
+      "minutes": 6,
+      "ratings": {
+        "off": 62,
+        "def": 66,
+        "shoot": 40,
+        "pass": 63,
+        "reb": 57,
+        "ovr": 63
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5239590",
+      "name": "Liam McNeeley",
+      "abbr": "CHA",
+      "team": "Charlotte Hornets",
+      "pos": "PG",
+      "games": 5,
+      "minutes": 9.4,
+      "ratings": {
+        "off": 69,
+        "def": 70,
+        "shoot": 47,
+        "pass": 67,
+        "reb": 63,
+        "ovr": 69
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4433249",
+      "name": "Moussa Diabate",
+      "abbr": "CHA",
+      "team": "Charlotte Hornets",
+      "pos": "PF",
+      "games": 9,
+      "minutes": 28.8,
+      "ratings": {
+        "off": 91,
+        "def": 90,
+        "shoot": 38,
+        "pass": 72,
+        "reb": 89,
+        "ovr": 90
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4396971",
+      "name": "Naz Reid",
+      "abbr": "CHA",
+      "team": "Charlotte Hornets",
+      "pos": "C",
+      "games": 10,
+      "minutes": 29.2,
+      "ratings": {
+        "off": 88,
+        "def": 78,
+        "shoot": 75,
+        "pass": 71,
+        "reb": 86,
+        "ovr": 85
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4701225",
+      "name": "PJ Hall",
+      "abbr": "CHA",
+      "team": "Charlotte Hornets",
+      "pos": "C",
+      "games": 2,
+      "minutes": 5.5,
+      "ratings": {
+        "off": 52,
+        "def": 67,
+        "shoot": 25,
+        "pass": 70,
+        "reb": 61,
+        "ovr": 62
+      },
+      "source": "derived"
+    },
+    {
+      "id": "2583632",
+      "name": "Royce O'Neale",
+      "abbr": "CHA",
+      "team": "Charlotte Hornets",
+      "pos": "SF",
+      "games": 10,
+      "minutes": 18.8,
+      "ratings": {
+        "off": 77,
+        "def": 73,
+        "shoot": 65,
+        "pass": 66,
+        "reb": 68,
+        "ovr": 73
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4576060",
+      "name": "Ryan Kalkbrenner",
+      "abbr": "CHA",
+      "team": "Charlotte Hornets",
+      "pos": "C",
+      "games": 10,
+      "minutes": 17.2,
+      "ratings": {
+        "off": 95,
+        "def": 76,
+        "shoot": 39,
+        "pass": 69,
+        "reb": 73,
+        "ovr": 83
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4602025",
+      "name": "Sion James",
+      "abbr": "CHA",
+      "team": "Charlotte Hornets",
+      "pos": "PG",
+      "games": 10,
+      "minutes": 24.8,
+      "ratings": {
+        "off": 77,
+        "def": 74,
+        "shoot": 61,
+        "pass": 74,
+        "reb": 67,
+        "ovr": 75
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5211176",
+      "name": "Tidjane Salaun",
+      "abbr": "CHA",
+      "team": "Charlotte Hornets",
+      "pos": "PF",
+      "games": 9,
+      "minutes": 14.8,
+      "ratings": {
+        "off": 81,
+        "def": 72,
+        "shoot": 69,
+        "pass": 64,
+        "reb": 69,
+        "ovr": 75
+      },
+      "source": "derived"
+    },
+    {
+      "id": "2990984",
+      "name": "Buddy Hield",
+      "abbr": "CHI",
+      "team": "Chicago Bulls",
+      "pos": "PG",
+      "games": 8,
+      "minutes": 13,
+      "ratings": {
+        "off": 82,
+        "def": 72,
+        "shoot": 69,
+        "pass": 70,
+        "reb": 63,
+        "ovr": 76
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5095151",
+      "name": "Caleb Wilson",
+      "abbr": "CHI",
+      "team": "Chicago Bulls",
+      "pos": "PF",
+      "games": 8,
+      "minutes": 32.6,
+      "ratings": {
+        "off": 90,
+        "def": 90,
+        "shoot": 72,
+        "pass": 73,
+        "reb": 80,
+        "ovr": 87
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4848625",
+      "name": "Dailyn Swain",
+      "abbr": "CHI",
+      "team": "Chicago Bulls",
+      "pos": "PG",
+      "games": 2,
+      "minutes": 9.5,
+      "ratings": {
+        "off": 79,
+        "def": 74,
+        "shoot": 40,
+        "pass": 70,
+        "reb": 62,
+        "ovr": 75
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4432822",
+      "name": "Isaac Okoro",
+      "abbr": "CHI",
+      "team": "Chicago Bulls",
+      "pos": "SF",
+      "games": 8,
+      "minutes": 17.9,
+      "ratings": {
+        "off": 76,
+        "def": 70,
+        "shoot": 54,
+        "pass": 68,
+        "reb": 62,
+        "ovr": 72
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4397189",
+      "name": "Jalen Smith",
+      "abbr": "CHI",
+      "team": "Chicago Bulls",
+      "pos": "SF",
+      "games": 8,
+      "minutes": 22.5,
+      "ratings": {
+        "off": 87,
+        "def": 82,
+        "shoot": 66,
+        "pass": 71,
+        "reb": 84,
+        "ovr": 85
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4898010",
+      "name": "Jaylin Sellers",
+      "abbr": "CHI",
+      "team": "Chicago Bulls",
+      "pos": "PG",
+      "games": 5,
+      "minutes": 9.2,
+      "ratings": {
+        "off": 77,
+        "def": 71,
+        "shoot": 72,
+        "pass": 67,
+        "reb": 60,
+        "ovr": 74
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4683750",
+      "name": "Jordan Hawkins",
+      "abbr": "CHI",
+      "team": "Chicago Bulls",
+      "pos": "PG",
+      "games": 4,
+      "minutes": 5.5,
+      "ratings": {
+        "off": 72,
+        "def": 67,
+        "shoot": 35,
+        "pass": 63,
+        "reb": 59,
+        "ovr": 68
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4871145",
+      "name": "Josh Giddey",
+      "abbr": "CHI",
+      "team": "Chicago Bulls",
+      "pos": "PG",
+      "games": 8,
+      "minutes": 27.1,
+      "ratings": {
+        "off": 81,
+        "def": 78,
+        "shoot": 64,
+        "pass": 95,
+        "reb": 72,
+        "ovr": 84
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5044385",
+      "name": "Leonard Miller",
+      "abbr": "CHI",
+      "team": "Chicago Bulls",
+      "pos": "PF",
+      "games": 8,
+      "minutes": 17.6,
+      "ratings": {
+        "off": 82,
+        "def": 73,
+        "shoot": 55,
+        "pass": 67,
+        "reb": 71,
+        "ovr": 76
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4711294",
+      "name": "Matas Buzelis",
+      "abbr": "CHI",
+      "team": "Chicago Bulls",
+      "pos": "SF",
+      "games": 8,
+      "minutes": 25.1,
+      "ratings": {
+        "off": 86,
+        "def": 76,
+        "shoot": 66,
+        "pass": 72,
+        "reb": 72,
+        "ovr": 79
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5242496",
+      "name": "Noa Essengue",
+      "abbr": "CHI",
+      "team": "Chicago Bulls",
+      "pos": "PF",
+      "games": 7,
+      "minutes": 14,
+      "ratings": {
+        "off": 75,
+        "def": 71,
+        "shoot": 52,
+        "pass": 65,
+        "reb": 68,
+        "ovr": 72
+      },
+      "source": "derived"
+    },
+    {
+      "id": "2595516",
+      "name": "Norman Powell",
+      "abbr": "CHI",
+      "team": "Chicago Bulls",
+      "pos": "SG",
+      "games": 8,
+      "minutes": 28.8,
+      "ratings": {
+        "off": 90,
+        "def": 79,
+        "shoot": 73,
+        "pass": 70,
+        "reb": 65,
+        "ovr": 82
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4431687",
+      "name": "Patrick Williams",
+      "abbr": "CHI",
+      "team": "Chicago Bulls",
+      "pos": "SF",
+      "games": 1,
+      "minutes": 20,
+      "ratings": {
+        "off": 70,
+        "def": 70,
+        "shoot": 40,
+        "pass": 72,
+        "reb": 57,
+        "ovr": 71
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5105555",
+      "name": "Tobe Awaka",
+      "abbr": "CHI",
+      "team": "Chicago Bulls",
+      "pos": "SF",
+      "games": 4,
+      "minutes": 10.3,
+      "ratings": {
+        "off": 88,
+        "def": 78,
+        "shoot": 31,
+        "pass": 67,
+        "reb": 75,
+        "ovr": 81
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4395626",
+      "name": "Tre Jones",
+      "abbr": "CHI",
+      "team": "Chicago Bulls",
+      "pos": "PG",
+      "games": 8,
+      "minutes": 18.3,
+      "ratings": {
+        "off": 88,
+        "def": 77,
+        "shoot": 82,
+        "pass": 76,
+        "reb": 67,
+        "ovr": 83
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4066650",
+      "name": "Zach Collins",
+      "abbr": "CHI",
+      "team": "Chicago Bulls",
+      "pos": "PF",
+      "games": 6,
+      "minutes": 8.7,
+      "ratings": {
+        "off": 73,
+        "def": 67,
+        "shoot": 40,
+        "pass": 66,
+        "reb": 65,
+        "ovr": 69
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4701233",
+      "name": "Craig Porter Jr.",
+      "abbr": "CLE",
+      "team": "Cleveland Cavaliers",
+      "pos": "PG",
+      "games": 8,
+      "minutes": 9.1,
+      "ratings": {
+        "off": 70,
+        "def": 72,
+        "shoot": 54,
+        "pass": 67,
+        "reb": 62,
+        "ovr": 70
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3908809",
+      "name": "Donovan Mitchell",
+      "abbr": "CLE",
+      "team": "Cleveland Cavaliers",
+      "pos": "SG",
+      "games": 10,
+      "minutes": 33.8,
+      "ratings": {
+        "off": 98,
+        "def": 84,
+        "shoot": 82,
+        "pass": 87,
+        "reb": 74,
+        "ovr": 91
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4432158",
+      "name": "Evan Mobley",
+      "abbr": "CLE",
+      "team": "Cleveland Cavaliers",
+      "pos": "PF",
+      "games": 10,
+      "minutes": 32.7,
+      "ratings": {
+        "off": 95,
+        "def": 83,
+        "shoot": 85,
+        "pass": 79,
+        "reb": 85,
+        "ovr": 89
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "3992",
+      "name": "James Harden",
+      "abbr": "CLE",
+      "team": "Cleveland Cavaliers",
+      "pos": "PG",
+      "games": 10,
+      "minutes": 33.4,
+      "ratings": {
+        "off": 87,
+        "def": 81,
+        "shoot": 78,
+        "pass": 87,
+        "reb": 74,
+        "ovr": 85
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4066328",
+      "name": "Jarrett Allen",
+      "abbr": "CLE",
+      "team": "Cleveland Cavaliers",
+      "pos": "C",
+      "games": 8,
+      "minutes": 25.3,
+      "ratings": {
+        "off": 93,
+        "def": 84,
+        "shoot": 95,
+        "pass": 69,
+        "reb": 85,
+        "ovr": 91
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4683747",
+      "name": "Jaylon Tyson",
+      "abbr": "CLE",
+      "team": "Cleveland Cavaliers",
+      "pos": "PG",
+      "games": 5,
+      "minutes": 20.8,
+      "ratings": {
+        "off": 80,
+        "def": 77,
+        "shoot": 56,
+        "pass": 75,
+        "reb": 69,
+        "ovr": 78
+      },
+      "source": "derived"
+    },
+    {
+      "id": "2995706",
+      "name": "Mario Hezonja",
+      "abbr": "CLE",
+      "team": "Cleveland Cavaliers",
+      "pos": "SF",
+      "games": 10,
+      "minutes": 20.2,
+      "ratings": {
+        "off": 81,
+        "def": 76,
+        "shoot": 64,
+        "pass": 71,
+        "reb": 79,
+        "ovr": 79
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5041951",
+      "name": "Meleek Thomas",
+      "abbr": "CLE",
+      "team": "Cleveland Cavaliers",
+      "pos": "PG",
+      "games": 7,
+      "minutes": 22.6,
+      "ratings": {
+        "off": 90,
+        "def": 76,
+        "shoot": 88,
+        "pass": 67,
+        "reb": 66,
+        "ovr": 85
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4702134",
+      "name": "Norchad Omier",
+      "abbr": "CLE",
+      "team": "Cleveland Cavaliers",
+      "pos": "C",
+      "games": 1,
+      "minutes": 3,
+      "ratings": {
+        "off": 52,
+        "def": 65,
+        "shoot": 25,
+        "pass": 67,
+        "reb": 64,
+        "ovr": 60
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4576087",
+      "name": "Peyton Watson",
+      "abbr": "CLE",
+      "team": "Cleveland Cavaliers",
+      "pos": "PG",
+      "games": 8,
+      "minutes": 28.6,
+      "ratings": {
+        "off": 83,
+        "def": 89,
+        "shoot": 56,
+        "pass": 75,
+        "reb": 73,
+        "ovr": 82
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5177362",
+      "name": "Riley Minix",
+      "abbr": "CLE",
+      "team": "Cleveland Cavaliers",
+      "pos": "SF",
+      "games": 2,
+      "minutes": 8,
+      "ratings": {
+        "off": 74,
+        "def": 67,
+        "shoot": 63,
+        "pass": 63,
+        "reb": 68,
+        "ovr": 70
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4066757",
+      "name": "Sam Merrill",
+      "abbr": "CLE",
+      "team": "Cleveland Cavaliers",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 23.1,
+      "ratings": {
+        "off": 83,
+        "def": 77,
+        "shoot": 72,
+        "pass": 71,
+        "reb": 68,
+        "ovr": 78
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3934723",
+      "name": "Thomas Bryant",
+      "abbr": "CLE",
+      "team": "Cleveland Cavaliers",
+      "pos": "C",
+      "games": 5,
+      "minutes": 12,
+      "ratings": {
+        "off": 86,
+        "def": 66,
+        "shoot": 76,
+        "pass": 64,
+        "reb": 65,
+        "ovr": 77
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5023693",
+      "name": "Tyrese Proctor",
+      "abbr": "CLE",
+      "team": "Cleveland Cavaliers",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 15.8,
+      "ratings": {
+        "off": 85,
+        "def": 72,
+        "shoot": 88,
+        "pass": 72,
+        "reb": 67,
+        "ovr": 82
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3138160",
+      "name": "Caleb Martin",
+      "abbr": "DAL",
+      "team": "Dallas Mavericks",
+      "pos": "SF",
+      "games": 5,
+      "minutes": 18.2,
+      "ratings": {
+        "off": 87,
+        "def": 69,
+        "shoot": 86,
+        "pass": 65,
+        "reb": 65,
+        "ovr": 81
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5041939",
+      "name": "Cooper Flagg",
+      "abbr": "DAL",
+      "team": "Dallas Mavericks",
+      "pos": "SF",
+      "games": 8,
+      "minutes": 34.3,
+      "ratings": {
+        "off": 96,
+        "def": 92,
+        "shoot": 64,
+        "pass": 90,
+        "reb": 81,
+        "ovr": 93
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4278049",
+      "name": "Daniel Gafford",
+      "abbr": "DAL",
+      "team": "Dallas Mavericks",
+      "pos": "PF",
+      "games": 9,
+      "minutes": 22.6,
+      "ratings": {
+        "off": 93,
+        "def": 91,
+        "shoot": 99,
+        "pass": 71,
+        "reb": 78,
+        "ovr": 94
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5105806",
+      "name": "Jett Howard",
+      "abbr": "DAL",
+      "team": "Dallas Mavericks",
+      "pos": "PG",
+      "games": 4,
+      "minutes": 2.3,
+      "ratings": {
+        "off": 79,
+        "def": 66,
+        "shoot": 69,
+        "pass": 63,
+        "reb": 57,
+        "ovr": 72
+      },
+      "source": "derived"
+    },
+    {
+      "id": "6442",
+      "name": "Kyrie Irving",
+      "abbr": "DAL",
+      "team": "Dallas Mavericks",
+      "pos": "PG",
+      "games": 7,
+      "minutes": 29.6,
+      "ratings": {
+        "off": 96,
+        "def": 82,
+        "shoot": 81,
+        "pass": 82,
+        "reb": 69,
+        "ovr": 88
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4432107",
+      "name": "Marcus Sasser",
+      "abbr": "DAL",
+      "team": "Dallas Mavericks",
+      "pos": "PG",
+      "games": 8,
+      "minutes": 17.3,
+      "ratings": {
+        "off": 85,
+        "def": 69,
+        "shoot": 77,
+        "pass": 72,
+        "reb": 62,
+        "ovr": 78
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4432582",
+      "name": "Max Christie",
+      "abbr": "DAL",
+      "team": "Dallas Mavericks",
+      "pos": "PG",
+      "games": 8,
+      "minutes": 21.8,
+      "ratings": {
+        "off": 80,
+        "def": 76,
+        "shoot": 67,
+        "pass": 70,
+        "reb": 68,
+        "ovr": 76
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4873153",
+      "name": "Morez Johnson Jr.",
+      "abbr": "DAL",
+      "team": "Dallas Mavericks",
+      "pos": "PF",
+      "games": 9,
+      "minutes": 16.8,
+      "ratings": {
+        "off": 88,
+        "def": 73,
+        "shoot": 59,
+        "pass": 69,
+        "reb": 73,
+        "ovr": 79
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4701208",
+      "name": "Moussa Cisse",
+      "abbr": "DAL",
+      "team": "Dallas Mavericks",
+      "pos": "C",
+      "games": 6,
+      "minutes": 2.7,
+      "ratings": {
+        "off": 91,
+        "def": 63,
+        "shoot": 33,
+        "pass": 63,
+        "reb": 60,
+        "ovr": 75
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4278594",
+      "name": "Naji Marshall",
+      "abbr": "DAL",
+      "team": "Dallas Mavericks",
+      "pos": "SF",
+      "games": 6,
+      "minutes": 26.3,
+      "ratings": {
+        "off": 86,
+        "def": 77,
+        "shoot": 61,
+        "pass": 85,
+        "reb": 68,
+        "ovr": 83
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4278078",
+      "name": "P.J. Washington",
+      "abbr": "DAL",
+      "team": "Dallas Mavericks",
+      "pos": "SF",
+      "games": 9,
+      "minutes": 34.4,
+      "ratings": {
+        "off": 89,
+        "def": 83,
+        "shoot": 76,
+        "pass": 69,
+        "reb": 84,
+        "ovr": 86
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4593125",
+      "name": "Santi Aldama",
+      "abbr": "DAL",
+      "team": "Dallas Mavericks",
+      "pos": "PF",
+      "games": 1,
+      "minutes": 13,
+      "ratings": {
+        "off": 85,
+        "def": 73,
+        "shoot": 38,
+        "pass": 67,
+        "reb": 88,
+        "ovr": 82
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5279129",
+      "name": "Sergio de Larrea",
+      "abbr": "DAL",
+      "team": "Dallas Mavericks",
+      "pos": "SF",
+      "games": 4,
+      "minutes": 11.5,
+      "ratings": {
+        "off": 78,
+        "def": 66,
+        "shoot": 80,
+        "pass": 69,
+        "reb": 64,
+        "ovr": 75
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5106040",
+      "name": "Tobi Lawal",
+      "abbr": "DAL",
+      "team": "Dallas Mavericks",
+      "pos": "SF",
+      "games": 5,
+      "minutes": 2.2,
+      "ratings": {
+        "off": 75,
+        "def": 65,
+        "shoot": 55,
+        "pass": 65,
+        "reb": 58,
+        "ovr": 69
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4896372",
+      "name": "Walter Clayton Jr.",
+      "abbr": "DAL",
+      "team": "Dallas Mavericks",
+      "pos": "PG",
+      "games": 8,
+      "minutes": 15.4,
+      "ratings": {
+        "off": 85,
+        "def": 73,
+        "shoot": 80,
+        "pass": 76,
+        "reb": 66,
+        "ovr": 80
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5211175",
+      "name": "Zaccharie Risacher",
+      "abbr": "DAL",
+      "team": "Dallas Mavericks",
+      "pos": "SF",
+      "games": 9,
+      "minutes": 26.1,
+      "ratings": {
+        "off": 77,
+        "def": 89,
+        "shoot": 59,
+        "pass": 70,
+        "reb": 75,
+        "ovr": 80
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3064290",
+      "name": "Aaron Gordon",
+      "abbr": "DEN",
+      "team": "Denver Nuggets",
+      "pos": "PF",
+      "games": 8,
+      "minutes": 29.3,
+      "ratings": {
+        "off": 86,
+        "def": 78,
+        "shoot": 68,
+        "pass": 72,
+        "reb": 75,
+        "ovr": 80
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4065813",
+      "name": "Alpha Diallo",
+      "abbr": "DEN",
+      "team": "Denver Nuggets",
+      "pos": "SF",
+      "games": 3,
+      "minutes": 10.7,
+      "ratings": {
+        "off": 67,
+        "def": 67,
+        "shoot": 26,
+        "pass": 66,
+        "reb": 61,
+        "ovr": 67
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4565698",
+      "name": "Bryce Hopkins",
+      "abbr": "DEN",
+      "team": "Denver Nuggets",
+      "pos": "SF",
+      "games": 6,
+      "minutes": 16,
+      "ratings": {
+        "off": 90,
+        "def": 68,
+        "shoot": 72,
+        "pass": 65,
+        "reb": 65,
+        "ovr": 78
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5105592",
+      "name": "Cam Whitmore",
+      "abbr": "DEN",
+      "team": "Denver Nuggets",
+      "pos": "SF",
+      "games": 2,
+      "minutes": 7.5,
+      "ratings": {
+        "off": 79,
+        "def": 68,
+        "shoot": 26,
+        "pass": 65,
+        "reb": 61,
+        "ovr": 72
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3138196",
+      "name": "Cameron Johnson",
+      "abbr": "DEN",
+      "team": "Denver Nuggets",
+      "pos": "SF",
+      "games": 5,
+      "minutes": 27.4,
+      "ratings": {
+        "off": 86,
+        "def": 75,
+        "shoot": 74,
+        "pass": 71,
+        "reb": 72,
+        "ovr": 79
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4431767",
+      "name": "Christian Braun",
+      "abbr": "DEN",
+      "team": "Denver Nuggets",
+      "pos": "PG",
+      "games": 8,
+      "minutes": 34.3,
+      "ratings": {
+        "off": 92,
+        "def": 84,
+        "shoot": 77,
+        "pass": 72,
+        "reb": 70,
+        "ovr": 85
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4433607",
+      "name": "DaRon Holmes II",
+      "abbr": "DEN",
+      "team": "Denver Nuggets",
+      "pos": "PF",
+      "games": 3,
+      "minutes": 3,
+      "ratings": {
+        "off": 68,
+        "def": 65,
+        "shoot": 55,
+        "pass": 66,
+        "reb": 58,
+        "ovr": 67
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3978",
+      "name": "DeMar DeRozan",
+      "abbr": "DEN",
+      "team": "Denver Nuggets",
+      "pos": "PG",
+      "games": 7,
+      "minutes": 24.6,
+      "ratings": {
+        "off": 84,
+        "def": 75,
+        "shoot": 55,
+        "pass": 76,
+        "reb": 63,
+        "ovr": 79
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3936299",
+      "name": "Jamal Murray",
+      "abbr": "DEN",
+      "team": "Denver Nuggets",
+      "pos": "PG",
+      "games": 8,
+      "minutes": 36.6,
+      "ratings": {
+        "off": 99,
+        "def": 83,
+        "shoot": 95,
+        "pass": 89,
+        "reb": 75,
+        "ovr": 93
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4277848",
+      "name": "Marvin Bagley III",
+      "abbr": "DEN",
+      "team": "Denver Nuggets",
+      "pos": "PF",
+      "games": 8,
+      "minutes": 12.3,
+      "ratings": {
+        "off": 86,
+        "def": 71,
+        "shoot": 38,
+        "pass": 66,
+        "reb": 69,
+        "ovr": 77
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3112335",
+      "name": "Nikola Jokic",
+      "abbr": "DEN",
+      "team": "Denver Nuggets",
+      "pos": "C",
+      "games": 8,
+      "minutes": 36,
+      "ratings": {
+        "off": 96,
+        "def": 92,
+        "shoot": 65,
+        "pass": 99,
+        "reb": 93,
+        "ovr": 96
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4433629",
+      "name": "Ryan Nembhard",
+      "abbr": "DEN",
+      "team": "Denver Nuggets",
+      "pos": "PG",
+      "games": 3,
+      "minutes": 3.3,
+      "ratings": {
+        "off": 88,
+        "def": 67,
+        "shoot": 99,
+        "pass": 66,
+        "reb": 58,
+        "ovr": 85
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4592427",
+      "name": "Spencer Jones",
+      "abbr": "DEN",
+      "team": "Denver Nuggets",
+      "pos": "SF",
+      "games": 1,
+      "minutes": 21,
+      "ratings": {
+        "off": 99,
+        "def": 78,
+        "shoot": 99,
+        "pass": 63,
+        "reb": 78,
+        "ovr": 93
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4698719",
+      "name": "Trevon Brazile",
+      "abbr": "DEN",
+      "team": "Denver Nuggets",
+      "pos": "PF",
+      "games": 8,
+      "minutes": 21.1,
+      "ratings": {
+        "off": 85,
+        "def": 78,
+        "shoot": 65,
+        "pass": 66,
+        "reb": 78,
+        "ovr": 81
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3135046",
+      "name": "Tyus Jones",
+      "abbr": "DEN",
+      "team": "Denver Nuggets",
+      "pos": "PG",
+      "games": 8,
+      "minutes": 11.1,
+      "ratings": {
+        "off": 80,
+        "def": 73,
+        "shoot": 67,
+        "pass": 72,
+        "reb": 59,
+        "ovr": 76
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4431690",
+      "name": "Zeke Nnaji",
+      "abbr": "DEN",
+      "team": "Denver Nuggets",
+      "pos": "PF",
+      "games": 2,
+      "minutes": 3.5,
+      "ratings": {
+        "off": 99,
+        "def": 63,
+        "shoot": 99,
+        "pass": 63,
+        "reb": 59,
+        "ovr": 89
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4684742",
+      "name": "Ausar Thompson",
+      "abbr": "DET",
+      "team": "Detroit Pistons",
+      "pos": "PG",
+      "games": 7,
+      "minutes": 27.6,
+      "ratings": {
+        "off": 87,
+        "def": 87,
+        "shoot": 37,
+        "pass": 83,
+        "reb": 85,
+        "ovr": 86
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4432166",
+      "name": "Cade Cunningham",
+      "abbr": "DET",
+      "team": "Detroit Pistons",
+      "pos": "PG",
+      "games": 8,
+      "minutes": 33.4,
+      "ratings": {
+        "off": 97,
+        "def": 90,
+        "shoot": 76,
+        "pass": 95,
+        "reb": 76,
+        "ovr": 94
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4700852",
+      "name": "Chaz Lanier",
+      "abbr": "DET",
+      "team": "Detroit Pistons",
+      "pos": "PG",
+      "games": 3,
+      "minutes": 3.7,
+      "ratings": {
+        "off": 87,
+        "def": 66,
+        "shoot": 80,
+        "pass": 63,
+        "reb": 57,
+        "ovr": 79
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5107199",
+      "name": "Daniss Jenkins",
+      "abbr": "DET",
+      "team": "Detroit Pistons",
+      "pos": "PG",
+      "games": 8,
+      "minutes": 24,
+      "ratings": {
+        "off": 85,
+        "def": 73,
+        "shoot": 77,
+        "pass": 82,
+        "reb": 67,
+        "ovr": 81
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3157465",
+      "name": "Duncan Robinson",
+      "abbr": "DET",
+      "team": "Detroit Pistons",
+      "pos": "SF",
+      "games": 8,
+      "minutes": 31,
+      "ratings": {
+        "off": 96,
+        "def": 80,
+        "shoot": 94,
+        "pass": 73,
+        "reb": 64,
+        "ovr": 91
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5258459",
+      "name": "Ebuka Okorie",
+      "abbr": "DET",
+      "team": "Detroit Pistons",
+      "pos": "PG",
+      "games": 4,
+      "minutes": 3.5,
+      "ratings": {
+        "off": 71,
+        "def": 69,
+        "shoot": 40,
+        "pass": 67,
+        "reb": 59,
+        "ovr": 69
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4397449",
+      "name": "Elijah Harkless",
+      "abbr": "DET",
+      "team": "Detroit Pistons",
+      "pos": "PG",
+      "games": 1,
+      "minutes": 3,
+      "ratings": {
+        "off": 52,
+        "def": 66,
+        "shoot": 25,
+        "pass": 63,
+        "reb": 57,
+        "ovr": 59
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5107818",
+      "name": "Isaac Jones",
+      "abbr": "DET",
+      "team": "Detroit Pistons",
+      "pos": "C",
+      "games": 3,
+      "minutes": 3.7,
+      "ratings": {
+        "off": 74,
+        "def": 69,
+        "shoot": 26,
+        "pass": 65,
+        "reb": 63,
+        "ovr": 70
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4395702",
+      "name": "Isaiah Joe",
+      "abbr": "DET",
+      "team": "Detroit Pistons",
+      "pos": "PG",
+      "games": 3,
+      "minutes": 14,
+      "ratings": {
+        "off": 79,
+        "def": 72,
+        "shoot": 58,
+        "pass": 67,
+        "reb": 63,
+        "ovr": 73
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4433621",
+      "name": "Jalen Duren",
+      "abbr": "DET",
+      "team": "Detroit Pistons",
+      "pos": "C",
+      "games": 2,
+      "minutes": 19,
+      "ratings": {
+        "off": 93,
+        "def": 82,
+        "shoot": 40,
+        "pass": 72,
+        "reb": 84,
+        "ovr": 87
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "2596112",
+      "name": "Javonte Green",
+      "abbr": "DET",
+      "team": "Detroit Pistons",
+      "pos": "PG",
+      "games": 8,
+      "minutes": 18.4,
+      "ratings": {
+        "off": 80,
+        "def": 76,
+        "shoot": 71,
+        "pass": 65,
+        "reb": 66,
+        "ovr": 76
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3908845",
+      "name": "John Collins",
+      "abbr": "DET",
+      "team": "Detroit Pistons",
+      "pos": "PF",
+      "games": 8,
+      "minutes": 25.6,
+      "ratings": {
+        "off": 84,
+        "def": 78,
+        "shoot": 66,
+        "pass": 65,
+        "reb": 78,
+        "ovr": 81
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4066372",
+      "name": "Kevin Huerter",
+      "abbr": "DET",
+      "team": "Detroit Pistons",
+      "pos": "PG",
+      "games": 8,
+      "minutes": 20.4,
+      "ratings": {
+        "off": 79,
+        "def": 77,
+        "shoot": 70,
+        "pass": 71,
+        "reb": 65,
+        "ovr": 76
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4278562",
+      "name": "Paul Reed",
+      "abbr": "DET",
+      "team": "Detroit Pistons",
+      "pos": "PF",
+      "games": 8,
+      "minutes": 27.3,
+      "ratings": {
+        "off": 92,
+        "def": 84,
+        "shoot": 93,
+        "pass": 73,
+        "reb": 81,
+        "ovr": 90
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4683771",
+      "name": "Ronald Holland II",
+      "abbr": "DET",
+      "team": "Detroit Pistons",
+      "pos": "SF",
+      "games": 8,
+      "minutes": 15.8,
+      "ratings": {
+        "off": 80,
+        "def": 80,
+        "shoot": 67,
+        "pass": 71,
+        "reb": 69,
+        "ovr": 77
+      },
+      "source": "derived"
+    },
+    {
+      "id": "2990962",
+      "name": "Taurean Prince",
+      "abbr": "DET",
+      "team": "Detroit Pistons",
+      "pos": "SF",
+      "games": 2,
+      "minutes": 7,
+      "ratings": {
+        "off": 72,
+        "def": 71,
+        "shoot": 63,
+        "pass": 63,
+        "reb": 61,
+        "ovr": 69
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4397882",
+      "name": "Tolu Smith",
+      "abbr": "DET",
+      "team": "Detroit Pistons",
+      "pos": "PF",
+      "games": 7,
+      "minutes": 3.9,
+      "ratings": {
+        "off": 73,
+        "def": 67,
+        "shoot": 30,
+        "pass": 64,
+        "reb": 63,
+        "ovr": 69
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3213",
+      "name": "Al Horford",
+      "abbr": "GS",
+      "team": "Golden State Warriors",
+      "pos": "C",
+      "games": 8,
+      "minutes": 17.9,
+      "ratings": {
+        "off": 76,
+        "def": 74,
+        "shoot": 65,
+        "pass": 69,
+        "reb": 73,
+        "ovr": 75
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4709138",
+      "name": "Brandin Podziemski",
+      "abbr": "GS",
+      "team": "Golden State Warriors",
+      "pos": "PG",
+      "games": 8,
+      "minutes": 33.9,
+      "ratings": {
+        "off": 91,
+        "def": 84,
+        "shoot": 78,
+        "pass": 81,
+        "reb": 75,
+        "ovr": 86
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4397040",
+      "name": "Brandon Williams",
+      "abbr": "GS",
+      "team": "Golden State Warriors",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 17.7,
+      "ratings": {
+        "off": 84,
+        "def": 78,
+        "shoot": 68,
+        "pass": 74,
+        "reb": 65,
+        "ovr": 79
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4397886",
+      "name": "Charles Bassey",
+      "abbr": "GS",
+      "team": "Golden State Warriors",
+      "pos": "C",
+      "games": 8,
+      "minutes": 11.8,
+      "ratings": {
+        "off": 91,
+        "def": 76,
+        "shoot": 39,
+        "pass": 65,
+        "reb": 75,
+        "ovr": 82
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4066436",
+      "name": "De'Anthony Melton",
+      "abbr": "GS",
+      "team": "Golden State Warriors",
+      "pos": "PG",
+      "games": 10,
+      "minutes": 21.8,
+      "ratings": {
+        "off": 84,
+        "def": 83,
+        "shoot": 80,
+        "pass": 72,
+        "reb": 71,
+        "ovr": 83
+      },
+      "source": "derived"
+    },
+    {
+      "id": "6589",
+      "name": "Draymond Green",
+      "abbr": "GS",
+      "team": "Golden State Warriors",
+      "pos": "SF",
+      "games": 8,
+      "minutes": 27.5,
+      "ratings": {
+        "off": 73,
+        "def": 83,
+        "shoot": 51,
+        "pass": 96,
+        "reb": 75,
+        "ovr": 83
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3134903",
+      "name": "Gary Payton II",
+      "abbr": "GS",
+      "team": "Golden State Warriors",
+      "pos": "PG",
+      "games": 10,
+      "minutes": 13.4,
+      "ratings": {
+        "off": 84,
+        "def": 73,
+        "shoot": 61,
+        "pass": 65,
+        "reb": 62,
+        "ovr": 75
+      },
+      "source": "derived"
+    },
+    {
+      "id": "2990969",
+      "name": "Georges Niang",
+      "abbr": "GS",
+      "team": "Golden State Warriors",
+      "pos": "SF",
+      "games": 10,
+      "minutes": 20.7,
+      "ratings": {
+        "off": 85,
+        "def": 72,
+        "shoot": 71,
+        "pass": 70,
+        "reb": 68,
+        "ovr": 77
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4703396",
+      "name": "Graham Ike",
+      "abbr": "GS",
+      "team": "Golden State Warriors",
+      "pos": "PF",
+      "games": 7,
+      "minutes": 9.7,
+      "ratings": {
+        "off": 85,
+        "def": 68,
+        "shoot": 99,
+        "pass": 66,
+        "reb": 66,
+        "ovr": 84
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4997536",
+      "name": "Gui Santos",
+      "abbr": "GS",
+      "team": "Golden State Warriors",
+      "pos": "SF",
+      "games": 7,
+      "minutes": 18.9,
+      "ratings": {
+        "off": 83,
+        "def": 74,
+        "shoot": 66,
+        "pass": 68,
+        "reb": 70,
+        "ovr": 77
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4433149",
+      "name": "LJ Cryer",
+      "abbr": "GS",
+      "team": "Golden State Warriors",
+      "pos": "PG",
+      "games": 7,
+      "minutes": 4.3,
+      "ratings": {
+        "off": 75,
+        "def": 67,
+        "shoot": 77,
+        "pass": 67,
+        "reb": 58,
+        "ovr": 73
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4897449",
+      "name": "Malevy Leons",
+      "abbr": "GS",
+      "team": "Golden State Warriors",
+      "pos": "PF",
+      "games": 5,
+      "minutes": 3.6,
+      "ratings": {
+        "off": 60,
+        "def": 65,
+        "shoot": 26,
+        "pass": 63,
+        "reb": 59,
+        "ovr": 62
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3975",
+      "name": "Stephen Curry",
+      "abbr": "GS",
+      "team": "Golden State Warriors",
+      "pos": "PG",
+      "games": 8,
+      "minutes": 29.6,
+      "ratings": {
+        "off": 99,
+        "def": 79,
+        "shoot": 97,
+        "pass": 82,
+        "reb": 70,
+        "ovr": 93
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4897262",
+      "name": "Will Richard",
+      "abbr": "GS",
+      "team": "Golden State Warriors",
+      "pos": "PG",
+      "games": 10,
+      "minutes": 17.2,
+      "ratings": {
+        "off": 83,
+        "def": 73,
+        "shoot": 77,
+        "pass": 67,
+        "reb": 63,
+        "ovr": 78
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5175737",
+      "name": "Yaxel Lendeborg",
+      "abbr": "GS",
+      "team": "Golden State Warriors",
+      "pos": "SF",
+      "games": 10,
+      "minutes": 32.3,
+      "ratings": {
+        "off": 96,
+        "def": 84,
+        "shoot": 81,
+        "pass": 80,
+        "reb": 82,
+        "ovr": 88
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4871144",
+      "name": "Alperen Sengun",
+      "abbr": "HOU",
+      "team": "Houston Rockets",
+      "pos": "C",
+      "games": 8,
+      "minutes": 34.6,
+      "ratings": {
+        "off": 95,
+        "def": 84,
+        "shoot": 86,
+        "pass": 96,
+        "reb": 89,
+        "ovr": 92
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4684740",
+      "name": "Amen Thompson",
+      "abbr": "HOU",
+      "team": "Houston Rockets",
+      "pos": "PG",
+      "games": 10,
+      "minutes": 33.3,
+      "ratings": {
+        "off": 90,
+        "def": 86,
+        "shoot": 59,
+        "pass": 76,
+        "reb": 78,
+        "ovr": 85
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3037789",
+      "name": "Bogdan Bogdanovic",
+      "abbr": "HOU",
+      "team": "Houston Rockets",
+      "pos": "PG",
+      "games": 10,
+      "minutes": 11.3,
+      "ratings": {
+        "off": 85,
+        "def": 69,
+        "shoot": 80,
+        "pass": 67,
+        "reb": 61,
+        "ovr": 79
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5105837",
+      "name": "Bruce Thornton",
+      "abbr": "HOU",
+      "team": "Houston Rockets",
+      "pos": "PG",
+      "games": 6,
+      "minutes": 3.2,
+      "ratings": {
+        "off": 78,
+        "def": 68,
+        "shoot": 69,
+        "pass": 63,
+        "reb": 58,
+        "ovr": 72
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3102529",
+      "name": "Clint Capela",
+      "abbr": "HOU",
+      "team": "Houston Rockets",
+      "pos": "C",
+      "games": 6,
+      "minutes": 14.2,
+      "ratings": {
+        "off": 86,
+        "def": 76,
+        "shoot": 33,
+        "pass": 70,
+        "reb": 76,
+        "ovr": 80
+      },
+      "source": "derived"
+    },
+    {
+      "id": "2991230",
+      "name": "Fred VanVleet",
+      "abbr": "HOU",
+      "team": "Houston Rockets",
+      "pos": "PG",
+      "games": 8,
+      "minutes": 30,
+      "ratings": {
+        "off": 88,
+        "def": 80,
+        "shoot": 78,
+        "pass": 88,
+        "reb": 68,
+        "ovr": 86
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4592857",
+      "name": "Isaiah Crawford",
+      "abbr": "HOU",
+      "team": "Houston Rockets",
+      "pos": "SF",
+      "games": 6,
+      "minutes": 5,
+      "ratings": {
+        "off": 78,
+        "def": 65,
+        "shoot": 70,
+        "pass": 63,
+        "reb": 58,
+        "ovr": 72
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4432639",
+      "name": "Jabari Smith Jr.",
+      "abbr": "HOU",
+      "team": "Houston Rockets",
+      "pos": "PF",
+      "games": 10,
+      "minutes": 35.1,
+      "ratings": {
+        "off": 95,
+        "def": 83,
+        "shoot": 89,
+        "pass": 73,
+        "reb": 79,
+        "ovr": 90
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "3136777",
+      "name": "Jae'Sean Tate",
+      "abbr": "HOU",
+      "team": "Houston Rockets",
+      "pos": "SF",
+      "games": 6,
+      "minutes": 2.7,
+      "ratings": {
+        "off": 52,
+        "def": 66,
+        "shoot": 25,
+        "pass": 64,
+        "reb": 60,
+        "ovr": 60
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3202",
+      "name": "Kevin Durant",
+      "abbr": "HOU",
+      "team": "Houston Rockets",
+      "pos": "SF",
+      "games": 10,
+      "minutes": 34.1,
+      "ratings": {
+        "off": 96,
+        "def": 85,
+        "shoot": 76,
+        "pass": 76,
+        "reb": 77,
+        "ovr": 87
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "2990992",
+      "name": "Marcus Smart",
+      "abbr": "HOU",
+      "team": "Houston Rockets",
+      "pos": "PG",
+      "games": 7,
+      "minutes": 22.7,
+      "ratings": {
+        "off": 84,
+        "def": 77,
+        "shoot": 76,
+        "pass": 72,
+        "reb": 66,
+        "ovr": 80
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4432827",
+      "name": "Oscar Tshiebwe",
+      "abbr": "HOU",
+      "team": "Houston Rockets",
+      "pos": "C",
+      "games": 6,
+      "minutes": 7,
+      "ratings": {
+        "off": 94,
+        "def": 67,
+        "shoot": 30,
+        "pass": 65,
+        "reb": 64,
+        "ovr": 78
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4711272",
+      "name": "Reed Sheppard",
+      "abbr": "HOU",
+      "team": "Houston Rockets",
+      "pos": "PG",
+      "games": 7,
+      "minutes": 20.6,
+      "ratings": {
+        "off": 85,
+        "def": 79,
+        "shoot": 75,
+        "pass": 76,
+        "reb": 64,
+        "ovr": 81
+      },
+      "source": "derived"
+    },
+    {
+      "id": "2991235",
+      "name": "Steven Adams",
+      "abbr": "HOU",
+      "team": "Houston Rockets",
+      "pos": "C",
+      "games": 1,
+      "minutes": 8,
+      "ratings": {
+        "off": 98,
+        "def": 65,
+        "shoot": 26,
+        "pass": 67,
+        "reb": 64,
+        "ovr": 79
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4433192",
+      "name": "Tari Eason",
+      "abbr": "HOU",
+      "team": "Houston Rockets",
+      "pos": "SF",
+      "games": 10,
+      "minutes": 24.2,
+      "ratings": {
+        "off": 85,
+        "def": 86,
+        "shoot": 64,
+        "pass": 69,
+        "reb": 78,
+        "ovr": 83
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4396909",
+      "name": "Aaron Nesmith",
+      "abbr": "IND",
+      "team": "Indiana Pacers",
+      "pos": "PG",
+      "games": 8,
+      "minutes": 24.5,
+      "ratings": {
+        "off": 85,
+        "def": 77,
+        "shoot": 70,
+        "pass": 71,
+        "reb": 65,
+        "ovr": 79
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4395712",
+      "name": "Andrew Nembhard",
+      "abbr": "IND",
+      "team": "Indiana Pacers",
+      "pos": "PG",
+      "games": 8,
+      "minutes": 33.1,
+      "ratings": {
+        "off": 93,
+        "def": 73,
+        "shoot": 83,
+        "pass": 92,
+        "reb": 64,
+        "ovr": 87
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4433076",
+      "name": "Ben Sheppard",
+      "abbr": "IND",
+      "team": "Indiana Pacers",
+      "pos": "PG",
+      "games": 1,
+      "minutes": 12,
+      "ratings": {
+        "off": 70,
+        "def": 67,
+        "shoot": 71,
+        "pass": 63,
+        "reb": 61,
+        "ovr": 69
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5105854",
+      "name": "Braden Smith",
+      "abbr": "IND",
+      "team": "Indiana Pacers",
+      "pos": "PG",
+      "games": 7,
+      "minutes": 13.6,
+      "ratings": {
+        "off": 79,
+        "def": 76,
+        "shoot": 58,
+        "pass": 75,
+        "reb": 60,
+        "ovr": 77
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4017837",
+      "name": "Ivica Zubac",
+      "abbr": "IND",
+      "team": "Indiana Pacers",
+      "pos": "C",
+      "games": 5,
+      "minutes": 20.4,
+      "ratings": {
+        "off": 85,
+        "def": 77,
+        "shoot": 35,
+        "pass": 72,
+        "reb": 88,
+        "ovr": 84
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4398207",
+      "name": "Jalen Slawson",
+      "abbr": "IND",
+      "team": "Indiana Pacers",
+      "pos": "SF",
+      "games": 9,
+      "minutes": 14.9,
+      "ratings": {
+        "off": 80,
+        "def": 79,
+        "shoot": 54,
+        "pass": 68,
+        "reb": 68,
+        "ovr": 76
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5106060",
+      "name": "Jarace Walker",
+      "abbr": "IND",
+      "team": "Indiana Pacers",
+      "pos": "SF",
+      "games": 10,
+      "minutes": 23.4,
+      "ratings": {
+        "off": 79,
+        "def": 79,
+        "shoot": 64,
+        "pass": 72,
+        "reb": 79,
+        "ovr": 79
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4065731",
+      "name": "Jay Huff",
+      "abbr": "IND",
+      "team": "Indiana Pacers",
+      "pos": "C",
+      "games": 9,
+      "minutes": 18.2,
+      "ratings": {
+        "off": 86,
+        "def": 72,
+        "shoot": 66,
+        "pass": 67,
+        "reb": 71,
+        "ovr": 78
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3133603",
+      "name": "Kelly Oubre Jr.",
+      "abbr": "IND",
+      "team": "Indiana Pacers",
+      "pos": "PG",
+      "games": 8,
+      "minutes": 22.3,
+      "ratings": {
+        "off": 82,
+        "def": 77,
+        "shoot": 59,
+        "pass": 69,
+        "reb": 65,
+        "ovr": 77
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4431752",
+      "name": "Kobe Brown",
+      "abbr": "IND",
+      "team": "Indiana Pacers",
+      "pos": "PG",
+      "games": 6,
+      "minutes": 13.7,
+      "ratings": {
+        "off": 81,
+        "def": 70,
+        "shoot": 61,
+        "pass": 67,
+        "reb": 65,
+        "ovr": 74
+      },
+      "source": "derived"
+    },
+    {
+      "id": "2580365",
+      "name": "Larry Nance Jr.",
+      "abbr": "IND",
+      "team": "Indiana Pacers",
+      "pos": "SF",
+      "games": 9,
+      "minutes": 15.8,
+      "ratings": {
+        "off": 78,
+        "def": 74,
+        "shoot": 71,
+        "pass": 66,
+        "reb": 68,
+        "ovr": 75
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4278355",
+      "name": "Obi Toppin",
+      "abbr": "IND",
+      "team": "Indiana Pacers",
+      "pos": "PF",
+      "games": 7,
+      "minutes": 22.3,
+      "ratings": {
+        "off": 91,
+        "def": 73,
+        "shoot": 76,
+        "pass": 69,
+        "reb": 76,
+        "ovr": 81
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3149673",
+      "name": "Pascal Siakam",
+      "abbr": "IND",
+      "team": "Indiana Pacers",
+      "pos": "PF",
+      "games": 9,
+      "minutes": 31.9,
+      "ratings": {
+        "off": 95,
+        "def": 77,
+        "shoot": 68,
+        "pass": 79,
+        "reb": 80,
+        "ovr": 85
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4592829",
+      "name": "Quenton Jackson",
+      "abbr": "IND",
+      "team": "Indiana Pacers",
+      "pos": "PG",
+      "games": 10,
+      "minutes": 21.3,
+      "ratings": {
+        "off": 87,
+        "def": 81,
+        "shoot": 71,
+        "pass": 74,
+        "reb": 69,
+        "ovr": 81
+      },
+      "source": "derived"
+    },
+    {
+      "id": "2530530",
+      "name": "T.J. McConnell",
+      "abbr": "IND",
+      "team": "Indiana Pacers",
+      "pos": "PG",
+      "games": 1,
+      "minutes": 9,
+      "ratings": {
+        "off": 82,
+        "def": 75,
+        "shoot": 27,
+        "pass": 67,
+        "reb": 64,
+        "ovr": 76
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4396993",
+      "name": "Tyrese Haliburton",
+      "abbr": "IND",
+      "team": "Indiana Pacers",
+      "pos": "PG",
+      "games": 4,
+      "minutes": 33,
+      "ratings": {
+        "off": 98,
+        "def": 85,
+        "shoot": 81,
+        "pass": 99,
+        "reb": 72,
+        "ovr": 95
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "5075626",
+      "name": "Baba Miller",
+      "abbr": "LAC",
+      "team": "LA Clippers",
+      "pos": "PF",
+      "games": 7,
+      "minutes": 8.4,
+      "ratings": {
+        "off": 88,
+        "def": 71,
+        "shoot": 79,
+        "pass": 66,
+        "reb": 64,
+        "ovr": 80
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4683935",
+      "name": "Blake Wesley",
+      "abbr": "LAC",
+      "team": "LA Clippers",
+      "pos": "PG",
+      "games": 2,
+      "minutes": 4.5,
+      "ratings": {
+        "off": 61,
+        "def": 69,
+        "shoot": 40,
+        "pass": 63,
+        "reb": 64,
+        "ovr": 64
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3448",
+      "name": "Brook Lopez",
+      "abbr": "LAC",
+      "team": "LA Clippers",
+      "pos": "C",
+      "games": 8,
+      "minutes": 23.5,
+      "ratings": {
+        "off": 92,
+        "def": 78,
+        "shoot": 78,
+        "pass": 67,
+        "reb": 75,
+        "ovr": 84
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4845363",
+      "name": "Cam Christie",
+      "abbr": "LAC",
+      "team": "LA Clippers",
+      "pos": "PG",
+      "games": 4,
+      "minutes": 6.8,
+      "ratings": {
+        "off": 70,
+        "def": 69,
+        "shoot": 62,
+        "pass": 65,
+        "reb": 59,
+        "ovr": 68
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4396907",
+      "name": "Darius Garland",
+      "abbr": "LAC",
+      "team": "LA Clippers",
+      "pos": "PG",
+      "games": 8,
+      "minutes": 33.8,
+      "ratings": {
+        "off": 95,
+        "def": 72,
+        "shoot": 79,
+        "pass": 91,
+        "reb": 62,
+        "ovr": 87
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "3936099",
+      "name": "Derrick Jones Jr.",
+      "abbr": "LAC",
+      "team": "LA Clippers",
+      "pos": "SF",
+      "games": 7,
+      "minutes": 29.9,
+      "ratings": {
+        "off": 89,
+        "def": 83,
+        "shoot": 86,
+        "pass": 69,
+        "reb": 75,
+        "ovr": 86
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5106258",
+      "name": "Gradey Dick",
+      "abbr": "LAC",
+      "team": "LA Clippers",
+      "pos": "PG",
+      "games": 8,
+      "minutes": 14.8,
+      "ratings": {
+        "off": 84,
+        "def": 75,
+        "shoot": 74,
+        "pass": 66,
+        "reb": 67,
+        "ovr": 78
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4432170",
+      "name": "Isaiah Jackson",
+      "abbr": "LAC",
+      "team": "LA Clippers",
+      "pos": "SF",
+      "games": 8,
+      "minutes": 21,
+      "ratings": {
+        "off": 87,
+        "def": 85,
+        "shoot": 99,
+        "pass": 73,
+        "reb": 78,
+        "ovr": 90
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4398390",
+      "name": "Jalen Pickett",
+      "abbr": "LAC",
+      "team": "LA Clippers",
+      "pos": "PG",
+      "games": 3,
+      "minutes": 5.3,
+      "ratings": {
+        "off": 80,
+        "def": 69,
+        "shoot": 69,
+        "pass": 69,
+        "reb": 61,
+        "ovr": 74
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5254165",
+      "name": "Keaton Wagler",
+      "abbr": "LAC",
+      "team": "LA Clippers",
+      "pos": "PG",
+      "games": 8,
+      "minutes": 23.8,
+      "ratings": {
+        "off": 82,
+        "def": 77,
+        "shoot": 74,
+        "pass": 77,
+        "reb": 71,
+        "ovr": 79
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4702352",
+      "name": "Kobe Sanders",
+      "abbr": "LAC",
+      "team": "LA Clippers",
+      "pos": "PG",
+      "games": 8,
+      "minutes": 24.4,
+      "ratings": {
+        "off": 87,
+        "def": 77,
+        "shoot": 79,
+        "pass": 72,
+        "reb": 67,
+        "ovr": 82
+      },
+      "source": "derived"
+    },
+    {
+      "id": "2991139",
+      "name": "Kris Dunn",
+      "abbr": "LAC",
+      "team": "LA Clippers",
+      "pos": "PG",
+      "games": 8,
+      "minutes": 30.4,
+      "ratings": {
+        "off": 87,
+        "def": 93,
+        "shoot": 71,
+        "pass": 82,
+        "reb": 71,
+        "ovr": 87
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4065778",
+      "name": "Max Strus",
+      "abbr": "LAC",
+      "team": "LA Clippers",
+      "pos": "PG",
+      "games": 2,
+      "minutes": 23,
+      "ratings": {
+        "off": 79,
+        "def": 78,
+        "shoot": 74,
+        "pass": 86,
+        "reb": 72,
+        "ovr": 81
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5105832",
+      "name": "Nick Martinelli",
+      "abbr": "LAC",
+      "team": "LA Clippers",
+      "pos": "SF",
+      "games": 4,
+      "minutes": 5,
+      "ratings": {
+        "off": 89,
+        "def": 66,
+        "shoot": 98,
+        "pass": 65,
+        "reb": 63,
+        "ovr": 85
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4066648",
+      "name": "Rui Hachimura",
+      "abbr": "LAC",
+      "team": "LA Clippers",
+      "pos": "SF",
+      "games": 6,
+      "minutes": 31.2,
+      "ratings": {
+        "off": 85,
+        "def": 79,
+        "shoot": 73,
+        "pass": 70,
+        "reb": 80,
+        "ovr": 82
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5060631",
+      "name": "Adou Thiero",
+      "abbr": "LAL",
+      "team": "Los Angeles Lakers",
+      "pos": "SF",
+      "games": 1,
+      "minutes": 7,
+      "ratings": {
+        "off": 76,
+        "def": 69,
+        "shoot": 26,
+        "pass": 72,
+        "reb": 71,
+        "ovr": 73
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4066457",
+      "name": "Austin Reaves",
+      "abbr": "LAL",
+      "team": "Los Angeles Lakers",
+      "pos": "SG",
+      "games": 10,
+      "minutes": 36.2,
+      "ratings": {
+        "off": 99,
+        "def": 80,
+        "shoot": 82,
+        "pass": 83,
+        "reb": 68,
+        "ovr": 89
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4683774",
+      "name": "Bronny James",
+      "abbr": "LAL",
+      "team": "Los Angeles Lakers",
+      "pos": "PG",
+      "games": 5,
+      "minutes": 2.4,
+      "ratings": {
+        "off": 81,
+        "def": 68,
+        "shoot": 26,
+        "pass": 63,
+        "reb": 57,
+        "ovr": 72
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5113969",
+      "name": "Cameron Carr",
+      "abbr": "LAL",
+      "team": "Los Angeles Lakers",
+      "pos": "PG",
+      "games": 3,
+      "minutes": 1.3,
+      "ratings": {
+        "off": 52,
+        "def": 66,
+        "shoot": 25,
+        "pass": 63,
+        "reb": 57,
+        "ovr": 59
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4702972",
+      "name": "Chris Manon",
+      "abbr": "LAL",
+      "team": "Los Angeles Lakers",
+      "pos": "PG",
+      "games": 2,
+      "minutes": 3.5,
+      "ratings": {
+        "off": 67,
+        "def": 67,
+        "shoot": 26,
+        "pass": 63,
+        "reb": 59,
+        "ovr": 66
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4277811",
+      "name": "Collin Sexton",
+      "abbr": "LAL",
+      "team": "Los Angeles Lakers",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 16.6,
+      "ratings": {
+        "off": 82,
+        "def": 74,
+        "shoot": 62,
+        "pass": 72,
+        "reb": 63,
+        "ovr": 77
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4868423",
+      "name": "Jaden Hardy",
+      "abbr": "LAL",
+      "team": "Los Angeles Lakers",
+      "pos": "PG",
+      "games": 6,
+      "minutes": 3.5,
+      "ratings": {
+        "off": 64,
+        "def": 69,
+        "shoot": 49,
+        "pass": 65,
+        "reb": 59,
+        "ovr": 66
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4592691",
+      "name": "Jake LaRavia",
+      "abbr": "LAL",
+      "team": "Los Angeles Lakers",
+      "pos": "SF",
+      "games": 9,
+      "minutes": 23.4,
+      "ratings": {
+        "off": 85,
+        "def": 85,
+        "shoot": 87,
+        "pass": 70,
+        "reb": 71,
+        "ovr": 86
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4278077",
+      "name": "Jarred Vanderbilt",
+      "abbr": "LAL",
+      "team": "Los Angeles Lakers",
+      "pos": "SF",
+      "games": 5,
+      "minutes": 11.8,
+      "ratings": {
+        "off": 85,
+        "def": 70,
+        "shoot": 26,
+        "pass": 68,
+        "reb": 68,
+        "ovr": 76
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3155535",
+      "name": "Kevon Looney",
+      "abbr": "LAL",
+      "team": "Los Angeles Lakers",
+      "pos": "PF",
+      "games": 5,
+      "minutes": 5.8,
+      "ratings": {
+        "off": 83,
+        "def": 64,
+        "shoot": 40,
+        "pass": 64,
+        "reb": 63,
+        "ovr": 72
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4596528",
+      "name": "Lawson Lovering",
+      "abbr": "LAL",
+      "team": "Los Angeles Lakers",
+      "pos": "C",
+      "games": 2,
+      "minutes": 1.5,
+      "ratings": {
+        "off": 52,
+        "def": 66,
+        "shoot": 25,
+        "pass": 63,
+        "reb": 59,
+        "ovr": 59
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3945274",
+      "name": "Luka Doncic",
+      "abbr": "LAL",
+      "team": "Los Angeles Lakers",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 36,
+      "ratings": {
+        "off": 99,
+        "def": 91,
+        "shoot": 98,
+        "pass": 95,
+        "reb": 83,
+        "ovr": 96
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "3907498",
+      "name": "Matisse Thybulle",
+      "abbr": "LAL",
+      "team": "Los Angeles Lakers",
+      "pos": "PG",
+      "games": 10,
+      "minutes": 24.3,
+      "ratings": {
+        "off": 84,
+        "def": 86,
+        "shoot": 80,
+        "pass": 68,
+        "reb": 63,
+        "ovr": 83
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4397014",
+      "name": "Quentin Grimes",
+      "abbr": "LAL",
+      "team": "Los Angeles Lakers",
+      "pos": "PG",
+      "games": 10,
+      "minutes": 25.5,
+      "ratings": {
+        "off": 83,
+        "def": 76,
+        "shoot": 57,
+        "pass": 73,
+        "reb": 66,
+        "ovr": 78
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4278580",
+      "name": "Sandro Mamukelashvili",
+      "abbr": "LAL",
+      "team": "Los Angeles Lakers",
+      "pos": "PF",
+      "games": 10,
+      "minutes": 23.1,
+      "ratings": {
+        "off": 85,
+        "def": 77,
+        "shoot": 68,
+        "pass": 70,
+        "reb": 72,
+        "ovr": 79
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4433136",
+      "name": "Walker Kessler",
+      "abbr": "LAL",
+      "team": "Los Angeles Lakers",
+      "pos": "C",
+      "games": 10,
+      "minutes": 31.2,
+      "ratings": {
+        "off": 97,
+        "def": 99,
+        "shoot": 36,
+        "pass": 68,
+        "reb": 94,
+        "ovr": 97
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4433137",
+      "name": "Ziaire Williams",
+      "abbr": "LAL",
+      "team": "Los Angeles Lakers",
+      "pos": "PF",
+      "games": 7,
+      "minutes": 24.6,
+      "ratings": {
+        "off": 91,
+        "def": 77,
+        "shoot": 84,
+        "pass": 71,
+        "reb": 68,
+        "ovr": 85
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4433083",
+      "name": "Cam Spencer",
+      "abbr": "MEM",
+      "team": "Memphis Grizzlies",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 19.7,
+      "ratings": {
+        "off": 90,
+        "def": 75,
+        "shoot": 90,
+        "pass": 84,
+        "reb": 68,
+        "ovr": 86
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5041935",
+      "name": "Cameron Boozer",
+      "abbr": "MEM",
+      "team": "Memphis Grizzlies",
+      "pos": "PF",
+      "games": 9,
+      "minutes": 32.1,
+      "ratings": {
+        "off": 86,
+        "def": 84,
+        "shoot": 74,
+        "pass": 85,
+        "reb": 92,
+        "ovr": 87
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "5105817",
+      "name": "Carson Cooper",
+      "abbr": "MEM",
+      "team": "Memphis Grizzlies",
+      "pos": "C",
+      "games": 1,
+      "minutes": 3,
+      "ratings": {
+        "off": 57,
+        "def": 65,
+        "shoot": 33,
+        "pass": 67,
+        "reb": 64,
+        "ovr": 62
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4903027",
+      "name": "Cedric Coward",
+      "abbr": "MEM",
+      "team": "Memphis Grizzlies",
+      "pos": "SF",
+      "games": 8,
+      "minutes": 28.5,
+      "ratings": {
+        "off": 89,
+        "def": 85,
+        "shoot": 87,
+        "pass": 73,
+        "reb": 88,
+        "ovr": 88
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5105550",
+      "name": "GG Jackson",
+      "abbr": "MEM",
+      "team": "Memphis Grizzlies",
+      "pos": "PF",
+      "games": 8,
+      "minutes": 15.6,
+      "ratings": {
+        "off": 81,
+        "def": 69,
+        "shoot": 73,
+        "pass": 67,
+        "reb": 69,
+        "ovr": 75
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4432810",
+      "name": "Isaiah Stewart",
+      "abbr": "MEM",
+      "team": "Memphis Grizzlies",
+      "pos": "C",
+      "games": 7,
+      "minutes": 18.3,
+      "ratings": {
+        "off": 98,
+        "def": 71,
+        "shoot": 94,
+        "pass": 66,
+        "reb": 69,
+        "ovr": 89
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4683934",
+      "name": "Jahmai Mashack",
+      "abbr": "MEM",
+      "team": "Memphis Grizzlies",
+      "pos": "PG",
+      "games": 3,
+      "minutes": 2.7,
+      "ratings": {
+        "off": 74,
+        "def": 68,
+        "shoot": 26,
+        "pass": 67,
+        "reb": 57,
+        "ovr": 70
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4781746",
+      "name": "Javon Small",
+      "abbr": "MEM",
+      "team": "Memphis Grizzlies",
+      "pos": "PG",
+      "games": 2,
+      "minutes": 20.5,
+      "ratings": {
+        "off": 78,
+        "def": 69,
+        "shoot": 73,
+        "pass": 78,
+        "reb": 65,
+        "ovr": 75
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5112087",
+      "name": "Jaylen Wells",
+      "abbr": "MEM",
+      "team": "Memphis Grizzlies",
+      "pos": "SF",
+      "games": 9,
+      "minutes": 27.1,
+      "ratings": {
+        "off": 88,
+        "def": 74,
+        "shoot": 72,
+        "pass": 69,
+        "reb": 68,
+        "ovr": 79
+      },
+      "source": "derived"
+    },
+    {
+      "id": "2991070",
+      "name": "Jerami Grant",
+      "abbr": "MEM",
+      "team": "Memphis Grizzlies",
+      "pos": "SF",
+      "games": 9,
+      "minutes": 24.1,
+      "ratings": {
+        "off": 83,
+        "def": 75,
+        "shoot": 76,
+        "pass": 72,
+        "reb": 64,
+        "ovr": 79
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5231919",
+      "name": "Karim Lopez",
+      "abbr": "MEM",
+      "team": "Memphis Grizzlies",
+      "pos": "SF",
+      "games": 3,
+      "minutes": 3.7,
+      "ratings": {
+        "off": 82,
+        "def": 67,
+        "shoot": 40,
+        "pass": 63,
+        "reb": 60,
+        "ovr": 72
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4594326",
+      "name": "Kris Murray",
+      "abbr": "MEM",
+      "team": "Memphis Grizzlies",
+      "pos": "SF",
+      "games": 6,
+      "minutes": 14,
+      "ratings": {
+        "off": 70,
+        "def": 73,
+        "shoot": 47,
+        "pass": 67,
+        "reb": 64,
+        "ovr": 70
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4595400",
+      "name": "Olivier-Maxence Prosper",
+      "abbr": "MEM",
+      "team": "Memphis Grizzlies",
+      "pos": "SF",
+      "games": 4,
+      "minutes": 6.3,
+      "ratings": {
+        "off": 76,
+        "def": 66,
+        "shoot": 26,
+        "pass": 67,
+        "reb": 63,
+        "ovr": 70
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4593016",
+      "name": "Quinten Post",
+      "abbr": "MEM",
+      "team": "Memphis Grizzlies",
+      "pos": "C",
+      "games": 7,
+      "minutes": 14.6,
+      "ratings": {
+        "off": 83,
+        "def": 68,
+        "shoot": 61,
+        "pass": 65,
+        "reb": 65,
+        "ovr": 73
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4431785",
+      "name": "Scotty Pippen Jr.",
+      "abbr": "MEM",
+      "team": "Memphis Grizzlies",
+      "pos": "PG",
+      "games": 5,
+      "minutes": 16,
+      "ratings": {
+        "off": 81,
+        "def": 76,
+        "shoot": 58,
+        "pass": 72,
+        "reb": 64,
+        "ovr": 77
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4684806",
+      "name": "Taylor Hendricks",
+      "abbr": "MEM",
+      "team": "Memphis Grizzlies",
+      "pos": "PF",
+      "games": 4,
+      "minutes": 4.3,
+      "ratings": {
+        "off": 77,
+        "def": 64,
+        "shoot": 78,
+        "pass": 63,
+        "reb": 62,
+        "ovr": 74
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4065733",
+      "name": "Ty Jerome",
+      "abbr": "MEM",
+      "team": "Memphis Grizzlies",
+      "pos": "PG",
+      "games": 8,
+      "minutes": 30.4,
+      "ratings": {
+        "off": 99,
+        "def": 78,
+        "shoot": 81,
+        "pass": 85,
+        "reb": 68,
+        "ovr": 89
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4600663",
+      "name": "Zach Edey",
+      "abbr": "MEM",
+      "team": "Memphis Grizzlies",
+      "pos": "C",
+      "games": 8,
+      "minutes": 20.5,
+      "ratings": {
+        "off": 87,
+        "def": 82,
+        "shoot": 99,
+        "pass": 67,
+        "reb": 85,
+        "ovr": 89
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3059319",
+      "name": "Andrew Wiggins",
+      "abbr": "MIA",
+      "team": "Miami Heat",
+      "pos": "SF",
+      "games": 9,
+      "minutes": 25.9,
+      "ratings": {
+        "off": 82,
+        "def": 77,
+        "shoot": 65,
+        "pass": 70,
+        "reb": 68,
+        "ovr": 77
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4066261",
+      "name": "Bam Adebayo",
+      "abbr": "MIA",
+      "team": "Miami Heat",
+      "pos": "C",
+      "games": 9,
+      "minutes": 32.7,
+      "ratings": {
+        "off": 94,
+        "def": 84,
+        "shoot": 56,
+        "pass": 76,
+        "reb": 87,
+        "ovr": 89
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "3064482",
+      "name": "Bobby Portis",
+      "abbr": "MIA",
+      "team": "Miami Heat",
+      "pos": "PF",
+      "games": 9,
+      "minutes": 20.8,
+      "ratings": {
+        "off": 81,
+        "def": 80,
+        "shoot": 70,
+        "pass": 71,
+        "reb": 81,
+        "ovr": 81
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4278053",
+      "name": "Davion Mitchell",
+      "abbr": "MIA",
+      "team": "Miami Heat",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 35.1,
+      "ratings": {
+        "off": 92,
+        "def": 80,
+        "shoot": 80,
+        "pass": 97,
+        "reb": 62,
+        "ovr": 90
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4066993",
+      "name": "Dru Smith",
+      "abbr": "MIA",
+      "team": "Miami Heat",
+      "pos": "PG",
+      "games": 6,
+      "minutes": 8.3,
+      "ratings": {
+        "off": 79,
+        "def": 70,
+        "shoot": 79,
+        "pass": 69,
+        "reb": 61,
+        "ovr": 76
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3032977",
+      "name": "Giannis Antetokounmpo",
+      "abbr": "MIA",
+      "team": "Miami Heat",
+      "pos": "PF",
+      "games": 9,
+      "minutes": 32.7,
+      "ratings": {
+        "off": 99,
+        "def": 93,
+        "shoot": 60,
+        "pass": 87,
+        "reb": 99,
+        "ovr": 97
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "6475",
+      "name": "Klay Thompson",
+      "abbr": "MIA",
+      "team": "Miami Heat",
+      "pos": "SG",
+      "games": 9,
+      "minutes": 23.4,
+      "ratings": {
+        "off": 91,
+        "def": 71,
+        "shoot": 88,
+        "pass": 70,
+        "reb": 62,
+        "ovr": 84
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4431772",
+      "name": "Myron Gardner",
+      "abbr": "MIA",
+      "team": "Miami Heat",
+      "pos": "SF",
+      "games": 5,
+      "minutes": 2,
+      "ratings": {
+        "off": 61,
+        "def": 66,
+        "shoot": 40,
+        "pass": 64,
+        "reb": 59,
+        "ovr": 63
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4278076",
+      "name": "Nick Richards",
+      "abbr": "MIA",
+      "team": "Miami Heat",
+      "pos": "C",
+      "games": 5,
+      "minutes": 2,
+      "ratings": {
+        "off": 96,
+        "def": 63,
+        "shoot": 99,
+        "pass": 64,
+        "reb": 59,
+        "ovr": 87
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4997528",
+      "name": "Nikola Jovic",
+      "abbr": "MIA",
+      "team": "Miami Heat",
+      "pos": "PF",
+      "games": 7,
+      "minutes": 12.1,
+      "ratings": {
+        "off": 72,
+        "def": 70,
+        "shoot": 44,
+        "pass": 67,
+        "reb": 66,
+        "ovr": 70
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4601025",
+      "name": "Pelle Larsson",
+      "abbr": "MIA",
+      "team": "Miami Heat",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 30.1,
+      "ratings": {
+        "off": 87,
+        "def": 79,
+        "shoot": 77,
+        "pass": 79,
+        "reb": 67,
+        "ovr": 82
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5107157",
+      "name": "Ryan Conwell",
+      "abbr": "MIA",
+      "team": "Miami Heat",
+      "pos": "PG",
+      "games": 7,
+      "minutes": 10.3,
+      "ratings": {
+        "off": 78,
+        "def": 71,
+        "shoot": 73,
+        "pass": 67,
+        "reb": 60,
+        "ovr": 75
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3899664",
+      "name": "Simone Fontecchio",
+      "abbr": "MIA",
+      "team": "Miami Heat",
+      "pos": "SF",
+      "games": 4,
+      "minutes": 3,
+      "ratings": {
+        "off": 59,
+        "def": 66,
+        "shoot": 41,
+        "pass": 63,
+        "reb": 59,
+        "ovr": 62
+      },
+      "source": "derived"
+    },
+    {
+      "id": "2528210",
+      "name": "Tim Hardaway Jr.",
+      "abbr": "MIA",
+      "team": "Miami Heat",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 15.4,
+      "ratings": {
+        "off": 74,
+        "def": 72,
+        "shoot": 60,
+        "pass": 66,
+        "reb": 62,
+        "ovr": 71
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4397475",
+      "name": "AJ Green",
+      "abbr": "MIL",
+      "team": "Milwaukee Bucks",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 20.4,
+      "ratings": {
+        "off": 86,
+        "def": 70,
+        "shoot": 86,
+        "pass": 70,
+        "reb": 64,
+        "ovr": 81
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5214989",
+      "name": "Bogoljub Markovic",
+      "abbr": "MIL",
+      "team": "Milwaukee Bucks",
+      "pos": "PF",
+      "games": 1,
+      "minutes": 5,
+      "ratings": {
+        "off": 96,
+        "def": 64,
+        "shoot": 26,
+        "pass": 63,
+        "reb": 61,
+        "ovr": 77
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5082206",
+      "name": "Brayden Burries",
+      "abbr": "MIL",
+      "team": "Milwaukee Bucks",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 20.1,
+      "ratings": {
+        "off": 84,
+        "def": 77,
+        "shoot": 58,
+        "pass": 72,
+        "reb": 74,
+        "ovr": 79
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4277843",
+      "name": "Gary Trent Jr.",
+      "abbr": "MIL",
+      "team": "Milwaukee Bucks",
+      "pos": "PG",
+      "games": 2,
+      "minutes": 6.5,
+      "ratings": {
+        "off": 72,
+        "def": 67,
+        "shoot": 71,
+        "pass": 65,
+        "reb": 59,
+        "ovr": 70
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4432848",
+      "name": "Jaime Jaquez Jr.",
+      "abbr": "MIL",
+      "team": "Milwaukee Bucks",
+      "pos": "SF",
+      "games": 9,
+      "minutes": 28.4,
+      "ratings": {
+        "off": 91,
+        "def": 75,
+        "shoot": 82,
+        "pass": 75,
+        "reb": 79,
+        "ovr": 84
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4277922",
+      "name": "Jericho Sims",
+      "abbr": "MIL",
+      "team": "Milwaukee Bucks",
+      "pos": "C",
+      "games": 5,
+      "minutes": 6.2,
+      "ratings": {
+        "off": 52,
+        "def": 63,
+        "shoot": 25,
+        "pass": 64,
+        "reb": 59,
+        "ovr": 59
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5214640",
+      "name": "Kasparas Jakucionis",
+      "abbr": "MIL",
+      "team": "Milwaukee Bucks",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 19.8,
+      "ratings": {
+        "off": 83,
+        "def": 74,
+        "shoot": 59,
+        "pass": 79,
+        "reb": 66,
+        "ovr": 79
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5105623",
+      "name": "Kel'el Ware",
+      "abbr": "MIL",
+      "team": "Milwaukee Bucks",
+      "pos": "C",
+      "games": 9,
+      "minutes": 18.2,
+      "ratings": {
+        "off": 83,
+        "def": 79,
+        "shoot": 57,
+        "pass": 66,
+        "reb": 85,
+        "ovr": 82
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3134907",
+      "name": "Kyle Kuzma",
+      "abbr": "MIL",
+      "team": "Milwaukee Bucks",
+      "pos": "SF",
+      "games": 9,
+      "minutes": 27,
+      "ratings": {
+        "off": 84,
+        "def": 77,
+        "shoot": 62,
+        "pass": 76,
+        "reb": 78,
+        "ovr": 80
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3133628",
+      "name": "Myles Turner",
+      "abbr": "MIL",
+      "team": "Milwaukee Bucks",
+      "pos": "C",
+      "games": 9,
+      "minutes": 27.4,
+      "ratings": {
+        "off": 81,
+        "def": 93,
+        "shoot": 66,
+        "pass": 73,
+        "reb": 78,
+        "ovr": 84
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "5164559",
+      "name": "Nate Ament",
+      "abbr": "MIL",
+      "team": "Milwaukee Bucks",
+      "pos": "PF",
+      "games": 7,
+      "minutes": 14.9,
+      "ratings": {
+        "off": 82,
+        "def": 69,
+        "shoot": 70,
+        "pass": 65,
+        "reb": 64,
+        "ovr": 75
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4997526",
+      "name": "Ousmane Dieng",
+      "abbr": "MIL",
+      "team": "Milwaukee Bucks",
+      "pos": "PF",
+      "games": 6,
+      "minutes": 10,
+      "ratings": {
+        "off": 70,
+        "def": 65,
+        "shoot": 43,
+        "pass": 67,
+        "reb": 61,
+        "ovr": 68
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4591725",
+      "name": "Ryan Rollins",
+      "abbr": "MIL",
+      "team": "Milwaukee Bucks",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 23.7,
+      "ratings": {
+        "off": 82,
+        "def": 79,
+        "shoot": 67,
+        "pass": 80,
+        "reb": 71,
+        "ovr": 81
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4395725",
+      "name": "Tyler Herro",
+      "abbr": "MIL",
+      "team": "Milwaukee Bucks",
+      "pos": "SG",
+      "games": 9,
+      "minutes": 31.1,
+      "ratings": {
+        "off": 96,
+        "def": 79,
+        "shoot": 85,
+        "pass": 82,
+        "reb": 74,
+        "ovr": 88
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4594268",
+      "name": "Anthony Edwards",
+      "abbr": "MIN",
+      "team": "Minnesota Timberwolves",
+      "pos": "SG",
+      "games": 4,
+      "minutes": 33.8,
+      "ratings": {
+        "off": 99,
+        "def": 90,
+        "shoot": 89,
+        "pass": 78,
+        "reb": 73,
+        "ovr": 93
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4397002",
+      "name": "Ayo Dosunmu",
+      "abbr": "MIN",
+      "team": "Minnesota Timberwolves",
+      "pos": "PG",
+      "games": 10,
+      "minutes": 31.5,
+      "ratings": {
+        "off": 94,
+        "def": 83,
+        "shoot": 82,
+        "pass": 81,
+        "reb": 74,
+        "ovr": 87
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4592492",
+      "name": "Bones Hyland",
+      "abbr": "MIN",
+      "team": "Minnesota Timberwolves",
+      "pos": "PG",
+      "games": 10,
+      "minutes": 12.2,
+      "ratings": {
+        "off": 84,
+        "def": 75,
+        "shoot": 73,
+        "pass": 74,
+        "reb": 61,
+        "ovr": 78
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4895758",
+      "name": "Cody Williams",
+      "abbr": "MIN",
+      "team": "Minnesota Timberwolves",
+      "pos": "SF",
+      "games": 5,
+      "minutes": 3.8,
+      "ratings": {
+        "off": 52,
+        "def": 64,
+        "shoot": 25,
+        "pass": 63,
+        "reb": 58,
+        "ovr": 59
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5061585",
+      "name": "Isaiah Evans",
+      "abbr": "MIN",
+      "team": "Minnesota Timberwolves",
+      "pos": "SF",
+      "games": 4,
+      "minutes": 2.5,
+      "ratings": {
+        "off": 52,
+        "def": 64,
+        "shoot": 25,
+        "pass": 65,
+        "reb": 58,
+        "ovr": 59
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4431671",
+      "name": "Jaden McDaniels",
+      "abbr": "MIN",
+      "team": "Minnesota Timberwolves",
+      "pos": "PF",
+      "games": 10,
+      "minutes": 33.9,
+      "ratings": {
+        "off": 93,
+        "def": 81,
+        "shoot": 69,
+        "pass": 79,
+        "reb": 79,
+        "ovr": 85
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4432247",
+      "name": "Jaylen Clark",
+      "abbr": "MIN",
+      "team": "Minnesota Timberwolves",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 13.6,
+      "ratings": {
+        "off": 79,
+        "def": 75,
+        "shoot": 71,
+        "pass": 67,
+        "reb": 63,
+        "ovr": 76
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5279133",
+      "name": "Joan Beringer",
+      "abbr": "MIN",
+      "team": "Minnesota Timberwolves",
+      "pos": "PF",
+      "games": 10,
+      "minutes": 16.5,
+      "ratings": {
+        "off": 87,
+        "def": 78,
+        "shoot": 37,
+        "pass": 66,
+        "reb": 80,
+        "ovr": 82
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4433247",
+      "name": "Jonathan Kuminga",
+      "abbr": "MIN",
+      "team": "Minnesota Timberwolves",
+      "pos": "PF",
+      "games": 10,
+      "minutes": 31.2,
+      "ratings": {
+        "off": 86,
+        "def": 83,
+        "shoot": 77,
+        "pass": 76,
+        "reb": 78,
+        "ovr": 83
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4432816",
+      "name": "LaMelo Ball",
+      "abbr": "MIN",
+      "team": "Minnesota Timberwolves",
+      "pos": "PG",
+      "games": 10,
+      "minutes": 27.5,
+      "ratings": {
+        "off": 92,
+        "def": 81,
+        "shoot": 82,
+        "pass": 89,
+        "reb": 68,
+        "ovr": 88
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "3032976",
+      "name": "Rudy Gobert",
+      "abbr": "MIN",
+      "team": "Minnesota Timberwolves",
+      "pos": "C",
+      "games": 9,
+      "minutes": 29.8,
+      "ratings": {
+        "off": 80,
+        "def": 88,
+        "shoot": 33,
+        "pass": 69,
+        "reb": 99,
+        "ovr": 88
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4432847",
+      "name": "Terrence Shannon Jr.",
+      "abbr": "MIN",
+      "team": "Minnesota Timberwolves",
+      "pos": "PG",
+      "games": 7,
+      "minutes": 22,
+      "ratings": {
+        "off": 86,
+        "def": 74,
+        "shoot": 77,
+        "pass": 74,
+        "reb": 69,
+        "ovr": 80
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3136196",
+      "name": "Trey Lyles",
+      "abbr": "MIN",
+      "team": "Minnesota Timberwolves",
+      "pos": "PF",
+      "games": 10,
+      "minutes": 18.2,
+      "ratings": {
+        "off": 82,
+        "def": 73,
+        "shoot": 65,
+        "pass": 67,
+        "reb": 71,
+        "ovr": 76
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4592979",
+      "name": "Zyon Pullin",
+      "abbr": "MIN",
+      "team": "Minnesota Timberwolves",
+      "pos": "PG",
+      "games": 2,
+      "minutes": 3,
+      "ratings": {
+        "off": 96,
+        "def": 67,
+        "shoot": 26,
+        "pass": 63,
+        "reb": 59,
+        "ovr": 78
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5170947",
+      "name": "AJ Johnson",
+      "abbr": "NO",
+      "team": "New Orleans Pelicans",
+      "pos": "PG",
+      "games": 1,
+      "minutes": 3,
+      "ratings": {
+        "off": 52,
+        "def": 73,
+        "shoot": 25,
+        "pass": 63,
+        "reb": 57,
+        "ovr": 61
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4683634",
+      "name": "Bennedict Mathurin",
+      "abbr": "NO",
+      "team": "New Orleans Pelicans",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 15.7,
+      "ratings": {
+        "off": 81,
+        "def": 71,
+        "shoot": 60,
+        "pass": 69,
+        "reb": 64,
+        "ovr": 75
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4576086",
+      "name": "Bryce McGowens",
+      "abbr": "NO",
+      "team": "New Orleans Pelicans",
+      "pos": "PG",
+      "games": 4,
+      "minutes": 7.5,
+      "ratings": {
+        "off": 74,
+        "def": 77,
+        "shoot": 36,
+        "pass": 67,
+        "reb": 59,
+        "ovr": 73
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3442",
+      "name": "DeAndre Jordan",
+      "abbr": "NO",
+      "team": "New Orleans Pelicans",
+      "pos": "C",
+      "games": 2,
+      "minutes": 16.5,
+      "ratings": {
+        "off": 99,
+        "def": 77,
+        "shoot": 36,
+        "pass": 67,
+        "reb": 80,
+        "ovr": 87
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3907497",
+      "name": "Dejounte Murray",
+      "abbr": "NO",
+      "team": "New Orleans Pelicans",
+      "pos": "PG",
+      "games": 6,
+      "minutes": 34.8,
+      "ratings": {
+        "off": 91,
+        "def": 92,
+        "shoot": 66,
+        "pass": 85,
+        "reb": 75,
+        "ovr": 90
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4869780",
+      "name": "Derik Queen",
+      "abbr": "NO",
+      "team": "New Orleans Pelicans",
+      "pos": "C",
+      "games": 9,
+      "minutes": 22.6,
+      "ratings": {
+        "off": 88,
+        "def": 78,
+        "shoot": 69,
+        "pass": 75,
+        "reb": 84,
+        "ovr": 84
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4277813",
+      "name": "Herbert Jones",
+      "abbr": "NO",
+      "team": "New Orleans Pelicans",
+      "pos": "SF",
+      "games": 9,
+      "minutes": 22.8,
+      "ratings": {
+        "off": 80,
+        "def": 74,
+        "shoot": 62,
+        "pass": 67,
+        "reb": 68,
+        "ovr": 75
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5144091",
+      "name": "Jeremiah Fears",
+      "abbr": "NO",
+      "team": "New Orleans Pelicans",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 28.9,
+      "ratings": {
+        "off": 88,
+        "def": 81,
+        "shoot": 62,
+        "pass": 82,
+        "reb": 72,
+        "ovr": 84
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4277956",
+      "name": "Jordan Poole",
+      "abbr": "NO",
+      "team": "New Orleans Pelicans",
+      "pos": "PG",
+      "games": 4,
+      "minutes": 16,
+      "ratings": {
+        "off": 73,
+        "def": 80,
+        "shoot": 60,
+        "pass": 76,
+        "reb": 64,
+        "ovr": 76
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4683742",
+      "name": "Julian Reese",
+      "abbr": "NO",
+      "team": "New Orleans Pelicans",
+      "pos": "PF",
+      "games": 1,
+      "minutes": 3,
+      "ratings": {
+        "off": 96,
+        "def": 64,
+        "shoot": 26,
+        "pass": 63,
+        "reb": 61,
+        "ovr": 77
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4997538",
+      "name": "Karlo Matkovic",
+      "abbr": "NO",
+      "team": "New Orleans Pelicans",
+      "pos": "PF",
+      "games": 8,
+      "minutes": 18.4,
+      "ratings": {
+        "off": 92,
+        "def": 77,
+        "shoot": 87,
+        "pass": 67,
+        "reb": 72,
+        "ovr": 86
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4397136",
+      "name": "Saddiq Bey",
+      "abbr": "NO",
+      "team": "New Orleans Pelicans",
+      "pos": "SF",
+      "games": 9,
+      "minutes": 27.1,
+      "ratings": {
+        "off": 93,
+        "def": 76,
+        "shoot": 79,
+        "pass": 72,
+        "reb": 71,
+        "ovr": 84
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4431675",
+      "name": "Trendon Watford",
+      "abbr": "NO",
+      "team": "New Orleans Pelicans",
+      "pos": "SF",
+      "games": 5,
+      "minutes": 17.8,
+      "ratings": {
+        "off": 88,
+        "def": 78,
+        "shoot": 60,
+        "pass": 68,
+        "reb": 70,
+        "ovr": 80
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4397688",
+      "name": "Trey Murphy III",
+      "abbr": "NO",
+      "team": "New Orleans Pelicans",
+      "pos": "SF",
+      "games": 8,
+      "minutes": 33.1,
+      "ratings": {
+        "off": 90,
+        "def": 77,
+        "shoot": 77,
+        "pass": 78,
+        "reb": 73,
+        "ovr": 83
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "5061589",
+      "name": "Yves Missi",
+      "abbr": "NO",
+      "team": "New Orleans Pelicans",
+      "pos": "C",
+      "games": 2,
+      "minutes": 19.5,
+      "ratings": {
+        "off": 99,
+        "def": 92,
+        "shoot": 38,
+        "pass": 74,
+        "reb": 84,
+        "ovr": 93
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4395628",
+      "name": "Zion Williamson",
+      "abbr": "NO",
+      "team": "New Orleans Pelicans",
+      "pos": "PF",
+      "games": 9,
+      "minutes": 33.2,
+      "ratings": {
+        "off": 98,
+        "def": 88,
+        "shoot": 78,
+        "pass": 75,
+        "reb": 76,
+        "ovr": 89
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "6585",
+      "name": "Andre Drummond",
+      "abbr": "NY",
+      "team": "New York Knicks",
+      "pos": "C",
+      "games": 9,
+      "minutes": 13.3,
+      "ratings": {
+        "off": 78,
+        "def": 77,
+        "shoot": 35,
+        "pass": 67,
+        "reb": 85,
+        "ovr": 80
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4897943",
+      "name": "Dalton Knecht",
+      "abbr": "NY",
+      "team": "New York Knicks",
+      "pos": "SF",
+      "games": 2,
+      "minutes": 11,
+      "ratings": {
+        "off": 85,
+        "def": 71,
+        "shoot": 72,
+        "pass": 65,
+        "reb": 69,
+        "ovr": 77
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4683730",
+      "name": "Jaden Akins",
+      "abbr": "NY",
+      "team": "New York Knicks",
+      "pos": "PG",
+      "games": 2,
+      "minutes": 1,
+      "ratings": {
+        "off": 52,
+        "def": 66,
+        "shoot": 25,
+        "pass": 63,
+        "reb": 57,
+        "ovr": 59
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3934672",
+      "name": "Jalen Brunson",
+      "abbr": "NY",
+      "team": "New York Knicks",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 34.1,
+      "ratings": {
+        "off": 96,
+        "def": 76,
+        "shoot": 80,
+        "pass": 87,
+        "reb": 67,
+        "ovr": 88
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4432808",
+      "name": "James Wiseman",
+      "abbr": "NY",
+      "team": "New York Knicks",
+      "pos": "C",
+      "games": 4,
+      "minutes": 5.3,
+      "ratings": {
+        "off": 71,
+        "def": 72,
+        "shoot": 26,
+        "pass": 63,
+        "reb": 67,
+        "ovr": 70
+      },
+      "source": "derived"
+    },
+    {
+      "id": "2528426",
+      "name": "Jordan Clarkson",
+      "abbr": "NY",
+      "team": "New York Knicks",
+      "pos": "PG",
+      "games": 8,
+      "minutes": 10.4,
+      "ratings": {
+        "off": 87,
+        "def": 72,
+        "shoot": 95,
+        "pass": 65,
+        "reb": 62,
+        "ovr": 85
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4277869",
+      "name": "Jose Alvarado",
+      "abbr": "NY",
+      "team": "New York Knicks",
+      "pos": "PG",
+      "games": 4,
+      "minutes": 11.3,
+      "ratings": {
+        "off": 67,
+        "def": 75,
+        "shoot": 52,
+        "pass": 71,
+        "reb": 62,
+        "ovr": 70
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3062679",
+      "name": "Josh Hart",
+      "abbr": "NY",
+      "team": "New York Knicks",
+      "pos": "PG",
+      "games": 7,
+      "minutes": 31.7,
+      "ratings": {
+        "off": 81,
+        "def": 90,
+        "shoot": 70,
+        "pass": 79,
+        "reb": 81,
+        "ovr": 84
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3136195",
+      "name": "Karl-Anthony Towns",
+      "abbr": "NY",
+      "team": "New York Knicks",
+      "pos": "C",
+      "games": 9,
+      "minutes": 31.6,
+      "ratings": {
+        "off": 98,
+        "def": 87,
+        "shoot": 83,
+        "pass": 76,
+        "reb": 99,
+        "ovr": 95
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "3914044",
+      "name": "Landry Shamet",
+      "abbr": "NY",
+      "team": "New York Knicks",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 25.3,
+      "ratings": {
+        "off": 84,
+        "def": 71,
+        "shoot": 79,
+        "pass": 71,
+        "reb": 62,
+        "ovr": 79
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3147657",
+      "name": "Mikal Bridges",
+      "abbr": "NY",
+      "team": "New York Knicks",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 26,
+      "ratings": {
+        "off": 80,
+        "def": 79,
+        "shoot": 66,
+        "pass": 72,
+        "reb": 68,
+        "ovr": 77
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4431823",
+      "name": "Miles McBride",
+      "abbr": "NY",
+      "team": "New York Knicks",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 17.2,
+      "ratings": {
+        "off": 83,
+        "def": 75,
+        "shoot": 80,
+        "pass": 67,
+        "reb": 63,
+        "ovr": 80
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5289900",
+      "name": "Mohamed Diawara",
+      "abbr": "NY",
+      "team": "New York Knicks",
+      "pos": "PF",
+      "games": 4,
+      "minutes": 10.8,
+      "ratings": {
+        "off": 73,
+        "def": 69,
+        "shoot": 48,
+        "pass": 71,
+        "reb": 66,
+        "ovr": 71
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3934719",
+      "name": "OG Anunoby",
+      "abbr": "NY",
+      "team": "New York Knicks",
+      "pos": "SF",
+      "games": 9,
+      "minutes": 33,
+      "ratings": {
+        "off": 88,
+        "def": 81,
+        "shoot": 71,
+        "pass": 73,
+        "reb": 77,
+        "ovr": 83
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "5211983",
+      "name": "Pacome Dadiet",
+      "abbr": "NY",
+      "team": "New York Knicks",
+      "pos": "PF",
+      "games": 2,
+      "minutes": 5,
+      "ratings": {
+        "off": 75,
+        "def": 63,
+        "shoot": 26,
+        "pass": 63,
+        "reb": 59,
+        "ovr": 68
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4433225",
+      "name": "Tyler Kolek",
+      "abbr": "NY",
+      "team": "New York Knicks",
+      "pos": "PG",
+      "games": 7,
+      "minutes": 12.4,
+      "ratings": {
+        "off": 73,
+        "def": 72,
+        "shoot": 62,
+        "pass": 84,
+        "reb": 63,
+        "ovr": 76
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5174983",
+      "name": "Aday Mara",
+      "abbr": "OKC",
+      "team": "Oklahoma City Thunder",
+      "pos": "C",
+      "games": 10,
+      "minutes": 19.7,
+      "ratings": {
+        "off": 89,
+        "def": 86,
+        "shoot": 99,
+        "pass": 69,
+        "reb": 78,
+        "ovr": 91
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4900671",
+      "name": "Ajay Mitchell",
+      "abbr": "OKC",
+      "team": "Oklahoma City Thunder",
+      "pos": "PG",
+      "games": 10,
+      "minutes": 27.3,
+      "ratings": {
+        "off": 94,
+        "def": 81,
+        "shoot": 67,
+        "pass": 77,
+        "reb": 69,
+        "ovr": 85
+      },
+      "source": "derived"
+    },
+    {
+      "id": "2991350",
+      "name": "Alex Caruso",
+      "abbr": "OKC",
+      "team": "Oklahoma City Thunder",
+      "pos": "PG",
+      "games": 7,
+      "minutes": 18.4,
+      "ratings": {
+        "off": 87,
+        "def": 80,
+        "shoot": 82,
+        "pass": 77,
+        "reb": 72,
+        "ovr": 84
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5241364",
+      "name": "Bennett Stirtz",
+      "abbr": "OKC",
+      "team": "Oklahoma City Thunder",
+      "pos": "PG",
+      "games": 10,
+      "minutes": 18,
+      "ratings": {
+        "off": 86,
+        "def": 71,
+        "shoot": 82,
+        "pass": 68,
+        "reb": 61,
+        "ovr": 80
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4684208",
+      "name": "Brooks Barnhizer",
+      "abbr": "OKC",
+      "team": "Oklahoma City Thunder",
+      "pos": "SF",
+      "games": 7,
+      "minutes": 5.4,
+      "ratings": {
+        "off": 80,
+        "def": 66,
+        "shoot": 35,
+        "pass": 67,
+        "reb": 61,
+        "ovr": 72
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4683692",
+      "name": "Cason Wallace",
+      "abbr": "OKC",
+      "team": "Oklahoma City Thunder",
+      "pos": "PG",
+      "games": 3,
+      "minutes": 16.3,
+      "ratings": {
+        "off": 75,
+        "def": 84,
+        "shoot": 55,
+        "pass": 69,
+        "reb": 66,
+        "ovr": 76
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4433255",
+      "name": "Chet Holmgren",
+      "abbr": "OKC",
+      "team": "Oklahoma City Thunder",
+      "pos": "PF",
+      "games": 3,
+      "minutes": 30,
+      "ratings": {
+        "off": 86,
+        "def": 99,
+        "shoot": 72,
+        "pass": 69,
+        "reb": 89,
+        "ovr": 91
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4222252",
+      "name": "Isaiah Hartenstein",
+      "abbr": "OKC",
+      "team": "Oklahoma City Thunder",
+      "pos": "C",
+      "games": 10,
+      "minutes": 24.1,
+      "ratings": {
+        "off": 83,
+        "def": 84,
+        "shoot": 39,
+        "pass": 77,
+        "reb": 93,
+        "ovr": 86
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4593803",
+      "name": "Jalen Williams",
+      "abbr": "OKC",
+      "team": "Oklahoma City Thunder",
+      "pos": "PG",
+      "games": 3,
+      "minutes": 31.7,
+      "ratings": {
+        "off": 85,
+        "def": 85,
+        "shoot": 71,
+        "pass": 77,
+        "reb": 73,
+        "ovr": 83
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4683778",
+      "name": "Jared McCain",
+      "abbr": "OKC",
+      "team": "Oklahoma City Thunder",
+      "pos": "PG",
+      "games": 10,
+      "minutes": 25.2,
+      "ratings": {
+        "off": 87,
+        "def": 79,
+        "shoot": 70,
+        "pass": 70,
+        "reb": 68,
+        "ovr": 80
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4432823",
+      "name": "Jaylin Williams",
+      "abbr": "OKC",
+      "team": "Oklahoma City Thunder",
+      "pos": "PF",
+      "games": 7,
+      "minutes": 18.4,
+      "ratings": {
+        "off": 71,
+        "def": 70,
+        "shoot": 60,
+        "pass": 70,
+        "reb": 71,
+        "ovr": 71
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5105800",
+      "name": "Josh Dix",
+      "abbr": "OKC",
+      "team": "Oklahoma City Thunder",
+      "pos": "PG",
+      "games": 7,
+      "minutes": 14.7,
+      "ratings": {
+        "off": 68,
+        "def": 70,
+        "shoot": 41,
+        "pass": 65,
+        "reb": 61,
+        "ovr": 68
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3133626",
+      "name": "Kenrich Williams",
+      "abbr": "OKC",
+      "team": "Oklahoma City Thunder",
+      "pos": "PG",
+      "games": 10,
+      "minutes": 18.4,
+      "ratings": {
+        "off": 84,
+        "def": 72,
+        "shoot": 81,
+        "pass": 68,
+        "reb": 70,
+        "ovr": 80
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4432185",
+      "name": "Micah Peavy",
+      "abbr": "OKC",
+      "team": "Oklahoma City Thunder",
+      "pos": "PG",
+      "games": 6,
+      "minutes": 17,
+      "ratings": {
+        "off": 80,
+        "def": 76,
+        "shoot": 73,
+        "pass": 64,
+        "reb": 69,
+        "ovr": 77
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4702384",
+      "name": "Nique Clifford",
+      "abbr": "OKC",
+      "team": "Oklahoma City Thunder",
+      "pos": "PG",
+      "games": 8,
+      "minutes": 6.3,
+      "ratings": {
+        "off": 69,
+        "def": 69,
+        "shoot": 37,
+        "pass": 67,
+        "reb": 60,
+        "ovr": 68
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4278073",
+      "name": "Shai Gilgeous-Alexander",
+      "abbr": "OKC",
+      "team": "Oklahoma City Thunder",
+      "pos": "PG",
+      "games": 10,
+      "minutes": 32.8,
+      "ratings": {
+        "off": 99,
+        "def": 85,
+        "shoot": 84,
+        "pass": 84,
+        "reb": 70,
+        "ovr": 91
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4593034",
+      "name": "Alex Morales",
+      "abbr": "ORL",
+      "team": "Orlando Magic",
+      "pos": "PG",
+      "games": 6,
+      "minutes": 9,
+      "ratings": {
+        "off": 74,
+        "def": 71,
+        "shoot": 33,
+        "pass": 65,
+        "reb": 62,
+        "ovr": 71
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4712849",
+      "name": "Anthony Black",
+      "abbr": "ORL",
+      "team": "Orlando Magic",
+      "pos": "PG",
+      "games": 6,
+      "minutes": 30,
+      "ratings": {
+        "off": 90,
+        "def": 89,
+        "shoot": 82,
+        "pass": 85,
+        "reb": 76,
+        "ovr": 88
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4397204",
+      "name": "Colin Castleton",
+      "abbr": "ORL",
+      "team": "Orlando Magic",
+      "pos": "C",
+      "games": 3,
+      "minutes": 4,
+      "ratings": {
+        "off": 87,
+        "def": 66,
+        "shoot": 33,
+        "pass": 66,
+        "reb": 62,
+        "ovr": 75
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4066320",
+      "name": "Desmond Bane",
+      "abbr": "ORL",
+      "team": "Orlando Magic",
+      "pos": "SG",
+      "games": 8,
+      "minutes": 34.5,
+      "ratings": {
+        "off": 90,
+        "def": 82,
+        "shoot": 82,
+        "pass": 73,
+        "reb": 70,
+        "ovr": 85
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4566434",
+      "name": "Franz Wagner",
+      "abbr": "ORL",
+      "team": "Orlando Magic",
+      "pos": "SF",
+      "games": 9,
+      "minutes": 36.4,
+      "ratings": {
+        "off": 92,
+        "def": 80,
+        "shoot": 63,
+        "pass": 99,
+        "reb": 79,
+        "ovr": 91
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4348700",
+      "name": "Goga Bitadze",
+      "abbr": "ORL",
+      "team": "Orlando Magic",
+      "pos": "C",
+      "games": 7,
+      "minutes": 8.9,
+      "ratings": {
+        "off": 83,
+        "def": 69,
+        "shoot": 36,
+        "pass": 66,
+        "reb": 69,
+        "ovr": 75
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4432165",
+      "name": "Jalen Suggs",
+      "abbr": "ORL",
+      "team": "Orlando Magic",
+      "pos": "SG",
+      "games": 3,
+      "minutes": 33.3,
+      "ratings": {
+        "off": 79,
+        "def": 87,
+        "shoot": 48,
+        "pass": 87,
+        "reb": 74,
+        "ovr": 84
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4278572",
+      "name": "Jamal Cain",
+      "abbr": "ORL",
+      "team": "Orlando Magic",
+      "pos": "SF",
+      "games": 9,
+      "minutes": 19.6,
+      "ratings": {
+        "off": 83,
+        "def": 70,
+        "shoot": 69,
+        "pass": 65,
+        "reb": 68,
+        "ovr": 75
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5239561",
+      "name": "Jase Richardson",
+      "abbr": "ORL",
+      "team": "Orlando Magic",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 22.7,
+      "ratings": {
+        "off": 77,
+        "def": 77,
+        "shoot": 61,
+        "pass": 75,
+        "reb": 64,
+        "ovr": 76
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3133635",
+      "name": "Jevon Carter",
+      "abbr": "ORL",
+      "team": "Orlando Magic",
+      "pos": "PG",
+      "games": 5,
+      "minutes": 14.2,
+      "ratings": {
+        "off": 70,
+        "def": 71,
+        "shoot": 58,
+        "pass": 70,
+        "reb": 59,
+        "ovr": 70
+      },
+      "source": "derived"
+    },
+    {
+      "id": "6478",
+      "name": "Nikola Vucevic",
+      "abbr": "ORL",
+      "team": "Orlando Magic",
+      "pos": "C",
+      "games": 9,
+      "minutes": 8.6,
+      "ratings": {
+        "off": 74,
+        "def": 69,
+        "shoot": 53,
+        "pass": 68,
+        "reb": 66,
+        "ovr": 71
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4432573",
+      "name": "Paolo Banchero",
+      "abbr": "ORL",
+      "team": "Orlando Magic",
+      "pos": "SF",
+      "games": 2,
+      "minutes": 34,
+      "ratings": {
+        "off": 99,
+        "def": 78,
+        "shoot": 87,
+        "pass": 94,
+        "reb": 80,
+        "ovr": 91
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4702382",
+      "name": "Tristan da Silva",
+      "abbr": "ORL",
+      "team": "Orlando Magic",
+      "pos": "SF",
+      "games": 9,
+      "minutes": 30.6,
+      "ratings": {
+        "off": 88,
+        "def": 72,
+        "shoot": 78,
+        "pass": 70,
+        "reb": 70,
+        "ovr": 80
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4277847",
+      "name": "Wendell Carter Jr.",
+      "abbr": "ORL",
+      "team": "Orlando Magic",
+      "pos": "C",
+      "games": 9,
+      "minutes": 33.6,
+      "ratings": {
+        "off": 96,
+        "def": 83,
+        "shoot": 83,
+        "pass": 67,
+        "reb": 91,
+        "ovr": 91
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5105637",
+      "name": "Adem Bona",
+      "abbr": "PHI",
+      "team": "Philadelphia 76ers",
+      "pos": "C",
+      "games": 9,
+      "minutes": 14.2,
+      "ratings": {
+        "off": 73,
+        "def": 75,
+        "shoot": 32,
+        "pass": 67,
+        "reb": 71,
+        "ovr": 73
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4351851",
+      "name": "Anfernee Simons",
+      "abbr": "PHI",
+      "team": "Philadelphia 76ers",
+      "pos": "PG",
+      "games": 10,
+      "minutes": 22.5,
+      "ratings": {
+        "off": 84,
+        "def": 74,
+        "shoot": 79,
+        "pass": 68,
+        "reb": 63,
+        "ovr": 80
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4433144",
+      "name": "Caleb Love",
+      "abbr": "PHI",
+      "team": "Philadelphia 76ers",
+      "pos": "PG",
+      "games": 1,
+      "minutes": 0,
+      "ratings": {
+        "off": 52,
+        "def": 66,
+        "shoot": 25,
+        "pass": 63,
+        "reb": 57,
+        "ovr": 59
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3912848",
+      "name": "Dean Wade",
+      "abbr": "PHI",
+      "team": "Philadelphia 76ers",
+      "pos": "PF",
+      "games": 8,
+      "minutes": 25.5,
+      "ratings": {
+        "off": 77,
+        "def": 80,
+        "shoot": 62,
+        "pass": 72,
+        "reb": 69,
+        "ovr": 76
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4432446",
+      "name": "Jabari Walker",
+      "abbr": "PHI",
+      "team": "Philadelphia 76ers",
+      "pos": "SF",
+      "games": 6,
+      "minutes": 9.5,
+      "ratings": {
+        "off": 85,
+        "def": 68,
+        "shoot": 52,
+        "pass": 66,
+        "reb": 66,
+        "ovr": 75
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3917376",
+      "name": "Jaylen Brown",
+      "abbr": "PHI",
+      "team": "Philadelphia 76ers",
+      "pos": "SG",
+      "games": 9,
+      "minutes": 35.9,
+      "ratings": {
+        "off": 95,
+        "def": 85,
+        "shoot": 80,
+        "pass": 80,
+        "reb": 79,
+        "ovr": 88
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "3059318",
+      "name": "Joel Embiid",
+      "abbr": "PHI",
+      "team": "Philadelphia 76ers",
+      "pos": "C",
+      "games": 8,
+      "minutes": 32.4,
+      "ratings": {
+        "off": 88,
+        "def": 82,
+        "shoot": 52,
+        "pass": 80,
+        "reb": 91,
+        "ovr": 87
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4711297",
+      "name": "Justin Edwards",
+      "abbr": "PHI",
+      "team": "Philadelphia 76ers",
+      "pos": "SF",
+      "games": 4,
+      "minutes": 2.3,
+      "ratings": {
+        "off": 75,
+        "def": 65,
+        "shoot": 69,
+        "pass": 63,
+        "reb": 60,
+        "ovr": 70
+      },
+      "source": "derived"
+    },
+    {
+      "id": "2581018",
+      "name": "Kentavious Caldwell-Pope",
+      "abbr": "PHI",
+      "team": "Philadelphia 76ers",
+      "pos": "PG",
+      "games": 10,
+      "minutes": 22.1,
+      "ratings": {
+        "off": 84,
+        "def": 75,
+        "shoot": 84,
+        "pass": 68,
+        "reb": 65,
+        "ovr": 81
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4873090",
+      "name": "Labaron Philon Jr.",
+      "abbr": "PHI",
+      "team": "Philadelphia 76ers",
+      "pos": "PG",
+      "games": 6,
+      "minutes": 6.3,
+      "ratings": {
+        "off": 72,
+        "def": 67,
+        "shoot": 52,
+        "pass": 65,
+        "reb": 61,
+        "ovr": 69
+      },
+      "source": "derived"
+    },
+    {
+      "id": "1966",
+      "name": "LeBron James",
+      "abbr": "PHI",
+      "team": "Philadelphia 76ers",
+      "pos": "SF",
+      "games": 8,
+      "minutes": 32.9,
+      "ratings": {
+        "off": 87,
+        "def": 88,
+        "shoot": 59,
+        "pass": 92,
+        "reb": 83,
+        "ovr": 89
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "5099752",
+      "name": "Rayan Rupert",
+      "abbr": "PHI",
+      "team": "Philadelphia 76ers",
+      "pos": "PG",
+      "games": 1,
+      "minutes": 2,
+      "ratings": {
+        "off": 96,
+        "def": 69,
+        "shoot": 26,
+        "pass": 63,
+        "reb": 64,
+        "ovr": 79
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3904625",
+      "name": "Tacko Fall",
+      "abbr": "PHI",
+      "team": "Philadelphia 76ers",
+      "pos": "C",
+      "games": 1,
+      "minutes": 3,
+      "ratings": {
+        "off": 52,
+        "def": 63,
+        "shoot": 25,
+        "pass": 63,
+        "reb": 61,
+        "ovr": 58
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4431678",
+      "name": "Tyrese Maxey",
+      "abbr": "PHI",
+      "team": "Philadelphia 76ers",
+      "pos": "PG",
+      "games": 10,
+      "minutes": 36.5,
+      "ratings": {
+        "off": 99,
+        "def": 85,
+        "shoot": 78,
+        "pass": 85,
+        "reb": 69,
+        "ovr": 91
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "5124612",
+      "name": "VJ Edgecombe",
+      "abbr": "PHI",
+      "team": "Philadelphia 76ers",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 33.4,
+      "ratings": {
+        "off": 88,
+        "def": 86,
+        "shoot": 74,
+        "pass": 75,
+        "reb": 79,
+        "ovr": 85
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4278585",
+      "name": "Collin Gillespie",
+      "abbr": "PHX",
+      "team": "Phoenix Suns",
+      "pos": "PG",
+      "games": 8,
+      "minutes": 24.6,
+      "ratings": {
+        "off": 74,
+        "def": 85,
+        "shoot": 58,
+        "pass": 80,
+        "reb": 65,
+        "ovr": 79
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3136193",
+      "name": "Devin Booker",
+      "abbr": "PHX",
+      "team": "Phoenix Suns",
+      "pos": "SG",
+      "games": 8,
+      "minutes": 35,
+      "ratings": {
+        "off": 99,
+        "def": 78,
+        "shoot": 78,
+        "pass": 84,
+        "reb": 66,
+        "ovr": 89
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "3155526",
+      "name": "Dillon Brooks",
+      "abbr": "PHX",
+      "team": "Phoenix Suns",
+      "pos": "SF",
+      "games": 8,
+      "minutes": 31.1,
+      "ratings": {
+        "off": 92,
+        "def": 76,
+        "shoot": 85,
+        "pass": 74,
+        "reb": 71,
+        "ovr": 85
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4066268",
+      "name": "Duop Reath",
+      "abbr": "PHX",
+      "team": "Phoenix Suns",
+      "pos": "C",
+      "games": 5,
+      "minutes": 5.4,
+      "ratings": {
+        "off": 91,
+        "def": 65,
+        "shoot": 84,
+        "pass": 63,
+        "reb": 60,
+        "ovr": 81
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4437244",
+      "name": "Jalen Green",
+      "abbr": "PHX",
+      "team": "Phoenix Suns",
+      "pos": "SG",
+      "games": 8,
+      "minutes": 29,
+      "ratings": {
+        "off": 84,
+        "def": 80,
+        "shoot": 58,
+        "pass": 78,
+        "reb": 67,
+        "ovr": 81
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4280245",
+      "name": "Jamaree Bouyea",
+      "abbr": "PHX",
+      "team": "Phoenix Suns",
+      "pos": "PG",
+      "games": 4,
+      "minutes": 3.5,
+      "ratings": {
+        "off": 99,
+        "def": 67,
+        "shoot": 99,
+        "pass": 67,
+        "reb": 58,
+        "ovr": 90
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4278402",
+      "name": "Jordan Goodwin",
+      "abbr": "PHX",
+      "team": "Phoenix Suns",
+      "pos": "PG",
+      "games": 5,
+      "minutes": 18.6,
+      "ratings": {
+        "off": 78,
+        "def": 80,
+        "shoot": 64,
+        "pass": 74,
+        "reb": 68,
+        "ovr": 77
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5203685",
+      "name": "Khaman Maluach",
+      "abbr": "PHX",
+      "team": "Phoenix Suns",
+      "pos": "C",
+      "games": 8,
+      "minutes": 19.6,
+      "ratings": {
+        "off": 88,
+        "def": 80,
+        "shoot": 54,
+        "pass": 68,
+        "reb": 80,
+        "ovr": 83
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5041953",
+      "name": "Koa Peat",
+      "abbr": "PHX",
+      "team": "Phoenix Suns",
+      "pos": "SF",
+      "games": 4,
+      "minutes": 3.5,
+      "ratings": {
+        "off": 83,
+        "def": 65,
+        "shoot": 40,
+        "pass": 63,
+        "reb": 60,
+        "ovr": 72
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3913174",
+      "name": "Luke Kennard",
+      "abbr": "PHX",
+      "team": "Phoenix Suns",
+      "pos": "PG",
+      "games": 7,
+      "minutes": 16.1,
+      "ratings": {
+        "off": 89,
+        "def": 69,
+        "shoot": 86,
+        "pass": 72,
+        "reb": 62,
+        "ovr": 82
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4066383",
+      "name": "Miles Bridges",
+      "abbr": "PHX",
+      "team": "Phoenix Suns",
+      "pos": "SF",
+      "games": 8,
+      "minutes": 32.3,
+      "ratings": {
+        "off": 92,
+        "def": 88,
+        "shoot": 76,
+        "pass": 78,
+        "reb": 85,
+        "ovr": 89
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4601023",
+      "name": "Oso Ighodaro",
+      "abbr": "PHX",
+      "team": "Phoenix Suns",
+      "pos": "PF",
+      "games": 6,
+      "minutes": 21.7,
+      "ratings": {
+        "off": 88,
+        "def": 74,
+        "shoot": 31,
+        "pass": 78,
+        "reb": 75,
+        "ovr": 81
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4592714",
+      "name": "Pat Spencer",
+      "abbr": "PHX",
+      "team": "Phoenix Suns",
+      "pos": "PG",
+      "games": 3,
+      "minutes": 4,
+      "ratings": {
+        "off": 68,
+        "def": 71,
+        "shoot": 69,
+        "pass": 66,
+        "reb": 61,
+        "ovr": 69
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5105977",
+      "name": "Rasheer Fleming",
+      "abbr": "PHX",
+      "team": "Phoenix Suns",
+      "pos": "PF",
+      "games": 2,
+      "minutes": 7.5,
+      "ratings": {
+        "off": 57,
+        "def": 71,
+        "shoot": 33,
+        "pass": 63,
+        "reb": 62,
+        "ovr": 63
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4888725",
+      "name": "Ryan Dunn",
+      "abbr": "PHX",
+      "team": "Phoenix Suns",
+      "pos": "SF",
+      "games": 8,
+      "minutes": 16,
+      "ratings": {
+        "off": 84,
+        "def": 78,
+        "shoot": 84,
+        "pass": 69,
+        "reb": 70,
+        "ovr": 82
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4592435",
+      "name": "Branden Carlson",
+      "abbr": "POR",
+      "team": "Portland Trail Blazers",
+      "pos": "C",
+      "games": 4,
+      "minutes": 7.8,
+      "ratings": {
+        "off": 78,
+        "def": 67,
+        "shoot": 26,
+        "pass": 65,
+        "reb": 63,
+        "ovr": 71
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4706557",
+      "name": "Chris Youngblood",
+      "abbr": "POR",
+      "team": "Portland Trail Blazers",
+      "pos": "PG",
+      "games": 5,
+      "minutes": 13.4,
+      "ratings": {
+        "off": 79,
+        "def": 72,
+        "shoot": 67,
+        "pass": 68,
+        "reb": 62,
+        "ovr": 74
+      },
+      "source": "derived"
+    },
+    {
+      "id": "6606",
+      "name": "Damian Lillard",
+      "abbr": "POR",
+      "team": "Portland Trail Blazers",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 29.4,
+      "ratings": {
+        "off": 92,
+        "def": 76,
+        "shoot": 78,
+        "pass": 82,
+        "reb": 68,
+        "ovr": 84
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4683021",
+      "name": "Deni Avdija",
+      "abbr": "POR",
+      "team": "Portland Trail Blazers",
+      "pos": "SF",
+      "games": 9,
+      "minutes": 32.1,
+      "ratings": {
+        "off": 94,
+        "def": 78,
+        "shoot": 72,
+        "pass": 89,
+        "reb": 79,
+        "ovr": 88
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "5105565",
+      "name": "Donovan Clingan",
+      "abbr": "POR",
+      "team": "Portland Trail Blazers",
+      "pos": "C",
+      "games": 9,
+      "minutes": 24.7,
+      "ratings": {
+        "off": 91,
+        "def": 96,
+        "shoot": 79,
+        "pass": 69,
+        "reb": 93,
+        "ovr": 93
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4279888",
+      "name": "Ja Morant",
+      "abbr": "POR",
+      "team": "Portland Trail Blazers",
+      "pos": "PG",
+      "games": 4,
+      "minutes": 25.8,
+      "ratings": {
+        "off": 94,
+        "def": 75,
+        "shoot": 81,
+        "pass": 86,
+        "reb": 65,
+        "ovr": 86
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4703889",
+      "name": "Jayson Kent",
+      "abbr": "POR",
+      "team": "Portland Trail Blazers",
+      "pos": "PG",
+      "games": 2,
+      "minutes": 9.5,
+      "ratings": {
+        "off": 62,
+        "def": 77,
+        "shoot": 26,
+        "pass": 65,
+        "reb": 61,
+        "ovr": 67
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4593043",
+      "name": "John Tonje",
+      "abbr": "POR",
+      "team": "Portland Trail Blazers",
+      "pos": "SF",
+      "games": 1,
+      "minutes": 5,
+      "ratings": {
+        "off": 86,
+        "def": 64,
+        "shoot": 86,
+        "pass": 63,
+        "reb": 57,
+        "ovr": 80
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3995",
+      "name": "Jrue Holiday",
+      "abbr": "POR",
+      "team": "Portland Trail Blazers",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 25.9,
+      "ratings": {
+        "off": 92,
+        "def": 78,
+        "shoot": 83,
+        "pass": 80,
+        "reb": 69,
+        "ovr": 85
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4066399",
+      "name": "Micah Potter",
+      "abbr": "POR",
+      "team": "Portland Trail Blazers",
+      "pos": "C",
+      "games": 5,
+      "minutes": 8,
+      "ratings": {
+        "off": 85,
+        "def": 67,
+        "shoot": 73,
+        "pass": 64,
+        "reb": 64,
+        "ovr": 76
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4066211",
+      "name": "Robert Williams III",
+      "abbr": "POR",
+      "team": "Portland Trail Blazers",
+      "pos": "C",
+      "games": 7,
+      "minutes": 16.6,
+      "ratings": {
+        "off": 90,
+        "def": 83,
+        "shoot": 38,
+        "pass": 68,
+        "reb": 82,
+        "ovr": 86
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4683678",
+      "name": "Scoot Henderson",
+      "abbr": "POR",
+      "team": "Portland Trail Blazers",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 22.3,
+      "ratings": {
+        "off": 79,
+        "def": 74,
+        "shoot": 55,
+        "pass": 68,
+        "reb": 64,
+        "ovr": 74
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5081727",
+      "name": "Sidy Cissoko",
+      "abbr": "POR",
+      "team": "Portland Trail Blazers",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 21.3,
+      "ratings": {
+        "off": 82,
+        "def": 75,
+        "shoot": 67,
+        "pass": 72,
+        "reb": 70,
+        "ovr": 77
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4431736",
+      "name": "Toumani Camara",
+      "abbr": "POR",
+      "team": "Portland Trail Blazers",
+      "pos": "SF",
+      "games": 9,
+      "minutes": 27.2,
+      "ratings": {
+        "off": 91,
+        "def": 74,
+        "shoot": 84,
+        "pass": 68,
+        "reb": 69,
+        "ovr": 84
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4578893",
+      "name": "Vit Krejci",
+      "abbr": "POR",
+      "team": "Portland Trail Blazers",
+      "pos": "PG",
+      "games": 7,
+      "minutes": 10.3,
+      "ratings": {
+        "off": 73,
+        "def": 71,
+        "shoot": 54,
+        "pass": 68,
+        "reb": 62,
+        "ovr": 71
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5217746",
+      "name": "Yang Hansen",
+      "abbr": "POR",
+      "team": "Portland Trail Blazers",
+      "pos": "C",
+      "games": 6,
+      "minutes": 10.2,
+      "ratings": {
+        "off": 83,
+        "def": 69,
+        "shoot": 88,
+        "pass": 65,
+        "reb": 69,
+        "ovr": 80
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5061568",
+      "name": "Carter Bryant",
+      "abbr": "SA",
+      "team": "San Antonio Spurs",
+      "pos": "SF",
+      "games": 9,
+      "minutes": 10.1,
+      "ratings": {
+        "off": 72,
+        "def": 67,
+        "shoot": 59,
+        "pass": 65,
+        "reb": 60,
+        "ovr": 69
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4713010",
+      "name": "David Jones Garcia",
+      "abbr": "SA",
+      "team": "San Antonio Spurs",
+      "pos": "SF",
+      "games": 2,
+      "minutes": 2.5,
+      "ratings": {
+        "off": 61,
+        "def": 64,
+        "shoot": 40,
+        "pass": 63,
+        "reb": 57,
+        "ovr": 62
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4066259",
+      "name": "De'Aaron Fox",
+      "abbr": "SA",
+      "team": "San Antonio Spurs",
+      "pos": "PG",
+      "games": 10,
+      "minutes": 29.4,
+      "ratings": {
+        "off": 91,
+        "def": 83,
+        "shoot": 72,
+        "pass": 88,
+        "reb": 70,
+        "ovr": 88
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4395630",
+      "name": "Devin Vassell",
+      "abbr": "SA",
+      "team": "San Antonio Spurs",
+      "pos": "PG",
+      "games": 10,
+      "minutes": 30,
+      "ratings": {
+        "off": 87,
+        "def": 83,
+        "shoot": 76,
+        "pass": 76,
+        "reb": 70,
+        "ovr": 83
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5037871",
+      "name": "Dylan Harper",
+      "abbr": "SA",
+      "team": "San Antonio Spurs",
+      "pos": "PG",
+      "games": 10,
+      "minutes": 32,
+      "ratings": {
+        "off": 94,
+        "def": 78,
+        "shoot": 75,
+        "pass": 82,
+        "reb": 75,
+        "ovr": 86
+      },
+      "source": "derived"
+    },
+    {
+      "id": "6578",
+      "name": "Harrison Barnes",
+      "abbr": "SA",
+      "team": "San Antonio Spurs",
+      "pos": "SF",
+      "games": 8,
+      "minutes": 12.9,
+      "ratings": {
+        "off": 81,
+        "def": 67,
+        "shoot": 72,
+        "pass": 63,
+        "reb": 60,
+        "ovr": 74
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5107968",
+      "name": "Ja'Kobi Gillespie",
+      "abbr": "SA",
+      "team": "San Antonio Spurs",
+      "pos": "PG",
+      "games": 2,
+      "minutes": 2,
+      "ratings": {
+        "off": 76,
+        "def": 66,
+        "shoot": 56,
+        "pass": 63,
+        "reb": 57,
+        "ovr": 69
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3134916",
+      "name": "Jordan McLaughlin",
+      "abbr": "SA",
+      "team": "San Antonio Spurs",
+      "pos": "PG",
+      "games": 5,
+      "minutes": 7.6,
+      "ratings": {
+        "off": 65,
+        "def": 72,
+        "shoot": 62,
+        "pass": 68,
+        "reb": 60,
+        "ovr": 68
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4592479",
+      "name": "Julian Champagnie",
+      "abbr": "SA",
+      "team": "San Antonio Spurs",
+      "pos": "SF",
+      "games": 10,
+      "minutes": 25.7,
+      "ratings": {
+        "off": 88,
+        "def": 78,
+        "shoot": 86,
+        "pass": 69,
+        "reb": 71,
+        "ovr": 85
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4395723",
+      "name": "Keldon Johnson",
+      "abbr": "SA",
+      "team": "San Antonio Spurs",
+      "pos": "SF",
+      "games": 10,
+      "minutes": 23.5,
+      "ratings": {
+        "off": 82,
+        "def": 74,
+        "shoot": 51,
+        "pass": 72,
+        "reb": 77,
+        "ovr": 78
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3064560",
+      "name": "Luke Kornet",
+      "abbr": "SA",
+      "team": "San Antonio Spurs",
+      "pos": "C",
+      "games": 10,
+      "minutes": 15.2,
+      "ratings": {
+        "off": 80,
+        "def": 72,
+        "shoot": 37,
+        "pass": 67,
+        "reb": 72,
+        "ovr": 75
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5105337",
+      "name": "Maliq Brown",
+      "abbr": "SA",
+      "team": "San Antonio Spurs",
+      "pos": "PF",
+      "games": 1,
+      "minutes": 1,
+      "ratings": {
+        "off": 52,
+        "def": 62,
+        "shoot": 25,
+        "pass": 67,
+        "reb": 57,
+        "ovr": 59
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4845367",
+      "name": "Stephon Castle",
+      "abbr": "SA",
+      "team": "San Antonio Spurs",
+      "pos": "PG",
+      "games": 10,
+      "minutes": 29.1,
+      "ratings": {
+        "off": 88,
+        "def": 80,
+        "shoot": 74,
+        "pass": 84,
+        "reb": 77,
+        "ovr": 85
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5105809",
+      "name": "Tarris Reed Jr.",
+      "abbr": "SA",
+      "team": "San Antonio Spurs",
+      "pos": "C",
+      "games": 6,
+      "minutes": 5.3,
+      "ratings": {
+        "off": 88,
+        "def": 68,
+        "shoot": 40,
+        "pass": 64,
+        "reb": 69,
+        "ovr": 77
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5104157",
+      "name": "Victor Wembanyama",
+      "abbr": "SA",
+      "team": "San Antonio Spurs",
+      "pos": "C",
+      "games": 10,
+      "minutes": 30.3,
+      "ratings": {
+        "off": 99,
+        "def": 99,
+        "shoot": 73,
+        "pass": 76,
+        "reb": 99,
+        "ovr": 99
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4917149",
+      "name": "Alex Karaban",
+      "abbr": "SAC",
+      "team": "Sacramento Kings",
+      "pos": "SF",
+      "games": 5,
+      "minutes": 9.8,
+      "ratings": {
+        "off": 72,
+        "def": 66,
+        "shoot": 68,
+        "pass": 65,
+        "reb": 60,
+        "ovr": 69
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4279318",
+      "name": "Daeqwon Plowden",
+      "abbr": "SAC",
+      "team": "Sacramento Kings",
+      "pos": "PG",
+      "games": 6,
+      "minutes": 12.2,
+      "ratings": {
+        "off": 77,
+        "def": 71,
+        "shoot": 53,
+        "pass": 65,
+        "reb": 62,
+        "ovr": 72
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5142620",
+      "name": "Darius Acuff Jr.",
+      "abbr": "SAC",
+      "team": "Sacramento Kings",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 36.9,
+      "ratings": {
+        "off": 95,
+        "def": 77,
+        "shoot": 77,
+        "pass": 93,
+        "reb": 69,
+        "ovr": 89
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4065732",
+      "name": "De'Andre Hunter",
+      "abbr": "SAC",
+      "team": "Sacramento Kings",
+      "pos": "SF",
+      "games": 8,
+      "minutes": 31.1,
+      "ratings": {
+        "off": 86,
+        "def": 72,
+        "shoot": 74,
+        "pass": 69,
+        "reb": 74,
+        "ovr": 78
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3155942",
+      "name": "Domantas Sabonis",
+      "abbr": "SAC",
+      "team": "Sacramento Kings",
+      "pos": "PF",
+      "games": 9,
+      "minutes": 35.6,
+      "ratings": {
+        "off": 97,
+        "def": 89,
+        "shoot": 82,
+        "pass": 88,
+        "reb": 99,
+        "ovr": 95
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4433174",
+      "name": "Dylan Cardwell",
+      "abbr": "SAC",
+      "team": "Sacramento Kings",
+      "pos": "C",
+      "games": 2,
+      "minutes": 14,
+      "ratings": {
+        "off": 84,
+        "def": 77,
+        "shoot": 33,
+        "pass": 70,
+        "reb": 71,
+        "ovr": 78
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5106058",
+      "name": "Emanuel Sharp",
+      "abbr": "SAC",
+      "team": "Sacramento Kings",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 18.7,
+      "ratings": {
+        "off": 81,
+        "def": 72,
+        "shoot": 82,
+        "pass": 67,
+        "reb": 62,
+        "ovr": 79
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5107897",
+      "name": "Jonathan Mogbo",
+      "abbr": "SAC",
+      "team": "Sacramento Kings",
+      "pos": "PF",
+      "games": 4,
+      "minutes": 17.3,
+      "ratings": {
+        "off": 78,
+        "def": 75,
+        "shoot": 55,
+        "pass": 67,
+        "reb": 67,
+        "ovr": 74
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4594327",
+      "name": "Keegan Murray",
+      "abbr": "SAC",
+      "team": "Sacramento Kings",
+      "pos": "SF",
+      "games": 2,
+      "minutes": 27,
+      "ratings": {
+        "off": 77,
+        "def": 74,
+        "shoot": 41,
+        "pass": 65,
+        "reb": 68,
+        "ovr": 74
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4395650",
+      "name": "Leaky Black",
+      "abbr": "SAC",
+      "team": "Sacramento Kings",
+      "pos": "SF",
+      "games": 5,
+      "minutes": 19,
+      "ratings": {
+        "off": 82,
+        "def": 78,
+        "shoot": 76,
+        "pass": 70,
+        "reb": 66,
+        "ovr": 79
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4066262",
+      "name": "Malik Monk",
+      "abbr": "SAC",
+      "team": "Sacramento Kings",
+      "pos": "PG",
+      "games": 8,
+      "minutes": 16.4,
+      "ratings": {
+        "off": 82,
+        "def": 71,
+        "shoot": 75,
+        "pass": 79,
+        "reb": 61,
+        "ovr": 78
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4431679",
+      "name": "Precious Achiuwa",
+      "abbr": "SAC",
+      "team": "Sacramento Kings",
+      "pos": "SF",
+      "games": 9,
+      "minutes": 26.6,
+      "ratings": {
+        "off": 86,
+        "def": 88,
+        "shoot": 63,
+        "pass": 68,
+        "reb": 78,
+        "ovr": 84
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3064440",
+      "name": "Zach LaVine",
+      "abbr": "SAC",
+      "team": "Sacramento Kings",
+      "pos": "SG",
+      "games": 9,
+      "minutes": 33.6,
+      "ratings": {
+        "off": 97,
+        "def": 79,
+        "shoot": 80,
+        "pass": 75,
+        "reb": 68,
+        "ovr": 87
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4702656",
+      "name": "Alijah Martin",
+      "abbr": "TOR",
+      "team": "Toronto Raptors",
+      "pos": "PG",
+      "games": 8,
+      "minutes": 9.9,
+      "ratings": {
+        "off": 94,
+        "def": 73,
+        "shoot": 92,
+        "pass": 67,
+        "reb": 62,
+        "ovr": 87
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5149115",
+      "name": "Allen Graves",
+      "abbr": "TOR",
+      "team": "Toronto Raptors",
+      "pos": "SF",
+      "games": 9,
+      "minutes": 13.2,
+      "ratings": {
+        "off": 79,
+        "def": 73,
+        "shoot": 53,
+        "pass": 67,
+        "reb": 66,
+        "ovr": 74
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5093267",
+      "name": "Collin Murray-Boyles",
+      "abbr": "TOR",
+      "team": "Toronto Raptors",
+      "pos": "SF",
+      "games": 9,
+      "minutes": 22.1,
+      "ratings": {
+        "off": 89,
+        "def": 81,
+        "shoot": 68,
+        "pass": 69,
+        "reb": 74,
+        "ovr": 82
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4395724",
+      "name": "Immanuel Quickley",
+      "abbr": "TOR",
+      "team": "Toronto Raptors",
+      "pos": "PG",
+      "games": 8,
+      "minutes": 31.8,
+      "ratings": {
+        "off": 90,
+        "def": 77,
+        "shoot": 77,
+        "pass": 87,
+        "reb": 69,
+        "ovr": 85
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4684272",
+      "name": "Ja'Kobe Walter",
+      "abbr": "TOR",
+      "team": "Toronto Raptors",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 29.1,
+      "ratings": {
+        "off": 84,
+        "def": 82,
+        "shoot": 71,
+        "pass": 73,
+        "reb": 70,
+        "ovr": 80
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4432737",
+      "name": "Jaden Bradley",
+      "abbr": "TOR",
+      "team": "Toronto Raptors",
+      "pos": "PG",
+      "games": 7,
+      "minutes": 4.6,
+      "ratings": {
+        "off": 79,
+        "def": 71,
+        "shoot": 38,
+        "pass": 66,
+        "reb": 59,
+        "ovr": 73
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3134908",
+      "name": "Jakob Poeltl",
+      "abbr": "TOR",
+      "team": "Toronto Raptors",
+      "pos": "C",
+      "games": 7,
+      "minutes": 21.6,
+      "ratings": {
+        "off": 88,
+        "def": 76,
+        "shoot": 35,
+        "pass": 68,
+        "reb": 80,
+        "ovr": 82
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4432241",
+      "name": "Jamal Shead",
+      "abbr": "TOR",
+      "team": "Toronto Raptors",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 23,
+      "ratings": {
+        "off": 79,
+        "def": 79,
+        "shoot": 59,
+        "pass": 91,
+        "reb": 64,
+        "ovr": 82
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4431893",
+      "name": "Jamison Battle",
+      "abbr": "TOR",
+      "team": "Toronto Raptors",
+      "pos": "SF",
+      "games": 9,
+      "minutes": 17,
+      "ratings": {
+        "off": 86,
+        "def": 69,
+        "shoot": 79,
+        "pass": 65,
+        "reb": 63,
+        "ovr": 79
+      },
+      "source": "derived"
+    },
+    {
+      "id": "6450",
+      "name": "Kawhi Leonard",
+      "abbr": "TOR",
+      "team": "Toronto Raptors",
+      "pos": "SF",
+      "games": 2,
+      "minutes": 26,
+      "ratings": {
+        "off": 89,
+        "def": 98,
+        "shoot": 73,
+        "pass": 70,
+        "reb": 83,
+        "ovr": 90
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "2993874",
+      "name": "Kyle Anderson",
+      "abbr": "TOR",
+      "team": "Toronto Raptors",
+      "pos": "SF",
+      "games": 6,
+      "minutes": 6,
+      "ratings": {
+        "off": 71,
+        "def": 70,
+        "shoot": 26,
+        "pass": 68,
+        "reb": 61,
+        "ovr": 70
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4395625",
+      "name": "RJ Barrett",
+      "abbr": "TOR",
+      "team": "Toronto Raptors",
+      "pos": "SF",
+      "games": 9,
+      "minutes": 33.1,
+      "ratings": {
+        "off": 93,
+        "def": 76,
+        "shoot": 68,
+        "pass": 79,
+        "reb": 78,
+        "ovr": 84
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4433134",
+      "name": "Scottie Barnes",
+      "abbr": "TOR",
+      "team": "Toronto Raptors",
+      "pos": "SF",
+      "games": 8,
+      "minutes": 33.3,
+      "ratings": {
+        "off": 94,
+        "def": 91,
+        "shoot": 54,
+        "pass": 84,
+        "reb": 83,
+        "ovr": 90
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4431684",
+      "name": "Trayce Jackson-Davis",
+      "abbr": "TOR",
+      "team": "Toronto Raptors",
+      "pos": "PF",
+      "games": 8,
+      "minutes": 6.6,
+      "ratings": {
+        "off": 91,
+        "def": 71,
+        "shoot": 37,
+        "pass": 65,
+        "reb": 65,
+        "ovr": 78
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4873138",
+      "name": "Ace Bailey",
+      "abbr": "UTAH",
+      "team": "Utah Jazz",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 30.4,
+      "ratings": {
+        "off": 87,
+        "def": 86,
+        "shoot": 60,
+        "pass": 71,
+        "reb": 80,
+        "ovr": 85
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5105839",
+      "name": "Brice Sensabaugh",
+      "abbr": "UTAH",
+      "team": "Utah Jazz",
+      "pos": "SF",
+      "games": 9,
+      "minutes": 14.3,
+      "ratings": {
+        "off": 84,
+        "def": 70,
+        "shoot": 80,
+        "pass": 68,
+        "reb": 67,
+        "ovr": 79
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5041955",
+      "name": "Darryn Peterson",
+      "abbr": "UTAH",
+      "team": "Utah Jazz",
+      "pos": "SG",
+      "games": 9,
+      "minutes": 30.2,
+      "ratings": {
+        "off": 86,
+        "def": 84,
+        "shoot": 75,
+        "pass": 79,
+        "reb": 70,
+        "ovr": 83
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4683766",
+      "name": "Isaiah Collier",
+      "abbr": "UTAH",
+      "team": "Utah Jazz",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 15.6,
+      "ratings": {
+        "off": 79,
+        "def": 72,
+        "shoot": 35,
+        "pass": 81,
+        "reb": 68,
+        "ovr": 78
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4277961",
+      "name": "Jaren Jackson Jr.",
+      "abbr": "UTAH",
+      "team": "Utah Jazz",
+      "pos": "PF",
+      "games": 4,
+      "minutes": 26,
+      "ratings": {
+        "off": 92,
+        "def": 79,
+        "shoot": 73,
+        "pass": 72,
+        "reb": 74,
+        "ovr": 83
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4397077",
+      "name": "Jaxson Hayes",
+      "abbr": "UTAH",
+      "team": "Utah Jazz",
+      "pos": "C",
+      "games": 8,
+      "minutes": 25,
+      "ratings": {
+        "off": 87,
+        "def": 89,
+        "shoot": 37,
+        "pass": 72,
+        "reb": 80,
+        "ovr": 86
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4432811",
+      "name": "Josh Green",
+      "abbr": "UTAH",
+      "team": "Utah Jazz",
+      "pos": "PG",
+      "games": 7,
+      "minutes": 16.6,
+      "ratings": {
+        "off": 79,
+        "def": 71,
+        "shoot": 70,
+        "pass": 66,
+        "reb": 62,
+        "ovr": 74
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4065663",
+      "name": "Josh Okogie",
+      "abbr": "UTAH",
+      "team": "Utah Jazz",
+      "pos": "PG",
+      "games": 8,
+      "minutes": 18.5,
+      "ratings": {
+        "off": 79,
+        "def": 76,
+        "shoot": 77,
+        "pass": 67,
+        "reb": 69,
+        "ovr": 78
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4433627",
+      "name": "Keyonte George",
+      "abbr": "UTAH",
+      "team": "Utah Jazz",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 32.3,
+      "ratings": {
+        "off": 94,
+        "def": 78,
+        "shoot": 73,
+        "pass": 89,
+        "reb": 71,
+        "ovr": 88
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4684793",
+      "name": "Kyle Filipowski",
+      "abbr": "UTAH",
+      "team": "Utah Jazz",
+      "pos": "PF",
+      "games": 6,
+      "minutes": 6.7,
+      "ratings": {
+        "off": 72,
+        "def": 66,
+        "shoot": 64,
+        "pass": 65,
+        "reb": 60,
+        "ovr": 68
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4066336",
+      "name": "Lauri Markkanen",
+      "abbr": "UTAH",
+      "team": "Utah Jazz",
+      "pos": "PF",
+      "games": 8,
+      "minutes": 30.9,
+      "ratings": {
+        "off": 91,
+        "def": 79,
+        "shoot": 85,
+        "pass": 72,
+        "reb": 81,
+        "ovr": 86
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "4277919",
+      "name": "Mo Bamba",
+      "abbr": "UTAH",
+      "team": "Utah Jazz",
+      "pos": "C",
+      "games": 5,
+      "minutes": 17.6,
+      "ratings": {
+        "off": 95,
+        "def": 82,
+        "shoot": 37,
+        "pass": 66,
+        "reb": 81,
+        "ovr": 87
+      },
+      "source": "derived"
+    },
+    {
+      "id": "3133602",
+      "name": "Svi Mykhailiuk",
+      "abbr": "UTAH",
+      "team": "Utah Jazz",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 16.2,
+      "ratings": {
+        "off": 72,
+        "def": 73,
+        "shoot": 53,
+        "pass": 67,
+        "reb": 63,
+        "ovr": 71
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4065673",
+      "name": "Tony Bradley",
+      "abbr": "UTAH",
+      "team": "Utah Jazz",
+      "pos": "C",
+      "games": 3,
+      "minutes": 4.7,
+      "ratings": {
+        "off": 75,
+        "def": 65,
+        "shoot": 26,
+        "pass": 63,
+        "reb": 63,
+        "ovr": 69
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5142718",
+      "name": "AJ Dybantsa",
+      "abbr": "WSH",
+      "team": "Washington Wizards",
+      "pos": "SF",
+      "games": 6,
+      "minutes": 31.5,
+      "ratings": {
+        "off": 88,
+        "def": 79,
+        "shoot": 66,
+        "pass": 73,
+        "reb": 77,
+        "ovr": 82
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "5160992",
+      "name": "Alex Sarr",
+      "abbr": "WSH",
+      "team": "Washington Wizards",
+      "pos": "C",
+      "games": 9,
+      "minutes": 25.8,
+      "ratings": {
+        "off": 87,
+        "def": 81,
+        "shoot": 58,
+        "pass": 72,
+        "reb": 83,
+        "ovr": 84
+      },
+      "source": "derived"
+    },
+    {
+      "id": "6583",
+      "name": "Anthony Davis",
+      "abbr": "WSH",
+      "team": "Washington Wizards",
+      "pos": "PF",
+      "games": 8,
+      "minutes": 33,
+      "ratings": {
+        "off": 97,
+        "def": 90,
+        "shoot": 74,
+        "pass": 72,
+        "reb": 89,
+        "ovr": 93
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "2581184",
+      "name": "Anthony Gill",
+      "abbr": "WSH",
+      "team": "Washington Wizards",
+      "pos": "SF",
+      "games": 2,
+      "minutes": 5,
+      "ratings": {
+        "off": 57,
+        "def": 64,
+        "shoot": 33,
+        "pass": 63,
+        "reb": 59,
+        "ovr": 61
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5104155",
+      "name": "Bilal Coulibaly",
+      "abbr": "WSH",
+      "team": "Washington Wizards",
+      "pos": "PG",
+      "games": 10,
+      "minutes": 25.8,
+      "ratings": {
+        "off": 84,
+        "def": 85,
+        "shoot": 53,
+        "pass": 66,
+        "reb": 69,
+        "ovr": 80
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4845374",
+      "name": "Bub Carrington",
+      "abbr": "WSH",
+      "team": "Washington Wizards",
+      "pos": "PG",
+      "games": 10,
+      "minutes": 19.3,
+      "ratings": {
+        "off": 83,
+        "def": 75,
+        "shoot": 88,
+        "pass": 72,
+        "reb": 64,
+        "ovr": 82
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4278129",
+      "name": "Deandre Ayton",
+      "abbr": "WSH",
+      "team": "Washington Wizards",
+      "pos": "C",
+      "games": 10,
+      "minutes": 15.2,
+      "ratings": {
+        "off": 89,
+        "def": 72,
+        "shoot": 34,
+        "pass": 67,
+        "reb": 74,
+        "ovr": 80
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5105841",
+      "name": "Felix Okpara",
+      "abbr": "WSH",
+      "team": "Washington Wizards",
+      "pos": "PF",
+      "games": 2,
+      "minutes": 2,
+      "ratings": {
+        "off": 57,
+        "def": 63,
+        "shoot": 33,
+        "pass": 63,
+        "reb": 59,
+        "ovr": 60
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4432907",
+      "name": "Justin Champagnie",
+      "abbr": "WSH",
+      "team": "Washington Wizards",
+      "pos": "SF",
+      "games": 4,
+      "minutes": 18.3,
+      "ratings": {
+        "off": 91,
+        "def": 79,
+        "shoot": 67,
+        "pass": 69,
+        "reb": 83,
+        "ovr": 85
+      },
+      "source": "derived"
+    },
+    {
+      "id": "6609",
+      "name": "Khris Middleton",
+      "abbr": "WSH",
+      "team": "Washington Wizards",
+      "pos": "SF",
+      "games": 5,
+      "minutes": 13.8,
+      "ratings": {
+        "off": 75,
+        "def": 68,
+        "shoot": 55,
+        "pass": 65,
+        "reb": 63,
+        "ovr": 70
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5174563",
+      "name": "Kyshawn George",
+      "abbr": "WSH",
+      "team": "Washington Wizards",
+      "pos": "SF",
+      "games": 10,
+      "minutes": 33,
+      "ratings": {
+        "off": 94,
+        "def": 82,
+        "shoot": 78,
+        "pass": 85,
+        "reb": 73,
+        "ovr": 88
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4432187",
+      "name": "Reece Beekman",
+      "abbr": "WSH",
+      "team": "Washington Wizards",
+      "pos": "PG",
+      "games": 1,
+      "minutes": 1,
+      "ratings": {
+        "off": 52,
+        "def": 66,
+        "shoot": 25,
+        "pass": 63,
+        "reb": 57,
+        "ovr": 59
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4277905",
+      "name": "Trae Young",
+      "abbr": "WSH",
+      "team": "Washington Wizards",
+      "pos": "PG",
+      "games": 10,
+      "minutes": 35.2,
+      "ratings": {
+        "off": 90,
+        "def": 79,
+        "shoot": 71,
+        "pass": 99,
+        "reb": 68,
+        "ovr": 89
+      },
+      "source": "draft-pool"
+    },
+    {
+      "id": "5238230",
+      "name": "Tre Johnson",
+      "abbr": "WSH",
+      "team": "Washington Wizards",
+      "pos": "PG",
+      "games": 9,
+      "minutes": 21.7,
+      "ratings": {
+        "off": 84,
+        "def": 71,
+        "shoot": 69,
+        "pass": 67,
+        "reb": 63,
+        "ovr": 76
+      },
+      "source": "derived"
+    },
+    {
+      "id": "4432819",
+      "name": "Tre Mann",
+      "abbr": "WSH",
+      "team": "Washington Wizards",
+      "pos": "PG",
+      "games": 4,
+      "minutes": 5.5,
+      "ratings": {
+        "off": 65,
+        "def": 74,
+        "shoot": 26,
+        "pass": 65,
+        "reb": 57,
+        "ovr": 68
+      },
+      "source": "derived"
+    },
+    {
+      "id": "5144126",
+      "name": "Will Riley",
+      "abbr": "WSH",
+      "team": "Washington Wizards",
+      "pos": "PG",
+      "games": 8,
+      "minutes": 7.1,
+      "ratings": {
+        "off": 77,
+        "def": 67,
+        "shoot": 47,
+        "pass": 65,
+        "reb": 58,
+        "ovr": 71
+      },
+      "source": "derived"
+    }
+  ],
+  "missing": [
+    {
+      "id": "5105571",
+      "name": "Henri Veesaar",
+      "abbr": "ATL",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4431714",
+      "name": "Jalen Wilson",
+      "abbr": "ATL",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4585618",
+      "name": "Keshon Gilbert",
+      "abbr": "ATL",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4712863",
+      "name": "Mouhamed Gueye",
+      "abbr": "ATL",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4702670",
+      "name": "Grant Nelson",
+      "abbr": "BKN",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "5105626",
+      "name": "Tyler Bilodeau",
+      "abbr": "BKN",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4702745",
+      "name": "Amari Williams",
+      "abbr": "BOS",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4433188",
+      "name": "Devin Carter",
+      "abbr": "BOS",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4066218",
+      "name": "Grant Williams",
+      "abbr": "CHA",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4684269",
+      "name": "Kylan Boswell",
+      "abbr": "CHA",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "5176517",
+      "name": "Michael Ajayi",
+      "abbr": "CHA",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4278067",
+      "name": "Nic Claxton",
+      "abbr": "CHI",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "5106261",
+      "name": "Ernest Udeh Jr.",
+      "abbr": "CLE",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4683688",
+      "name": "Dereck Lively II",
+      "abbr": "DAL",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "5148538",
+      "name": "Tarik Biberovic",
+      "abbr": "DAL",
+      "reason": "HTTP 404"
+    },
+    {
+      "id": "4432181",
+      "name": "Julian Strawther",
+      "abbr": "DEN",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "5037878",
+      "name": "Ugonna Onyenso",
+      "abbr": "DET",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "6430",
+      "name": "Jimmy Butler III",
+      "abbr": "GS",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "3102531",
+      "name": "Kristaps Porzingis",
+      "abbr": "GS",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4432171",
+      "name": "Moses Moody",
+      "abbr": "GS",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "5105553",
+      "name": "Julian Phillips",
+      "abbr": "HOU",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4683860",
+      "name": "Quadir Copeland",
+      "abbr": "HOU",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "5157066",
+      "name": "Johnny Furphy",
+      "abbr": "IND",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "6580",
+      "name": "Bradley Beal",
+      "abbr": "LAC",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "3913176",
+      "name": "Brandon Ingram",
+      "abbr": "LAC",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4396818",
+      "name": "Jordan Miller",
+      "abbr": "LAC",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "5108024",
+      "name": "Yanic Konan Niederhauser",
+      "abbr": "LAC",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "5114350",
+      "name": "AK Okereke",
+      "abbr": "LAL",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4433599",
+      "name": "Arthur Kaluma",
+      "abbr": "LAL",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "5105462",
+      "name": "Richie Saunders",
+      "abbr": "MEM",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4431786",
+      "name": "Keshad Johnson",
+      "abbr": "MIA",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4837356",
+      "name": "Tre Donaldson",
+      "abbr": "MIA",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4700818",
+      "name": "Vladislav Goldin",
+      "abbr": "MIA",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "2991043",
+      "name": "Caris LeVert",
+      "abbr": "MIL",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4397114",
+      "name": "Cormac Ryan",
+      "abbr": "MIL",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4697268",
+      "name": "Kam Jones",
+      "abbr": "MIL",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4397233",
+      "name": "Pete Nance",
+      "abbr": "MIL",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "3934673",
+      "name": "Donte DiVincenzo",
+      "abbr": "MIN",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "5157587",
+      "name": "Rocco Zikarsky",
+      "abbr": "MIN",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4703115",
+      "name": "Jaron Pierre Jr.",
+      "abbr": "NO",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4712862",
+      "name": "Malik Dia",
+      "abbr": "NO",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4838721",
+      "name": "Tyler Nickel",
+      "abbr": "NY",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "5159925",
+      "name": "Nikola Topic",
+      "abbr": "OKC",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "5061603",
+      "name": "Thomas Sorber",
+      "abbr": "OKC",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "5107251",
+      "name": "Izaiyah Nelson",
+      "abbr": "ORL",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4065654",
+      "name": "Jonathan Isaac",
+      "abbr": "ORL",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "5214637",
+      "name": "Noah Penda",
+      "abbr": "ORL",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4871141",
+      "name": "Ariel Hukporti",
+      "abbr": "PHI",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4870562",
+      "name": "Dominick Barlow",
+      "abbr": "PHI",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4431695",
+      "name": "Drew Timme",
+      "abbr": "PHX",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4701232",
+      "name": "Mark Williams",
+      "abbr": "PHX",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4914336",
+      "name": "Shaedon Sharpe",
+      "abbr": "POR",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "5101845",
+      "name": "Jayden Quaintance",
+      "abbr": "SA",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "6440",
+      "name": "Tobias Harris",
+      "abbr": "SA",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "3907387",
+      "name": "Ben Simmons",
+      "abbr": "SAC",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4898371",
+      "name": "Maxime Raynaud",
+      "abbr": "SAC",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4709131",
+      "name": "Sean Pedulla",
+      "abbr": "SAC",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4411057",
+      "name": "Kevin McCullar Jr.",
+      "abbr": "TOR",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4397784",
+      "name": "Malachi Smith",
+      "abbr": "TOR",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4432586",
+      "name": "Nate Bittle",
+      "abbr": "TOR",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4433618",
+      "name": "Harrison Ingram",
+      "abbr": "UTAH",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "3102530",
+      "name": "Jusuf Nurkic",
+      "abbr": "UTAH",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4683736",
+      "name": "Kobe Bufkin",
+      "abbr": "UTAH",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4433268",
+      "name": "Trey Alexander",
+      "abbr": "UTAH",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4606840",
+      "name": "Jamir Watkins",
+      "abbr": "WSH",
+      "reason": "no-2026-27-stats"
+    },
+    {
+      "id": "4997537",
+      "name": "Tristan Vukcevic",
+      "abbr": "WSH",
+      "reason": "no-2026-27-stats"
+    }
+  ]
+}

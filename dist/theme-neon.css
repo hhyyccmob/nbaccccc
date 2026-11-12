@@ -1,0 +1,230 @@
+/* Dark neon court theme */
+html[data-theme="neon"]{color-scheme:dark;--paper:#050908;--ink:#e9fff3;--green:#0b211a;--dark:#020b08;--muted:#8aa89a;--line:#17382d;--orange:#ff6b35;--gold:#ffd166;--neon:#8dff6a;--cyan:#5effdf;--panel:#0a1511;--panel2:#0e1d17;--panel3:#10241c}
+html[data-theme="neon"] body{background:radial-gradient(circle at 12% 0%,#102a20 0,#07100d 34%,#030706 72%,#020504 100%);color:var(--ink)}
+html[data-theme="neon"] ::selection{background:#8dff6a;color:#031009}
+html[data-theme="neon"] .theme-toggle{color:var(--neon);text-shadow:0 0 12px #8dff6a66}
+html[data-theme="neon"] .theme-toggle::after{content:'';display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--neon);margin-left:7px;box-shadow:0 0 8px var(--neon)}
+
+/* Shared */
+html[data-theme="neon"] .brand-ball{color:var(--neon);text-shadow:0 0 18px #8dff6a88}
+html[data-theme="neon"] .eyebrow{color:var(--neon)}
+html[data-theme="neon"] .eyebrow span{background:var(--neon);box-shadow:0 0 10px var(--neon)}
+html[data-theme="neon"] .primary-button{background:var(--orange);box-shadow:0 0 0 1px #ff6b3555,0 5px 18px #ff6b3538}
+html[data-theme="neon"] .primary-button:hover:not(:disabled){background:#ff8255;box-shadow:0 0 0 1px #ff6b3588,0 8px 25px #ff6b3550}
+html[data-theme="neon"] .primary-button:disabled{background:#12221b;color:#527064;box-shadow:none}
+html[data-theme="neon"] .outline-button{color:#d8ffe6;border-color:#2b5a46;background:#0b1813}
+html[data-theme="neon"] .outline-button:hover{background:#11271e;border-color:#8dff6a66;box-shadow:0 0 14px #8dff6a1a}
+
+/* Season mode */
+html[data-theme="neon"] body.season-app .masthead{border-bottom-color:#16352a;background:linear-gradient(180deg,#07100d,#050908)}
+html[data-theme="neon"] body.season-app .brand{color:#effff5}
+html[data-theme="neon"] body.season-app .edition,html[data-theme="neon"] body.season-app .hero-note,html[data-theme="neon"] body.season-app .lead{color:#8aa99a}
+html[data-theme="neon"] body.season-app .text-button{color:#d8ffe6}
+html[data-theme="neon"] body.season-app .text-button:hover{color:var(--neon)}
+html[data-theme="neon"] body.season-app .steps{color:#a7c3b2}
+html[data-theme="neon"] body.season-app .steps b{color:var(--neon);text-shadow:0 0 10px #8dff6a55}
+html[data-theme="neon"] body.season-app .steps i{color:#315245}
+html[data-theme="neon"] body.season-app #hero-mode-note{color:#8aa99a}
+html[data-theme="neon"] body.season-app .court-panel{background:#03100c;border:1px solid #1d4936;box-shadow:0 0 0 1px #8dff6a0d,0 18px 55px #00000080,0 0 36px #8dff6a0a}
+html[data-theme="neon"] body.season-app .court-top{border-bottom-color:#8dff6a1c;color:#d8ffe6}
+html[data-theme="neon"] body.season-app .court-top span:last-child,html[data-theme="neon"] body.season-app .court-bottom{color:#8eac9c}
+html[data-theme="neon"] body.season-app .court{background:linear-gradient(180deg,#07120e,#04100b);}
+html[data-theme="neon"] body.season-app .court svg{stroke:#8dff6a3d}
+html[data-theme="neon"] body.season-app .court-bottom{background:#00000025;border-top:1px solid #8dff6a0d}
+html[data-theme="neon"] body.season-app .court-bottom strong{color:var(--neon);text-shadow:0 0 14px #8dff6a55}
+html[data-theme="neon"] body.season-app .jersey{background:#173329;color:#dfffe9;box-shadow:inset 0 0 0 1px #8dff6a2b}
+html[data-theme="neon"] body.season-app .court-player.empty .jersey{background:#0d2119;color:#4d7060}
+html[data-theme="neon"] body.season-app .court-player .player-label{background:#061c14e8;color:#e7fff0;border:1px solid #8dff6a25}
+html[data-theme="neon"] body.season-app .court-player.empty .player-label{color:#6f917f}
+html[data-theme="neon"] body.season-app .court-player small{color:#789987}
+html[data-theme="neon"] body.season-app .draft-section{border-top-color:#17382d}
+html[data-theme="neon"] body.season-app h2{color:#effff5}
+html[data-theme="neon"] body.season-app h2>span{color:#8aa99a}
+html[data-theme="neon"] body.season-app .section-desc{color:#8aa99a}
+html[data-theme="neon"] body.season-app .select-label{color:#9bb8a8}
+html[data-theme="neon"] body.season-app select{background:#0c1813;color:#e4ffee;border-color:#28513e}
+html[data-theme="neon"] body.season-app .rating-note{background:#091410;border-color:#1d4031}
+html[data-theme="neon"] body.season-app .rating-note summary{color:#d8f5e1}
+html[data-theme="neon"] body.season-app .rating-note-body{border-top-color:#17382d}
+html[data-theme="neon"] body.season-app .rating-note-body p{color:#8eae9c}
+html[data-theme="neon"] body.season-app .rating-note-body b{color:var(--neon)}
+html[data-theme="neon"] body.season-app .rating-note-body code{background:#123024;color:#b9ffd0}
+html[data-theme="neon"] body.season-app .stage-panel{background:radial-gradient(circle at 12% 0%,#123c2b 0,#061a12 45%,#020906 100%);border-color:#1d5138;box-shadow:0 0 0 1px #8dff6a0d,0 22px 60px #00000080,0 0 42px #8dff6a0b}
+html[data-theme="neon"] body.season-app .stage-watermark{color:#8dff6a0a}
+html[data-theme="neon"] body.season-app .stage-kicker{color:var(--neon)}
+html[data-theme="neon"] body.season-app .stage-setup h3,html[data-theme="neon"] body.season-app .stage-heading h3,html[data-theme="neon"] body.season-app .stage-complete h3{color:#f0fff5}
+html[data-theme="neon"] body.season-app .stage-setup p,html[data-theme="neon"] body.season-app .stage-heading p{color:#9db9a8}
+html[data-theme="neon"] body.season-app .stage-pills span{border-color:#2b5a46;background:#0b2018;color:#c8f1d4}
+html[data-theme="neon"] body.season-app .stage-cta{background:var(--orange);box-shadow:0 0 0 1px #ff6b3566,0 0 25px #ff6b3530}
+html[data-theme="neon"] body.season-app .draft-progress .progress-step{border-color:#1e4735;background:#081510;color:#9bb9a8}
+html[data-theme="neon"] body.season-app .draft-progress .progress-step b{color:#e5fff0}
+html[data-theme="neon"] body.season-app .draft-progress .progress-step small{color:#759784}
+html[data-theme="neon"] body.season-app .draft-progress .progress-step.current{border-color:var(--neon);background:#8dff6a12;box-shadow:0 0 18px #8dff6a1a,inset 0 0 0 1px #8dff6a30}
+html[data-theme="neon"] body.season-app .draft-progress .progress-step.done{border-color:#3a8661;background:#8dff6a0b}
+html[data-theme="neon"] body.season-app .open-count{color:var(--neon);text-shadow:0 0 18px #8dff6a44}
+html[data-theme="neon"] body.season-app .blind-box{border-color:#2f5e49;background:repeating-linear-gradient(135deg,#0c1e17 0 10px,#091711 10px 20px);color:#b9e2c7;box-shadow:0 10px 30px #00000050,inset 0 0 0 1px #8dff6a0d}
+html[data-theme="neon"] body.season-app .blind-box::before{border-color:#8dff6a25}
+html[data-theme="neon"] body.season-app .blind-box::after{color:#8dff6a0b}
+html[data-theme="neon"] body.season-app .blind-box:hover{border-color:var(--neon);box-shadow:0 14px 35px #00000065,0 0 24px #8dff6a1f}
+html[data-theme="neon"] body.season-app .box-code,html[data-theme="neon"] body.season-app .blind-box small{color:#6e9a82}
+html[data-theme="neon"] body.season-app .box-orb{border-color:#8dff6a45;background:#8dff6a0a;color:var(--neon);text-shadow:0 0 18px #8dff6a55}
+html[data-theme="neon"] body.season-app .blind-box b{color:#dfffe9}
+html[data-theme="neon"] body.season-app .reveal-card{background:#08140f;border-color:#2d654b;color:#e7fff1;box-shadow:0 12px 34px #00000070,0 0 22px #8dff6a0d}
+html[data-theme="neon"] body.season-app .reveal-card.picked{border-color:var(--neon);box-shadow:0 0 0 1px #8dff6a55,0 0 30px #8dff6a20}
+html[data-theme="neon"] body.season-app .reveal-top,html[data-theme="neon"] body.season-app .reveal-card .player-en,html[data-theme="neon"] body.season-app .reveal-card .card-stats{color:#8eae9b}
+html[data-theme="neon"] body.season-app .reveal-card h4{color:#effff5}
+html[data-theme="neon"] body.season-app .reveal-card .card-stats b{color:var(--neon)}
+html[data-theme="neon"] body.season-app .reveal-card .card-portrait{background:radial-gradient(ellipse at 50% 100%,#183a2b 0%,#0a1c15 55%,transparent 56%)}
+html[data-theme="neon"] body.season-app .pick-button{background:#102e23;border-color:#2a5c46;color:#b8ffd0}
+html[data-theme="neon"] body.season-app .pick-button:hover,html[data-theme="neon"] body.season-app .pick-button.is-picked{background:var(--orange);border-color:var(--orange);color:white}
+html[data-theme="neon"] body.season-app .stage-nav{border-top-color:#8dff6a18}
+html[data-theme="neon"] body.season-app .stage-nav-btn{border-color:#2b5a46;background:#0a1b14;color:#c6ebd3}
+html[data-theme="neon"] body.season-app .stage-hint{color:#80a08e}
+html[data-theme="neon"] body.season-app .complete-player{border-color:#244f3b;background:#0a1a13;color:#e9fff1}
+html[data-theme="neon"] body.season-app .complete-player:hover{border-color:var(--neon);background:#10281d;box-shadow:0 0 20px #8dff6a18}
+html[data-theme="neon"] body.season-app .complete-pos,html[data-theme="neon"] body.season-app .complete-player small{color:#82a491}
+html[data-theme="neon"] body.season-app .analysis-panel{background:#07110d;border-color:#193c2d}
+html[data-theme="neon"] body.season-app .analysis-heading h3{color:#e9fff2}
+html[data-theme="neon"] body.season-app .analysis-heading p,html[data-theme="neon"] body.season-app .bar-label{color:#89a897}
+html[data-theme="neon"] body.season-app .bar-track{background:#163025}
+html[data-theme="neon"] body.season-app .bar-fill{background:linear-gradient(90deg,#4fcf72,var(--neon));box-shadow:0 0 10px #8dff6a55}
+html[data-theme="neon"] body.season-app .launch-bar strong{color:#effff5}
+html[data-theme="neon"] body.season-app .launch-bar p{color:#8aa99a}
+html[data-theme="neon"] body.season-app .result-hero{background:radial-gradient(circle at 15% 0%,#163f2c,#07140f 58%,#020906);border:1px solid #1e4c36;box-shadow:0 0 0 1px #8dff6a0d,0 20px 55px #00000080}
+html[data-theme="neon"] body.season-app .record{color:#f2fff6;text-shadow:0 0 26px #8dff6a22}
+html[data-theme="neon"] body.season-app .result-hero h3{color:var(--neon)}
+html[data-theme="neon"] body.season-app .result-hero p,html[data-theme="neon"] body.season-app .result-hero small{color:#a0bdaa}
+html[data-theme="neon"] body.season-app .result-trophy{color:var(--gold);text-shadow:0 0 26px #ffd16655}
+html[data-theme="neon"] body.season-app .result-metrics{border-color:#183a2b;background:#06100c}
+html[data-theme="neon"] body.season-app .metric{border-color:#183a2b}
+html[data-theme="neon"] body.season-app .metric strong{color:#eafff2}
+html[data-theme="neon"] body.season-app .metric span{color:#82a291}
+html[data-theme="neon"] body.season-app .report-panel,html[data-theme="neon"] body.season-app .log-details{background:#07110d;border-color:#193c2d;box-shadow:0 0 0 1px #8dff6a08}
+html[data-theme="neon"] body.season-app .report-panel h3,html[data-theme="neon"] body.season-app .table-heading h3{color:#eafff2}
+html[data-theme="neon"] body.season-app .game-tile{background:#123d28;color:#b9ffd0;box-shadow:inset 0 0 0 1px #8dff6a20}
+html[data-theme="neon"] body.season-app .game-tile.loss{background:#3b1610;color:#ff9a80}
+html[data-theme="neon"] body.season-app .legend,html[data-theme="neon"] body.season-app .result-footnote{color:#7f9f8d}
+html[data-theme="neon"] body.season-app .series-row{border-top-color:#17362a}
+html[data-theme="neon"] body.season-app .series-row small{color:#7f9e8d}
+html[data-theme="neon"] body.season-app .series-row .won{color:var(--neon)}
+html[data-theme="neon"] body.season-app .series-row .lost{color:#ff8c72}
+html[data-theme="neon"] body.season-app .standings th{background:#0a1812;color:#88aa96}
+html[data-theme="neon"] body.season-app .standings th,html[data-theme="neon"] body.season-app .standings td{border-bottom-color:#153429}
+html[data-theme="neon"] body.season-app .standings{color:#d9f4e3}
+html[data-theme="neon"] body.season-app .standings tr.mine{background:#8dff6a10;color:#effff5}
+html[data-theme="neon"] body.season-app .award-card{background:#0a1711;border-color:#224b38;box-shadow:0 0 0 1px #8dff6a08}
+html[data-theme="neon"] body.season-app .award-card .award-label span{color:#eafff2}
+html[data-theme="neon"] body.season-app .award-card strong{color:#f0fff5}
+html[data-theme="neon"] body.season-app .award-card p,html[data-theme="neon"] body.season-app .award-label small{color:#82a291}
+html[data-theme="neon"] body.season-app .award-line{color:#b9ffd0;border-top-color:#183b2c}
+html[data-theme="neon"] body.season-app .starter-stats-panel{background:#07110d;border-color:#193c2d}
+html[data-theme="neon"] body.season-app .starter-stats td strong{color:#eafff2}
+html[data-theme="neon"] body.season-app .tabs button{color:#8eae9c}
+html[data-theme="neon"] body.season-app .tabs button.active{background:var(--neon);color:#041009;box-shadow:0 0 16px #8dff6a33}
+html[data-theme="neon"] body.season-app .history-section{border-top-color:#17382d}
+html[data-theme="neon"] body.season-app .history-card{background:#08130f;border-color:#193c2d;color:#dfffe8}
+html[data-theme="neon"] body.season-app .history-card small{color:#7f9e8d}
+html[data-theme="neon"] body.season-app footer{border-top-color:#17382d;color:#759484}
+html[data-theme="neon"] body.season-app dialog{background:#07130e;border-color:#24513d;color:#e9fff2}
+html[data-theme="neon"] body.season-app .rules-source,html[data-theme="neon"] body.season-app .dialog-top+ol{color:#91ae9d}
+html[data-theme="neon"] body.season-app .text-button{color:#d8ffe6}
+
+/* Auction mode */
+html[data-theme="neon"] body.auction-app .site-header{border-bottom-color:#17382d;background:linear-gradient(180deg,#07100d,#050908)}
+html[data-theme="neon"] body.auction-app .brand{color:#effff5}
+html[data-theme="neon"] body.auction-app .brand small{color:#7f9f8d}
+html[data-theme="neon"] body.auction-app .header-nav a,html[data-theme="neon"] body.auction-app .header-nav button{color:#d8ffe6}
+html[data-theme="neon"] body.auction-app .header-nav a:hover,html[data-theme="neon"] body.auction-app .header-nav button:hover{color:var(--neon)}
+html[data-theme="neon"] body.auction-app .landing-hero{background:radial-gradient(circle at 12% 0%,#12442e 0,#071a10 45%,#020806 100%);border:1px solid #1d5138;box-shadow:0 0 0 1px #8dff6a0d,0 22px 60px #00000080,0 0 45px #8dff6a0b}
+html[data-theme="neon"] body.auction-app .landing-hero h1 em{color:var(--neon);text-shadow:0 0 28px #8dff6a44}
+html[data-theme="neon"] body.auction-app .landing-hero p,html[data-theme="neon"] body.auction-app .landing-stats span{color:#9eb9a8}
+html[data-theme="neon"] body.auction-app .landing-stats b{color:var(--neon);text-shadow:0 0 18px #8dff6a44}
+html[data-theme="neon"] body.auction-app .setup-card,html[data-theme="neon"] body.auction-app .landing-rules{background:#07130e;border-color:#1d4031;box-shadow:0 0 0 1px #8dff6a08}
+html[data-theme="neon"] body.auction-app .setup-card h2,html[data-theme="neon"] body.auction-app .landing-rules h3{color:#effff5}
+html[data-theme="neon"] body.auction-app .field-label{color:#8eae9c}
+html[data-theme="neon"] body.auction-app .field-label input,html[data-theme="neon"] body.auction-app #join-code,html[data-theme="neon"] body.auction-app #bid-amount,html[data-theme="neon"] body.auction-app select{background:#081610;color:#e7fff0;border-color:#28513e}
+html[data-theme="neon"] body.auction-app .mode-card{background:#0a1812;border-color:#214936;color:#dfffe8}
+html[data-theme="neon"] body.auction-app .mode-card small{color:#7f9e8d}
+html[data-theme="neon"] body.auction-app .mode-card.selected{border-color:var(--neon);background:#8dff6a0e;box-shadow:0 0 0 1px #8dff6a35,0 0 20px #8dff6a12}
+html[data-theme="neon"] body.auction-app .button.secondary{background:#0a1812;border-color:#28513e;color:#d8ffe6}
+html[data-theme="neon"] body.auction-app .button.secondary:hover{background:#10281d;border-color:#8dff6a55}
+html[data-theme="neon"] body.auction-app .landing-rules ul{color:#91ad9d}
+html[data-theme="neon"] body.auction-app .ai-button{background:#0d2017;border-color:#28513e;color:#c9f5d4}
+html[data-theme="neon"] body.auction-app .hint{color:#7e9d8b}
+html[data-theme="neon"] body.auction-app code{background:#123024;color:#b9ffd0}
+html[data-theme="neon"] body.auction-app .room-heading h1,html[data-theme="neon"] body.auction-app .assign-screen h1,html[data-theme="neon"] body.auction-app .series-screen h1{color:#effff5}
+html[data-theme="neon"] body.auction-app .room-heading p{color:#8aa99a}
+html[data-theme="neon"] body.auction-app .room-code-card{background:radial-gradient(circle at 12% 0%,#123b2a,#06170f 60%,#020806);border:1px solid #1d5138;box-shadow:0 0 0 1px #8dff6a0d,0 18px 45px #00000070}
+html[data-theme="neon"] body.auction-app .room-code-card>span,html[data-theme="neon"] body.auction-app .room-code-card>small{color:#85a592}
+html[data-theme="neon"] body.auction-app .room-code-card>strong{color:var(--neon);text-shadow:0 0 24px #8dff6a44}
+html[data-theme="neon"] body.auction-app .room-player{background:#08140f;border-color:#1d4031;color:#dfffe8}
+html[data-theme="neon"] body.auction-app .room-player.you{border-left-color:var(--neon);box-shadow:0 0 18px #8dff6a0d}
+html[data-theme="neon"] body.auction-app .room-player>span,html[data-theme="neon"] body.auction-app .room-player>small{color:#82a291}
+html[data-theme="neon"] body.auction-app .auction-status{border-color:#1e4735;background:#081510;color:#9bb9a8}
+html[data-theme="neon"] body.auction-app .auction-topbar h2{color:#effff5}
+html[data-theme="neon"] body.auction-app .auction-topbar h2 span{color:#7f9e8d}
+html[data-theme="neon"] body.auction-app .team-panel{background:#07130e;border-color:#1d4031;box-shadow:0 0 0 1px #8dff6a06}
+html[data-theme="neon"] body.auction-app .team-panel.you{border-color:#3c7d59;box-shadow:0 0 0 1px #8dff6a20,0 0 24px #8dff6a0c}
+html[data-theme="neon"] body.auction-app .team-panel-top>span,html[data-theme="neon"] body.auction-app .roster-count{color:#82a291}
+html[data-theme="neon"] body.auction-app .team-panel-top>strong{color:#eafff2}
+html[data-theme="neon"] body.auction-app .team-panel-top>b{color:var(--neon)}
+html[data-theme="neon"] body.auction-app .budget-track{background:#153027}
+html[data-theme="neon"] body.auction-app .budget-track i{background:linear-gradient(90deg,#4ecf73,var(--neon));box-shadow:0 0 8px #8dff6a55}
+html[data-theme="neon"] body.auction-app .mini-player{background:#0a1812;border-color:#1d4031}
+html[data-theme="neon"] body.auction-app .mini-player b{color:#e3ffec}
+html[data-theme="neon"] body.auction-app .mini-player small{color:#7f9e8d}
+html[data-theme="neon"] body.auction-app .mini-player.blind{background:#0b1b14;border-color:#28513e}
+html[data-theme="neon"] body.auction-app .mystery{background:#8dff6a10;color:var(--neon)}
+html[data-theme="neon"] body.auction-app .empty-roster{border-color:#28513e;color:#719482}
+html[data-theme="neon"] body.auction-app .lot-full{background:radial-gradient(circle at 15% 0%,#123b2a,#06170f 55%,#020806);border:1px solid #1d5138;box-shadow:0 0 0 1px #8dff6a0d,0 18px 45px #00000070}
+html[data-theme="neon"] body.auction-app .lot-photo{background:radial-gradient(circle at 50% 100%,#1b4b35,#06170f)}
+html[data-theme="neon"] body.auction-app .lot-ovr,html[data-theme="neon"] body.auction-app .lot-copy h2{color:#f1fff5}
+html[data-theme="neon"] body.auction-app .lot-meta,html[data-theme="neon"] body.auction-app .lot-en,html[data-theme="neon"] body.auction-app .lot-copy>small{color:#8eae9c}
+html[data-theme="neon"] body.auction-app .lot-stats{border-color:#8dff6a1c}
+html[data-theme="neon"] body.auction-app .lot-stats span{color:#8eae9c}
+html[data-theme="neon"] body.auction-app .lot-stats b{color:var(--neon)}
+html[data-theme="neon"] body.auction-app .lot-blind{background:radial-gradient(circle at 15% 0%,#123b2a,#06170f 55%,#020806);border:1px solid #1d5138;box-shadow:0 0 0 1px #8dff6a0d,0 18px 45px #00000070}
+html[data-theme="neon"] body.auction-app .mystery-orb{border-color:#8dff6a55;color:var(--neon);text-shadow:0 0 18px #8dff6a55}
+html[data-theme="neon"] body.auction-app .blind-tag{color:var(--gold)}
+html[data-theme="neon"] body.auction-app .lot-blind strong{color:#effff5}
+html[data-theme="neon"] body.auction-app .lot-blind p{color:#8eae9c}
+html[data-theme="neon"] body.auction-app .empty-lot{border-color:#28513e;background:#07130e;color:#7f9e8d}
+html[data-theme="neon"] body.auction-app .bid-box{background:#07130e;border-color:#1d4031}
+html[data-theme="neon"] body.auction-app .bid-summary{border-bottom-color:#17382d}
+html[data-theme="neon"] body.auction-app .bid-summary span{color:#82a291}
+html[data-theme="neon"] body.auction-app .bid-summary strong,html[data-theme="neon"] body.auction-app .bid-summary b{color:#eafff2}
+html[data-theme="neon"] body.auction-app .quick-bid{background:#0a1812;border-color:#28513e;color:#b9ffd0}
+html[data-theme="neon"] body.auction-app .waiting-bid{border-color:#28513e;color:#8eae9c}
+html[data-theme="neon"] body.auction-app .auction-log{border-top-color:#17382d}
+html[data-theme="neon"] body.auction-app .auction-log p{color:#84a291}
+html[data-theme="neon"] body.auction-app .auction-note{color:#7f9e8d}
+html[data-theme="neon"] body.auction-app .free-pick-panel,html[data-theme="neon"] body.auction-app .assignment-card{background:#07130e;border-color:#1d4031}
+html[data-theme="neon"] body.auction-app .free-pick-head h2,html[data-theme="neon"] body.auction-app .assignment-head h3{color:#effff5}
+html[data-theme="neon"] body.auction-app .free-pick-head p,html[data-theme="neon"] body.auction-app .assignment-head .hint{color:#8eae9c}
+html[data-theme="neon"] body.auction-app .pick-counter{color:var(--neon);text-shadow:0 0 20px #8dff6a44}
+html[data-theme="neon"] body.auction-app .free-player{background:#0a1812;border-color:#1d4031}
+html[data-theme="neon"] body.auction-app .free-player.clickable:hover{border-color:var(--neon);background:#10281d}
+html[data-theme="neon"] body.auction-app .slot-row>span{color:var(--neon)}
+html[data-theme="neon"] body.auction-app .assigned-row{border-top-color:#17382d}
+html[data-theme="neon"] body.auction-app .assigned-row>b{color:#eafff2}
+html[data-theme="neon"] body.auction-app .assigned-row>small{color:#82a291}
+html[data-theme="neon"] body.auction-app .done-pill{background:#123024;color:#aaffc3}
+html[data-theme="neon"] body.auction-app .mode-pill{background:#081510;border-color:#1d4031;color:#8eae9c}
+html[data-theme="neon"] body.auction-app .series-hero{background:radial-gradient(circle at 15% 0%,#123b2a,#06170f 58%,#020806);border:1px solid #1d5138;box-shadow:0 0 0 1px #8dff6a0d,0 18px 45px #00000070}
+html[data-theme="neon"] body.auction-app .series-hero span,html[data-theme="neon"] body.auction-app .series-hero small{color:#8eae9c}
+html[data-theme="neon"] body.auction-app .series-hero strong{color:#effff5}
+html[data-theme="neon"] body.auction-app .series-score{color:var(--neon);text-shadow:0 0 26px #8dff6a44}
+html[data-theme="neon"] body.auction-app .series-team-ratings>div{background:#07130e;border-color:#1d4031}
+html[data-theme="neon"] body.auction-app .series-team-ratings span{color:#dfffe8}
+html[data-theme="neon"] body.auction-app .series-team-ratings b{color:var(--neon)}
+html[data-theme="neon"] body.auction-app .series-team-ratings small{color:#82a291}
+html[data-theme="neon"] body.auction-app .game-list,html[data-theme="neon"] body.auction-app .game-row{border-color:#17382d}
+html[data-theme="neon"] body.auction-app .game-row b{color:var(--neon)}
+html[data-theme="neon"] body.auction-app .game-row strong{color:#eafff2}
+html[data-theme="neon"] body.auction-app dialog{background:#07130e;border-color:#24513d;color:#e9fff2}
+html[data-theme="neon"] body.auction-app #rules-body{color:#91ae9d}
+html[data-theme="neon"] body.auction-app #toast{background:#0b2a1d;color:var(--neon);border:1px solid #2b6848;box-shadow:0 0 24px #8dff6a20}
+
+@media(max-width:780px){html[data-theme="neon"] body.season-app .reveal-card .card-portrait,html[data-theme="neon"] body.auction-app .lot-photo{filter:saturate(1.05) brightness(.92)}}
+
+html[data-theme="neon"] body.season-app #toast{background:#0b2a1d;color:var(--neon);border:1px solid #2b6848;box-shadow:0 0 24px #8dff6a20}

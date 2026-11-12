@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+const base=new URL('./dist/',import.meta.url);
+let html=fs.readFileSync(new URL('index.html',base),'utf8');
+const style=fs.readFileSync(new URL('style.css',base),'utf8').replace(/^@import[^\n]*\n?/gm,'');
+const theme=fs.readFileSync(new URL('theme-neon.css',base),'utf8');
+const sources=JSON.parse(fs.readFileSync(new URL('assets/players/sources.json',base),'utf8'));
+if(sources.length!==160)throw Error('Need 160 portraits');
+const embedded=Object.fromEntries(sources.map(p=>[p.id,'data:'+p.mime+';base64,'+fs.readFileSync(new URL(p.file,base)).toString('base64')]));
+const files=['theme.js','players.js','teams.js','league-players.js','engine.js','app.js'];
+const js='const PLAYER_PHOTOS='+JSON.stringify(embedded)+';\n'+files.map(name=>fs.readFileSync(new URL(name,base),'utf8').replace(/^import[^\n]+\n/gm,'').replace(/\bexport /g,'')).join('\n');
+html=html.replace('<link rel="stylesheet" href="./style.css"><link rel="stylesheet" href="./theme-neon.css">',()=>`<style>${style}\n${theme}</style>`).replace('<script src="./theme.js"></script>','').replace('<script type="module" src="./app.js"></script>',()=>`<script>(()=>{${js}})();</script>`).replace('href="./"','href="#"').replaceAll('href="./auction.html"','href="./竞拍模式.html"');
+fs.writeFileSync(new URL('首发实验室.html',new URL('./',import.meta.url)),html);
+console.log('season standalone built');

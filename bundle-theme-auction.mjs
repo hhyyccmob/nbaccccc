@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+const base=new URL('./dist/',import.meta.url);
+let html=fs.readFileSync(new URL('auction.html',base),'utf8');
+const style=fs.readFileSync(new URL('auction.css',base),'utf8');
+const theme=fs.readFileSync(new URL('theme-neon.css',base),'utf8');
+const sources=JSON.parse(fs.readFileSync(new URL('assets/players/sources.json',base),'utf8'));
+const history=sources.filter(p=>p.pool==='history');
+if(history.length!==80)throw Error('Need 80 history portraits');
+const embedded=Object.fromEntries(history.map(p=>[p.id,'data:'+p.mime+';base64,'+fs.readFileSync(new URL(p.file,base)).toString('base64')]));
+const files=['theme.js','players.js','auction-data.js','auction-core.js','auction.js'];
+const js='const PLAYER_PHOTOS='+JSON.stringify(embedded)+';\n'+files.map(name=>fs.readFileSync(new URL(name,base),'utf8').replace(/^import[^\n]+\n/gm,'').replace(/\bexport /g,'')).join('\n');
+html=html.replace('<link rel="stylesheet" href="./auction.css"><link rel="stylesheet" href="./theme-neon.css">',()=>`<style>${style}\n${theme}</style>`).replace('<script src="./theme.js"></script>','').replace('<script type="module" src="./auction.js"></script>',()=>`<script>(()=>{${js}})();</script>`).replaceAll('href="./index.html"','href="./首发实验室.html"');
+fs.writeFileSync(new URL('竞拍模式.html',new URL('./',import.meta.url)),html);
+console.log('auction standalone built');
